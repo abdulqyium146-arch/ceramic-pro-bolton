@@ -1,0 +1,27 @@
+{
+  "name": "Ceramic Pro North West",
+  "short_name": "Ceramic Pro NW",
+  "description": "Bolton's specialist in ceramic coatings, PPF and professional car detailing.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#c9a84c",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-icon",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}

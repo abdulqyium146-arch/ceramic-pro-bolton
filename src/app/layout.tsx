@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Syne } from "next/font/google";
 import "./globals.css";
 import { BUSINESS } from "@/lib/business";
@@ -14,6 +14,10 @@ const syne = Syne({
   subsets: ["latin"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#c9a84c",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.url),
@@ -69,6 +73,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: BUSINESS.url,
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/icon", sizes: "64x64", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon", sizes: "180x180", type: "image/png" }],
+    shortcut: "/favicon.svg",
+  },
+  manifest: "/site.webmanifest",
   other: {
     "geo.region": "GB-MAN",
     "geo.placename": "Bolton, Greater Manchester",
