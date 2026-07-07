@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Star, ExternalLink } from "lucide-react";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import ReviewCard from "@/components/ui/ReviewCard";
 import CTABanner from "@/components/sections/CTABanner";
@@ -111,6 +111,7 @@ export default function ReviewsPage() {
         headline="Join Our Satisfied Customers"
         subtext="Experience the Ceramic Pro North West difference — professional results, every time."
         primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
+        secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="dark"
       />
     </>

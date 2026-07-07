@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import CTABanner from "@/components/sections/CTABanner";
+import { WHATSAPP_HREF } from "@/lib/business";
 
 export const metadata: Metadata = {
   title: "Car Detailing Blog — Ceramic Coating Tips Bolton | Ceramic Pro North West",
@@ -125,6 +127,14 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      <CTABanner
+        headline="Ready to Protect Your Car?"
+        subtext="Bolton's certified Ceramic Pro specialists — free quotes, honest advice, professional results."
+        primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
+        secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
+        variant="dark"
+      />
     </>
   );
 }

@@ -5,6 +5,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
+import CTABanner from "@/components/sections/CTABanner";
+import { WHATSAPP_HREF } from "@/lib/business";
 
 // Note: metadata can't be exported from client component — move to a layout or use generateMetadata pattern
 // This page is client for filter state only; in production convert to RSC + URL params
@@ -95,17 +97,13 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="py-16 px-4 bg-[#0a0a0a] text-center">
-        <h2 className="font-heading text-3xl font-bold text-white mb-4">Want Results Like These?</h2>
-        <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-          Book a free consultation at our Farnworth, Bolton workshop. We&apos;ll assess your vehicle and recommend the right treatment.
-        </p>
-        <Link href="/contact"
-          className="inline-flex items-center gap-2 px-8 py-4 bg-[#c9a84c] text-[#0f0f0f] font-bold rounded-xl hover:bg-[#e8c96c] transition-all">
-          Get a Free Quote <ArrowRight className="w-5 h-5" />
-        </Link>
-      </section>
+      <CTABanner
+        headline="Want Results Like These?"
+        subtext="Book a free consultation at our Farnworth, Bolton workshop. We'll assess your vehicle and recommend the right treatment."
+        primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
+        secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
+        variant="gold"
+      />
     </>
   );
 }

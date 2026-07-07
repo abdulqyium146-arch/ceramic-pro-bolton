@@ -5,7 +5,7 @@ import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import { POSTS } from "../page";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import CTABanner from "@/components/sections/CTABanner";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
 
 export async function generateStaticParams() {
   return POSTS.map((post) => ({ slug: post.slug }));
@@ -222,7 +222,7 @@ export default async function BlogPostPage({
         headline="Ready to Protect Your Car?"
         subtext="Get a free quote from Ceramic Pro North West — Bolton's certified detailing specialists."
         primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
-        secondaryCTA={{ label: `Call ${BUSINESS.phoneDisplay}`, href: `tel:${BUSINESS.phone}`, isPhone: true }}
+        secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="gold"
       />
     </>

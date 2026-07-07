@@ -5,9 +5,9 @@ export const BUSINESS = {
   description:
     "Ceramic Pro North West (trading as Initial Detail – Car Care) is Bolton's specialist in ceramic coatings, paint protection film (PPF/KAVACA), and professional car detailing. Serving Bolton, Farnworth, Manchester and surrounding Greater Manchester towns.",
   url: "https://www.ceramicpronorthwest.co.uk",
-  phone: "+441204435933",
-  phoneDisplay: "+44 1204 435933",
-  whatsapp: "441204435933",
+  phone: "+447375759686",
+  phoneDisplay: "07375 759686",
+  whatsapp: "447375759686",
   email: "[PLACEHOLDER: info@ceramicpronorthwest.co.uk]",
   address: {
     street: "115 Albert Road",
@@ -90,3 +90,5 @@ export const BUSINESS = {
 
 export type ServiceArea = (typeof BUSINESS.serviceArea)[number];
 export type Service = (typeof BUSINESS.services)[number];
+
+export const WHATSAPP_HREF = `https://wa.me/${BUSINESS.whatsapp}?text=${encodeURIComponent("Hi, I'd like a free quote. Can you help?")}`;

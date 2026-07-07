@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Shield, Film, Sparkles, Layers, Phone, Star, MapPin, CheckCircle, ArrowRight, MessageCircle } from "lucide-react";
-import { BUSINESS } from "@/lib/business";
+import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
 import ServiceCard from "@/components/ui/ServiceCard";
 import StatsBanner from "@/components/ui/StatsBanner";
 import ReviewCard from "@/components/ui/ReviewCard";
@@ -15,7 +15,7 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 export const metadata: Metadata = {
   title: "Ceramic Pro North West | Ceramic Coating & Car Detailing Bolton",
   description:
-    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. 4.7★ Google rated. Call +44 1204 435933.",
+    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. 4.7★ Google rated. Call or WhatsApp 07375 759686.",
   alternates: { canonical: "/" },
 };
 
@@ -450,7 +450,7 @@ export default function HomePage() {
         headline="Ready to Protect Your Car?"
         subtext="Get a free, no-obligation quote from Bolton's Ceramic Pro certified specialists. We'll recommend the right protection for your vehicle and budget."
         primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
-        secondaryCTA={{ label: `Call ${BUSINESS.phoneDisplay}`, href: `tel:${BUSINESS.phone}`, isPhone: true }}
+        secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="gold"
       />
     </>

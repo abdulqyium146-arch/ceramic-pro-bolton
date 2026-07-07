@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import StickyMobileCTA from "@/components/layout/StickyMobileCTA";
+import WhatsAppFloat from "@/components/ui/WhatsAppFloat";
 import SchemaLocalBusiness from "@/components/seo/SchemaLocalBusiness";
 
 export default function SiteLayout({
@@ -17,6 +18,7 @@ export default function SiteLayout({
       </main>
       <Footer />
       <StickyMobileCTA />
+      <WhatsAppFloat />
     </>
   );
 }
