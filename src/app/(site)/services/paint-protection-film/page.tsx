@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
+import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
   title: "Paint Protection Film Bolton — KAVACA PPF | Ceramic Pro North West",
@@ -69,6 +70,12 @@ const COVERAGE_OPTIONS = [
 export default function PPFPage() {
   return (
     <>
+      <SchemaService
+        name="Paint Protection Film (PPF) Bolton — KAVACA"
+        description="KAVACA Paint Protection Film in Bolton. Self-healing, anti-yellowing, optically clear barrier against stone chips and road damage."
+        slug="paint-protection-film"
+        serviceType="Paint Protection Film"
+      />
       <SchemaFAQ faqs={FAQS} />
 
       <div className="max-w-6xl mx-auto px-4">

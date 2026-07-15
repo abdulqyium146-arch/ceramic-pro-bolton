@@ -1,11 +1,13 @@
-import { buildLocalBusinessSchema } from "@/lib/schema";
+import { buildLocalBusinessSchema, buildWebSiteSchema } from "@/lib/schema";
 
 export default function SchemaLocalBusiness() {
-  const schema = buildLocalBusinessSchema();
+  const graph = [buildLocalBusinessSchema(), buildWebSiteSchema()];
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }),
+      }}
     />
   );
 }

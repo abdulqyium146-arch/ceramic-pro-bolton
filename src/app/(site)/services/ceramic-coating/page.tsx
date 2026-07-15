@@ -8,6 +8,7 @@ import ComparisonTable from "@/components/ui/ComparisonTable";
 import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
 import SchemaHowTo from "@/components/seo/SchemaHowTo";
+import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
   title: "Ceramic Coating Bolton — Ceramic Pro 9H | Ceramic Pro North West",
@@ -78,6 +79,12 @@ const BENEFITS = [
 export default function CeramicCoatingPage() {
   return (
     <>
+      <SchemaService
+        name="Ceramic Coating Bolton — Ceramic Pro 9H"
+        description="Professional Ceramic Pro 9H ceramic coating in Bolton. 9H hardness, UV protection, hydrophobic effect. Certified installers."
+        slug="ceramic-coating"
+        serviceType="Ceramic Coating"
+      />
       <SchemaFAQ faqs={FAQS} />
       <SchemaHowTo
         name="How the ceramic coating process works at Ceramic Pro North West"

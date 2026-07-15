@@ -1,17 +1,22 @@
 import { BUSINESS } from "./business";
 
+const isPlaceholder = (s: string) => s.startsWith("[PLACEHOLDER");
+
 export function buildLocalBusinessSchema() {
-  return {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "AutoDetailing"],
+    "@id": BUSINESS.url,
     name: BUSINESS.name,
     alternateName: BUSINESS.tradingAs,
     description: BUSINESS.description,
     url: BUSINESS.url,
     telephone: BUSINESS.phone,
-    email: BUSINESS.email,
     image: `${BUSINESS.url}/images/ceramic-pro-north-west-bolton.jpg`,
-    logo: `${BUSINESS.url}/images/logo.png`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${BUSINESS.url}/images/logo.png`,
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
@@ -40,14 +45,79 @@ export function buildLocalBusinessSchema() {
       "@type": "City",
       name: area.name,
     })),
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Car Protection & Detailing Services",
+      itemListElement: BUSINESS.services.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.name,
+          description: service.shortDesc,
+          url: `${BUSINESS.url}/services/${service.slug}`,
+        },
+      })),
+    },
     sameAs: [
       BUSINESS.social.facebook,
       BUSINESS.social.instagram,
       BUSINESS.social.googleBusiness,
-    ].filter((s) => !s.startsWith("[PLACEHOLDER")),
+    ].filter((s) => !isPlaceholder(s)),
     priceRange: "££",
     currenciesAccepted: "GBP",
     paymentAccepted: "Cash, Credit Card, Bank Transfer",
+  };
+
+  if (!isPlaceholder(BUSINESS.email)) {
+    schema.email = BUSINESS.email;
+  }
+
+  return schema;
+}
+
+export function buildWebSiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${BUSINESS.url}/#website`,
+    url: BUSINESS.url,
+    name: BUSINESS.name,
+    description: BUSINESS.description,
+    inLanguage: "en-GB",
+  };
+}
+
+export function buildServiceSchema({
+  name,
+  description,
+  slug,
+  serviceType,
+}: {
+  name: string;
+  description: string;
+  slug: string;
+  serviceType: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    serviceType,
+    url: `${BUSINESS.url}/services/${slug}`,
+    provider: {
+      "@type": "LocalBusiness",
+      "@id": BUSINESS.url,
+      name: BUSINESS.name,
+    },
+    areaServed: BUSINESS.serviceArea
+      .filter((a) => a.primary)
+      .map((area) => ({ "@type": "City", name: area.name })),
+    availableChannel: {
+      "@type": "ServiceChannel",
+      serviceUrl: `${BUSINESS.url}/contact`,
+      servicePhone: BUSINESS.phone,
+    },
   };
 }
 

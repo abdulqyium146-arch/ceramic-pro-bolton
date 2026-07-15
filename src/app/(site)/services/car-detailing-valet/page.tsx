@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
+import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
   title: "Car Detailing & Valet Services Bolton | Ceramic Pro North West",
@@ -82,6 +83,12 @@ const PACKAGES = [
 export default function DetailingPage() {
   return (
     <>
+      <SchemaService
+        name="Car Detailing & Valet Bolton"
+        description="Full interior and exterior car detailing and valet services in Bolton. Restore and maintain your vehicle to showroom condition."
+        slug="car-detailing-valet"
+        serviceType="Car Detailing"
+      />
       <SchemaFAQ faqs={FAQS} />
 
       <div className="max-w-6xl mx-auto px-4">

@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
+import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
   title: "Leather Coating & Interior Protection Bolton | Ceramic Pro North West",
@@ -49,6 +50,12 @@ const INTERIOR_SURFACES = [
 export default function LeatherInteriorPage() {
   return (
     <>
+      <SchemaService
+        name="Leather & Interior Protection Bolton"
+        description="Specialist leather coating and interior protection services in Bolton. Keeps cabins fresh, conditioned and protected against wear and staining."
+        slug="leather-interior-protection"
+        serviceType="Leather & Interior Protection"
+      />
       <SchemaFAQ faqs={FAQS} />
 
       <div className="max-w-6xl mx-auto px-4">
