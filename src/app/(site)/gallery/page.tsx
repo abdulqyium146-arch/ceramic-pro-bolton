@@ -32,8 +32,8 @@ export default function GalleryPage() {
     <>
       <SchemaBreadcrumb
         items={[
-          { name: "Home", url: BUSINESS.url },
-          { name: "Gallery", url: `${BUSINESS.url}/gallery` },
+          { name: "Home", href: "" },
+          { name: "Gallery", href: "/gallery" },
         ]}
       />
       <SchemaImageGallery images={GALLERY_IMAGES} />
