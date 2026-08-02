@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Shield, Film, Sparkles, Layers, Phone, Star, MapPin, CheckCircle, ArrowRight, MessageCircle } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -85,18 +86,24 @@ const BLOG_TEASERS = [
     title: "Ceramic Coating vs Wax: What Bolton Drivers Should Know",
     excerpt: "Is ceramic coating really worth the investment over traditional wax? We break down the differences every Greater Manchester driver should understand.",
     category: "Ceramic Coating",
+    image: "/images/mirror-finish-ceramic-coating-reflection-bolton.webp",
+    imageAlt: "Ultra-gloss mirror finish ceramic coating result — Ceramic Pro North West, Bolton",
   },
   {
     slug: "how-to-maintain-ceramic-coating-uk-weather",
     title: "How to Maintain Your Ceramic Coating in UK Weather",
     excerpt: "British weather is tough on car paint. Here's how to keep your coating performing through rain, frost, and road salt season.",
     category: "Maintenance",
+    image: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
+    imageAlt: "Black BMW M5 ceramic coating maintenance at Ceramic Pro North West, Bolton",
   },
   {
     slug: "ppf-vs-ceramic-coating-which-is-right-for-you",
     title: "PPF vs Ceramic Coating: Which Protection Does Your Car Need?",
     excerpt: "Both protect your car — but they work very differently. We explain which is right for your vehicle and budget.",
     category: "PPF",
+    image: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
+    imageAlt: "Bentley Continental GT KAVACA PPF installation at Ceramic Pro North West, Bolton",
   },
 ];
 
@@ -171,6 +178,60 @@ export default function HomePage() {
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" aria-hidden="true">
           <div className="w-6 h-10 border-2 border-[#3a3a3a] rounded-full flex items-start justify-center pt-2">
             <div className="w-1 h-2 bg-[#c9a84c] rounded-full" />
+          </div>
+        </div>
+      </section>
+
+      {/* Recent Work Strip */}
+      <section className="py-10 px-4 bg-[#0a0a0a]" aria-label="Recent ceramic coating work in Bolton">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-center text-[#c9a84c] text-xs font-semibold uppercase tracking-widest mb-5">Recent Work — Bolton Workshop</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            {[
+              {
+                src: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
+                alt: "Lamborghini Aventador ceramic coating — Ceramic Pro North West, Bolton, Greater Manchester",
+                label: "Lamborghini Aventador",
+              },
+              {
+                src: "/images/ferrari-360-modena-detailing-bolton.webp",
+                alt: "Ferrari 360 Modena detailing — Ceramic Pro North West, Farnworth, Bolton",
+                label: "Ferrari 360 Modena",
+              },
+              {
+                src: "/images/bentley-continental-gtc-ceramic-coating-bolton.webp",
+                alt: "Bentley Continental GTC Ceramic Pro 9H coating — Bolton workshop",
+                label: "Bentley Continental GTC",
+              },
+              {
+                src: "/images/bmw-m5-f10-ceramic-coating-bolton.webp",
+                alt: "BMW M5 F10 mirror-gloss ceramic coating — Ceramic Pro North West, Bolton",
+                label: "BMW M5 F10",
+              },
+            ].map((img) => (
+              <Link
+                key={img.src}
+                href="/gallery"
+                className="group relative aspect-[4/3] rounded-xl overflow-hidden block"
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 25vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                <span className="absolute bottom-2 left-3 text-white text-xs font-semibold drop-shadow">
+                  {img.label}
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/gallery" className="inline-flex items-center gap-2 text-[#c9a84c] font-semibold text-sm hover:gap-3 transition-all">
+              View Full Gallery <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
@@ -424,8 +485,14 @@ export default function HomePage() {
                 href={`/blog/${post.slug}`}
                 className="group block bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl overflow-hidden hover:border-[#c9a84c]/50 transition-all"
               >
-                <div className="h-40 bg-gradient-to-br from-[#242424] to-[#1a1a1a] flex items-center justify-center">
-                  <span className="text-xs text-gray-600 uppercase tracking-widest">[PLACEHOLDER: Article Image]</span>
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-6">
                   <span className="text-[#c9a84c] text-xs font-semibold uppercase tracking-wider">{post.category}</span>

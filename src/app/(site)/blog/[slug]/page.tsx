@@ -1,4 +1,5 @@
 import type { Metadata, ResolvingMetadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
@@ -24,6 +25,33 @@ export async function generateMetadata(
     alternates: { canonical: `/blog/${slug}` },
   };
 }
+
+const POST_HERO_IMAGES: Record<string, { src: string; alt: string }> = {
+  "ceramic-coating-vs-wax-bolton": {
+    src: "/images/mirror-finish-ceramic-coating-reflection-bolton.webp",
+    alt: "Ultra-gloss mirror finish — Ceramic Pro 9H ceramic coating result, Bolton, Greater Manchester",
+  },
+  "how-to-maintain-ceramic-coating-uk-weather": {
+    src: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
+    alt: "Black BMW M5 ceramic coating at Ceramic Pro North West workshop, Farnworth, Bolton",
+  },
+  "ppf-vs-ceramic-coating-which-is-right-for-you": {
+    src: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
+    alt: "Bentley Continental GT KAVACA PPF installation in progress — Ceramic Pro North West, Bolton",
+  },
+  "paint-correction-before-ceramic-coating": {
+    src: "/images/paint-correction-ceramic-coating-bolton.webp",
+    alt: "Professional paint correction before ceramic coating application — Ceramic Pro North West, Bolton",
+  },
+  "best-car-detailer-bolton": {
+    src: "/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp",
+    alt: "Ceramic Pro North West workshop at night — 115 Albert Road, Farnworth, Bolton",
+  },
+  "winter-car-protection-greater-manchester": {
+    src: "/images/bmw-m5-ceramic-gloss-finish-bolton.webp",
+    alt: "Black BMW M5 showing deep-gloss ceramic coating protection at night — Bolton, Greater Manchester",
+  },
+};
 
 const FULL_CONTENT: Record<string, React.ReactNode> = {
   "ceramic-coating-vs-wax-bolton": (
@@ -73,6 +101,19 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
           </tbody>
         </table>
       </div>
+      <div className="relative h-56 sm:h-72 rounded-xl overflow-hidden my-8">
+        <Image
+          src="/images/bmw-m5-ceramic-gloss-finish-bolton.webp"
+          alt="BMW M5 deep-gloss ceramic coating result at night — Bolton, Greater Manchester"
+          fill
+          sizes="(max-width: 768px) 100vw, 700px"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <p className="absolute bottom-3 left-4 text-white text-xs font-medium">
+          BMW M5 — Ceramic Pro 9H result. Bolton.
+        </p>
+      </div>
       <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Which Is Right for a Bolton Driver?</h2>
       <p className="text-gray-400 leading-relaxed mb-4">
         For casual car owners who enjoy the waxing ritual and don&apos;t mind reapplying every few months, traditional wax still has a place. But for Greater Manchester drivers who want to set-and-forget their paint protection — avoiding the hassle of regular waxing while getting superior protection through Bolton&apos;s wet winters and corrosive road salt season — ceramic coating is the superior choice.
@@ -108,6 +149,19 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
       <p className="text-gray-400 leading-relaxed">
         A quick rinse with a hosepipe or touchless jet wash on winter days will dramatically reduce salt exposure and keep your coating in optimal condition throughout the season.
       </p>
+      <div className="relative h-56 sm:h-72 rounded-xl overflow-hidden my-8">
+        <Image
+          src="/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp"
+          alt="Ceramic Pro North West workshop — 115 Albert Road, Farnworth, Bolton, Greater Manchester"
+          fill
+          sizes="(max-width: 768px) 100vw, 700px"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <p className="absolute bottom-3 left-4 text-white text-xs font-medium">
+          Our workshop — 115 Albert Road, Farnworth, Bolton.
+        </p>
+      </div>
       <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Annual Maintenance Inspection</h2>
       <p className="text-gray-400 leading-relaxed">
         Ceramic Pro North West recommends an annual maintenance check for all coated vehicles. During this visit, we inspect the coating under specialist lighting, assess its condition, and apply a maintenance boost product where needed. This annual service is also required to maintain the warranty on some Ceramic Pro packages. Contact us to book your annual maintenance appointment.
@@ -164,10 +218,19 @@ export default async function BlogPostPage({
             </div>
           </div>
 
-          {/* Hero image placeholder */}
-          <div className="h-60 bg-gradient-to-br from-[#242424] to-[#1a1a1a] rounded-xl flex items-center justify-center mb-10 border border-[#3a3a3a]">
-            <span className="text-xs text-gray-700 uppercase tracking-widest">[PLACEHOLDER: Article Header Image]</span>
-          </div>
+          {/* Hero image */}
+          {POST_HERO_IMAGES[slug] && (
+            <div className="relative h-64 sm:h-80 rounded-xl overflow-hidden mb-10">
+              <Image
+                src={POST_HERO_IMAGES[slug].src}
+                alt={POST_HERO_IMAGES[slug].alt}
+                fill
+                sizes="(max-width: 768px) 100vw, 768px"
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
 
           {/* Content */}
           <div className="prose-custom">
@@ -204,14 +267,25 @@ export default async function BlogPostPage({
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {relatedPosts.map((rp) => (
               <Link key={rp.slug} href={`/blog/${rp.slug}`}
-                className="group block bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-5 hover:border-[#c9a84c]/50 transition-all">
-                <span className="text-[#c9a84c] text-xs font-semibold">{rp.category}</span>
-                <h3 className="font-heading font-bold text-white mt-2 text-sm leading-snug group-hover:text-[#c9a84c] transition-colors">
-                  {rp.title}
-                </h3>
-                <p className="text-gray-500 text-xs mt-2 flex items-center gap-1">
-                  {rp.readTime} <ArrowRight className="w-3 h-3" />
-                </p>
+                className="group block bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl overflow-hidden hover:border-[#c9a84c]/50 transition-all">
+                <div className="relative h-32 overflow-hidden">
+                  <Image
+                    src={rp.image}
+                    alt={rp.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-4">
+                  <span className="text-[#c9a84c] text-xs font-semibold">{rp.category}</span>
+                  <h3 className="font-heading font-bold text-white mt-1 text-sm leading-snug group-hover:text-[#c9a84c] transition-colors">
+                    {rp.title}
+                  </h3>
+                  <p className="text-gray-500 text-xs mt-2 flex items-center gap-1">
+                    {rp.readTime} <ArrowRight className="w-3 h-3" />
+                  </p>
+                </div>
               </Link>
             ))}
           </div>

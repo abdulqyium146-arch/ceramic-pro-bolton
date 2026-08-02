@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -20,6 +21,8 @@ export const POSTS = [
     category: "Ceramic Coating",
     date: "2025-04-10",
     readTime: "5 min read",
+    image: "/images/mirror-finish-ceramic-coating-reflection-bolton.webp",
+    imageAlt: "Ultra-gloss mirror finish ceramic coating — Ceramic Pro North West, Bolton",
   },
   {
     slug: "how-to-maintain-ceramic-coating-uk-weather",
@@ -28,6 +31,8 @@ export const POSTS = [
     category: "Maintenance",
     date: "2025-03-18",
     readTime: "4 min read",
+    image: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
+    imageAlt: "Black BMW M5 in Ceramic Pro North West workshop, Bolton — ceramic coating maintenance",
   },
   {
     slug: "ppf-vs-ceramic-coating-which-is-right-for-you",
@@ -36,6 +41,8 @@ export const POSTS = [
     category: "PPF",
     date: "2025-02-25",
     readTime: "6 min read",
+    image: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
+    imageAlt: "Bentley Continental GT KAVACA PPF installation at Ceramic Pro North West, Bolton",
   },
   {
     slug: "paint-correction-before-ceramic-coating",
@@ -44,6 +51,8 @@ export const POSTS = [
     category: "Detailing",
     date: "2025-01-30",
     readTime: "4 min read",
+    image: "/images/paint-correction-ceramic-coating-bolton.webp",
+    imageAlt: "Professional paint correction before ceramic coating at Ceramic Pro North West, Bolton",
   },
   {
     slug: "best-car-detailer-bolton",
@@ -52,6 +61,8 @@ export const POSTS = [
     category: "Guides",
     date: "2024-12-14",
     readTime: "5 min read",
+    image: "/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp",
+    imageAlt: "Ceramic Pro North West workshop at night — 115 Albert Road, Farnworth, Bolton",
   },
   {
     slug: "winter-car-protection-greater-manchester",
@@ -60,6 +71,8 @@ export const POSTS = [
     category: "Seasonal",
     date: "2024-11-20",
     readTime: "5 min read",
+    image: "/images/bmw-m5-ceramic-gloss-finish-bolton.webp",
+    imageAlt: "Black BMW M5 showing deep ceramic gloss finish at night — ceramic protection, Bolton",
   },
 ];
 
@@ -98,8 +111,14 @@ export default function BlogPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {POSTS.map((post) => (
               <article key={post.slug} className="group bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl overflow-hidden hover:border-[#c9a84c]/50 transition-all flex flex-col">
-                <div className="h-48 bg-gradient-to-br from-[#242424] to-[#1a1a1a] flex items-center justify-center">
-                  <span className="text-xs text-gray-700 uppercase tracking-widest">[PLACEHOLDER: Article Image]</span>
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
                 <div className="p-6 flex flex-col flex-1">
                   <div className="flex items-center gap-3 mb-3">
