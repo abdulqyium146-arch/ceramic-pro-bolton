@@ -115,7 +115,7 @@ export default function HomePage() {
           }}
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center opacity-20" aria-hidden="true" />
+        <div className="absolute inset-0 bg-[url('/images/lamborghini-aventador-ceramic-coating-bolton.webp')] bg-cover bg-center opacity-20" aria-hidden="true" />
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center py-20">
           {/* Rating badge */}

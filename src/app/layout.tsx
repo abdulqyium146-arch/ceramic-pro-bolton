@@ -56,10 +56,10 @@ export const metadata: Metadata = {
       "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet services. 4.7★ Google rating.",
     images: [
       {
-        url: "/images/og-default.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Ceramic Pro North West – Ceramic Coating & Car Detailing Bolton",
+        url: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
+        width: 1280,
+        height: 853,
+        alt: "Lamborghini Aventador ceramic coating — Ceramic Pro North West, Bolton, Greater Manchester",
       },
     ],
   },
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: `${BUSINESS.name} | Ceramic Coating Bolton`,
     description:
       "Bolton's trusted ceramic coating & car detailing specialists. 4.7★ Google rating.",
-    images: ["/images/og-default.jpg"],
+    images: ["/images/lamborghini-aventador-ceramic-coating-bolton.webp"],
   },
   alternates: {
     canonical: BUSINESS.url,
