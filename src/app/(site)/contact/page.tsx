@@ -89,13 +89,13 @@ export default function ContactPage() {
               <div className="bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-6">
                 <div className="flex items-center gap-2 mb-4">
                   <Clock className="w-5 h-5 text-[#c9a84c]" />
-                  <h3 className="font-heading font-bold text-white">Opening Hours</h3>
+                  <h3 className="font-heading font-bold text-white">Available 24/7</h3>
                 </div>
                 <ul className="space-y-2">
                   {BUSINESS.hoursDisplay.map((h) => (
                     <li key={h.day} className="flex justify-between text-sm">
                       <span className="text-gray-400">{h.day}</span>
-                      <span className={h.hours === "Closed" ? "text-red-400 font-medium" : "text-white"}>
+                      <span className="text-[#c9a84c] font-medium">
                         {h.hours}
                       </span>
                     </li>

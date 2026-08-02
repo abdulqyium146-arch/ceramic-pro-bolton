@@ -136,13 +136,13 @@ export default function Footer() {
             <div className="mt-5">
               <div className="flex items-center gap-2 mb-2">
                 <Clock className="w-4 h-4 text-[#c9a84c]" />
-                <span className="text-white text-sm font-semibold">Opening Hours</span>
+                <span className="text-white text-sm font-semibold">Available 24/7</span>
               </div>
               <ul className="space-y-1">
                 {BUSINESS.hoursDisplay.map((h) => (
                   <li key={h.day} className="flex justify-between text-xs text-gray-400">
                     <span>{h.day}</span>
-                    <span className={h.hours === "Closed" ? "text-red-400" : "text-gray-300"}>
+                    <span className="text-[#c9a84c]">
                       {h.hours}
                     </span>
                   </li>
