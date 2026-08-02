@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: `%s | ${BUSINESS.name}`,
   },
   description:
-    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet services. Serving Greater Manchester. Call or WhatsApp 07375 759686.",
+    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet services. Serving Greater Manchester. Call or WhatsApp 07482 225323.",
   keywords: [
     "ceramic coating Bolton",
     "car detailing Bolton",

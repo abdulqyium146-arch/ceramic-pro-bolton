@@ -15,7 +15,7 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 export const metadata: Metadata = {
   title: "Ceramic Pro North West | Ceramic Coating & Car Detailing Bolton",
   description:
-    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. 4.7★ Google rated. Call or WhatsApp 07375 759686.",
+    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. 4.7★ Google rated. Call or WhatsApp 07482 225323.",
   alternates: { canonical: "/" },
 };
 

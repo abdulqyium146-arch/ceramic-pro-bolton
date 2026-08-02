@@ -11,7 +11,7 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 export const metadata: Metadata = {
   title: "Ceramic Coating & Car Detailing Bolton | Ceramic Pro North West",
   description:
-    "Bolton's trusted ceramic coating and car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. Based in Farnworth. Call or WhatsApp 07375 759686.",
+    "Bolton's trusted ceramic coating and car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. Based in Farnworth. Call or WhatsApp 07482 225323.",
   alternates: { canonical: "/locations/bolton" },
 };
 
