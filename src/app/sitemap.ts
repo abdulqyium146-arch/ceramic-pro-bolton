@@ -4,6 +4,7 @@ import { BUSINESS } from "@/lib/business";
 const base = BUSINESS.url;
 
 const BLOG_POSTS: { slug: string; date: string }[] = [
+  { slug: "ceramic-coating-vs-ppf-which-do-you-need", date: "2025-05-08" },
   { slug: "ceramic-coating-vs-wax-bolton", date: "2025-09-05" },
   { slug: "how-to-maintain-ceramic-coating-uk-weather", date: "2025-09-18" },
   { slug: "ppf-vs-ceramic-coating-which-is-right-for-you", date: "2025-10-02" },
@@ -27,6 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/locations/wigan`, priority: 0.7 },
     { url: `${base}/locations/chorley`, priority: 0.7 },
     { url: `${base}/locations/farnworth`, priority: 0.7 },
+    { url: `${base}/locations/altrincham`, priority: 0.7 },
     { url: `${base}/gallery`, priority: 0.8 },
     { url: `${base}/reviews`, priority: 0.7 },
     { url: `${base}/about`, priority: 0.6 },

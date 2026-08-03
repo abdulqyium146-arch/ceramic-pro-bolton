@@ -65,6 +65,16 @@ export const POSTS = [
     imageAlt: "Ceramic Pro North West workshop at night — 115 Albert Road, Farnworth, Bolton",
   },
   {
+    slug: "ceramic-coating-vs-ppf-which-do-you-need",
+    title: "Ceramic Coating vs PPF: Which Do You Actually Need?",
+    excerpt: "Ceramic coating or PPF — or both? We cut through the confusion with real-world scenarios so Manchester drivers can pick the right protection for their car, budget, and how they drive.",
+    category: "PPF",
+    date: "2025-05-08",
+    readTime: "6 min read",
+    image: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
+    imageAlt: "Bentley Continental GT with KAVACA PPF being installed at Ceramic Pro North West, Bolton",
+  },
+  {
     slug: "winter-car-protection-greater-manchester",
     title: "Winter Car Protection in Greater Manchester — Your Complete Guide",
     excerpt: "Road salt, frost, and wet roads make winter the harshest season for car paint. Here's how to protect your car through a typical Bolton and Greater Manchester winter.",

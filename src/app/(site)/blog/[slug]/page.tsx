@@ -39,6 +39,10 @@ const POST_HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     src: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
     alt: "Bentley Continental GT KAVACA PPF installation in progress — Ceramic Pro North West, Bolton",
   },
+  "ceramic-coating-vs-ppf-which-do-you-need": {
+    src: "/images/bentley-continental-gtc-ceramic-coating-bolton.webp",
+    alt: "Bentley Continental GTC receiving paint protection at Ceramic Pro North West, Bolton, Manchester",
+  },
   "paint-correction-before-ceramic-coating": {
     src: "/images/paint-correction-ceramic-coating-bolton.webp",
     alt: "Professional paint correction before ceramic coating application — Ceramic Pro North West, Bolton",
@@ -165,6 +169,81 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
       <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Annual Maintenance Inspection</h2>
       <p className="text-gray-400 leading-relaxed">
         Ceramic Pro North West recommends an annual maintenance check for all coated vehicles. During this visit, we inspect the coating under specialist lighting, assess its condition, and apply a maintenance boost product where needed. This annual service is also required to maintain the warranty on some Ceramic Pro packages. Contact us to book your annual maintenance appointment.
+      </p>
+    </>
+  ),
+  "ceramic-coating-vs-ppf-which-do-you-need": (
+    <>
+      <p className="text-gray-300 text-lg leading-relaxed mb-6">
+        Ceramic coating and paint protection film (PPF) are the two most effective ways to protect your car&apos;s paint — but they solve different problems. The question we hear most at our Bolton workshop is simple: &quot;which one do I actually need?&quot; The honest answer depends on how you use your car, where you drive, and what you&apos;re trying to protect against. This guide gives you real scenarios so you can make an informed decision.
+      </p>
+
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">What Each Product Is Designed To Do</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">Ceramic coating</strong> bonds chemically with your car&apos;s clear coat to create a hardened, hydrophobic surface. It excels at UV protection, chemical resistance (bird droppings, industrial fallout, road film), and making the car dramatically easier to clean. Ceramic Pro 9H — the professional product we use at Ceramic Pro North West — sits at 9H pencil hardness, the maximum measurable. It does not absorb physical impacts.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-6">
+        <strong className="text-white">Paint protection film (PPF)</strong> is a polyurethane film physically laminated to the paint surface. KAVACA PPF is self-healing — light scratches and swirl marks disappear with heat. More importantly, PPF absorbs stone chips, road debris impacts, and minor abrasions that would otherwise permanently damage the paint underneath. It does what ceramic coating cannot: stop physical damage before it reaches the paint.
+      </p>
+
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Scenario 1 — You Drive Mostly on City Roads and Dual Carriageways</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        If your main routes are the M60 ring road, the A56, or through Manchester and Salford city centres, stone chips from high-speed motorway driving are not your biggest risk. What you face more is road film, brake dust, bird droppings, and the difficulty of keeping a dark car clean through a Greater Manchester winter.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">Recommendation: Ceramic coating.</strong> It handles everything urban roads throw at your paint, makes washing fast and effective, and protects against the chemical threats most city drivers encounter daily.
+      </p>
+
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Scenario 2 — You Regularly Use Fast A-Roads, the M6, or the M62</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Motorway and fast A-road driving at 60–70 mph significantly increases stone chip risk. Lorries and heavy goods vehicles constantly shed road debris. The front bumper, bonnet leading edge, and A-pillars take the most punishment. Even a short regular commute on the M62 between Manchester and Leeds generates significant chip risk over months.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">Recommendation: PPF on high-impact zones</strong> (full bonnet, bumper, mirrors, door edges) <strong className="text-white">plus ceramic coating over the top.</strong> This is the combination most of our customers choose for daily-driven prestige vehicles. The PPF absorbs chips; the ceramic coating goes over the PPF and the rest of the car to give a unified hydrophobic finish and simplified maintenance.
+      </p>
+
+      <div className="relative h-56 sm:h-72 rounded-xl overflow-hidden my-8">
+        <Image
+          src="/images/lamborghini-aventador-ceramic-coating-bolton.webp"
+          alt="Lamborghini Aventador with full paint protection at Ceramic Pro North West — Bolton, Manchester"
+          fill
+          sizes="(max-width: 768px) 100vw, 700px"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <p className="absolute bottom-3 left-4 text-white text-xs font-medium">
+          Lamborghini Aventador — full PPF and ceramic coating, Bolton workshop.
+        </p>
+      </div>
+
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Scenario 3 — You Have a New or Nearly-New Prestige Car</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Porsche, BMW M-Series, Range Rover, Audi RS, Mercedes AMG — these vehicles come from the factory with paint that looks stunning but is often softer than equivalent paint on older cars. Many modern eco-friendly waterborne paints scratch and chip more easily. A new £60,000–£100,000 car losing paint condition quickly is an expensive problem.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">Recommendation: Full-front or full-car PPF applied immediately</strong>, ideally within the first week of ownership before any damage occurs, with ceramic coating over the full vehicle. This protects the car&apos;s value, preserves the factory finish, and ensures any future paint correction is minimal. Many of our Manchester and Altrincham customers bring new cars directly from the dealership.
+      </p>
+
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Scenario 4 — Budget Is a Factor</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        PPF is more expensive than ceramic coating — full-car PPF on a large vehicle is a significant investment. If budget is a constraint, the priority order is:
+      </p>
+      <ol className="list-decimal list-inside text-gray-400 space-y-2 mb-4 ml-2">
+        <li>Ceramic coating on the full car — excellent all-round value, protects against most everyday threats</li>
+        <li>PPF on front bumper and bonnet only — targets the highest chip-risk areas within a tighter budget</li>
+        <li>Full front-end PPF (bumper, full bonnet, wings, mirrors) — the most popular middle-ground package</li>
+        <li>Full-car PPF — maximum protection, best for high-value vehicles or long-term ownership plans</li>
+      </ol>
+      <p className="text-gray-400 leading-relaxed">
+        Ceramic coating alone is never the wrong choice — it&apos;s a meaningful upgrade from an unprotected paint finish at a price point accessible to most car owners. You can always add PPF to specific zones later.
+      </p>
+
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Can You Have Both?</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Yes — and this is what we recommend for most prestige vehicles. KAVACA PPF is applied first to the high-impact panels; Ceramic Pro 9H is then applied over the PPF and across the rest of the car. The result is a unified, hydrophobic surface with physical impact protection in the most vulnerable areas and chemical/UV protection everywhere else.
+      </p>
+      <p className="text-gray-400 leading-relaxed">
+        If you&apos;re not sure which combination makes sense for your car, call or WhatsApp us. We&apos;ll look at your vehicle, your typical driving routes, and give you an honest recommendation — not just the most expensive package.
       </p>
     </>
   ),

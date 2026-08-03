@@ -58,6 +58,7 @@ export const BUSINESS = {
     { name: "Salford", slug: "salford", primary: false },
     { name: "Wigan", slug: "wigan", primary: false },
     { name: "Chorley", slug: "chorley", primary: false },
+    { name: "Altrincham", slug: "altrincham", primary: false },
   ],
   services: [
     {

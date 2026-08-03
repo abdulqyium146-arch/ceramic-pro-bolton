@@ -47,6 +47,13 @@ const CITY_DATA: Record<
     description:
       "Ceramic Pro North West is based right here in Farnworth. If you are a Farnworth local, you are minutes from Bolton's best ceramic coating and car detailing workshop.",
   },
+  altrincham: {
+    name: "Altrincham",
+    distance: "approx. 13 miles from Altrincham town centre",
+    route: "via A56 through Sale and Eccles to M60/A666, approximately 20–25 minutes",
+    description:
+      "Altrincham drivers regularly make the short journey to our Farnworth, Bolton workshop for Ceramic Pro 9H ceramic coatings, KAVACA PPF, and professional car detailing. Altrincham's high concentration of prestige and luxury vehicles makes paint protection a sound investment — and Ceramic Pro North West is the nearest certified Ceramic Pro installer.",
+  },
 };
 
 export async function generateStaticParams() {
