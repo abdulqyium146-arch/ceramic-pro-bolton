@@ -3,6 +3,7 @@ import { Inter, Syne } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { BUSINESS } from "@/lib/business";
+import AnalyticsProvider from "@/components/AnalyticsProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -102,7 +103,7 @@ export default function RootLayout({
       className={`${inter.variable} ${syne.variable} h-full`}
     >
       <body className="min-h-full flex flex-col antialiased">
-        {children}
+        <AnalyticsProvider>{children}</AnalyticsProvider>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ERSBK6JG2N"
           strategy="afterInteractive"
