@@ -68,8 +68,8 @@ export async function POST(request: NextRequest) {
   // import { Resend } from 'resend';
   // const resend = new Resend(process.env.RESEND_API_KEY);
   // await resend.emails.send({
-  //   from: 'website@ceramicpronorthwest.co.uk',
-  //   to: 'info@ceramicpronorthwest.co.uk',
+  //   from: 'website@ceramicpromanchester.com',
+  //   to: 'info@ceramicpromanchester.com',
   //   subject: `New enquiry from ${data.name} — ${data.service}`,
   //   text: JSON.stringify(data, null, 2),
   // });

@@ -406,8 +406,56 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Trusted Partners */}
+      <section className="py-16 px-4 bg-[#0f0f0f]" aria-labelledby="partners-heading">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-[#c9a84c] font-semibold uppercase tracking-wider text-sm mb-3">Trusted Network</p>
+            <h2 id="partners-heading" className="font-heading text-3xl font-bold text-white mb-4">
+              Our Manchester Partner
+            </h2>
+            <p className="text-gray-400 max-w-xl mx-auto">
+              We work alongside trusted specialists across Greater Manchester. When our diary is full or you need a mobile service at your door, we recommend our verified partner.
+            </p>
+          </div>
+          <a
+            href="https://www.latinkingdetailing.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex flex-col sm:flex-row items-start sm:items-center gap-6 bg-[#1a1a1a] border border-[#3a3a3a] hover:border-[#c9a84c]/50 rounded-2xl p-7 transition-all"
+          >
+            {/* Logo placeholder badge */}
+            <div className="shrink-0 w-16 h-16 rounded-xl bg-[#c9a84c]/10 border border-[#c9a84c]/20 flex items-center justify-center">
+              <span className="text-[#c9a84c] font-heading font-bold text-xl">LK</span>
+            </div>
+            <div className="flex-1">
+              <div className="flex flex-wrap items-center gap-3 mb-1">
+                <h3 className="font-heading font-bold text-white text-lg group-hover:text-[#c9a84c] transition-colors">
+                  Latin King Detailing
+                </h3>
+                <span className="text-xs bg-[#c9a84c]/10 border border-[#c9a84c]/30 text-[#c9a84c] px-2 py-0.5 rounded-full font-semibold">
+                  Verified Partner
+                </span>
+                <span className="text-xs text-gray-500">★★★★★ 5.0 · 47+ reviews</span>
+              </div>
+              <p className="text-gray-400 text-sm leading-relaxed mb-3">
+                Mobile car detailing, paint correction, ceramic coating, and PPF — delivered to your door across Manchester, Salford, Stretford, Sale, Altrincham, and 15+ Greater Manchester locations.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["Mobile Valeting", "Paint Correction", "Ceramic Coating", "PPF"].map((tag) => (
+                  <span key={tag} className="text-xs text-gray-400 border border-[#3a3a3a] rounded-full px-3 py-1">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <ArrowRight className="w-5 h-5 text-[#c9a84c] shrink-0 hidden sm:block group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="py-16 px-4 bg-[#0f0f0f]" aria-labelledby="faq-heading">
+      <section className="py-16 px-4 bg-[#0a0a0a]" aria-labelledby="faq-heading">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-10">
             <h2 id="faq-heading" className="font-heading text-3xl font-bold text-white mb-4">
