@@ -1,52 +1,78 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone, ArrowRight } from "lucide-react";
+import { MapPin, Phone, ArrowRight, Star, CheckCircle, Clock } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import MapEmbed from "@/components/ui/MapEmbed";
 import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
+import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Ceramic Coating & Car Detailing Bolton | Ceramic Pro North West",
+  title: "Ceramic Coating for Cars Near Me | Bolton BL4 | Ceramic Pro North West",
   description:
-    "Bolton's trusted ceramic coating and car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. Based in Farnworth. Call or WhatsApp 07482 225323.",
+    "Looking for ceramic coating for your car near Bolton? Ceramic Pro North West is at BL4 9EA — your nearest certified installer. 4.7★ Google rated. Free quote: 07482 225323.",
   alternates: { canonical: "/locations/bolton" },
 };
 
 const FAQS = [
   {
-    question: "Where is Ceramic Pro North West located in Bolton?",
+    question: "Where is the nearest ceramic coating service to Bolton town centre?",
     answer:
-      "Ceramic Pro North West is based at 115 Albert Road, Farnworth, Bolton, BL4 9EA. Farnworth is approximately 2 miles south of Bolton town centre, easily accessible from the A6053 and close to the M61 motorway junction. We are a short drive from Bolton town centre, Horwich, Little Lever, and Kearsley.",
+      "Ceramic Pro North West is located at 115 Albert Road, Farnworth, Bolton, BL4 9EA — approximately 2 miles south of Bolton town centre. It is the nearest Ceramic Pro certified installer in the Bolton area, accessible from the A6053 and 5 minutes from the M61 motorway junction 4. If you are searching for ceramic coating for cars near me in Bolton, we are your closest certified option.",
   },
   {
-    question: "Do you offer ceramic coating in Bolton for all vehicle types?",
+    question: "Do you offer ceramic coating for cars near BL1, BL2, BL3, or BL5?",
     answer:
-      "Yes — Ceramic Pro North West applies ceramic coatings to cars, SUVs, vans, motorcycles, and motorhomes. We tailor every application to the specific vehicle's paint condition and the customer's requirements. All vehicles undergo a full inspection and decontamination before coating.",
+      "Yes — Ceramic Pro North West at BL4 9EA serves all Bolton postcodes including BL1 (Bolton town centre), BL2 (Tonge Moor, Breightmet), BL3 (Great Lever, Rumworth), BL4 (Farnworth — our location), BL5 (Westhoughton), BL6 (Horwich), and BL7 (Bromley Cross, Egerton). Most Bolton customers are within a 10-minute drive of our workshop.",
   },
   {
-    question: "Why is ceramic coating particularly useful for Bolton drivers?",
+    question: "Is ceramic coating worth it for everyday cars near Bolton?",
     answer:
-      "Greater Manchester's climate — frequent rain, road salt in winter, and motorway driving on the M61/M62 — is extremely harsh on car paint. Ceramic coating's hydrophobic and chemical-resistant properties make it ideal for Bolton drivers who want to protect their paint from the elements and reduce maintenance time throughout the year.",
+      "Yes — ceramic coating is particularly worthwhile for Bolton drivers because of Greater Manchester's wet climate, winter road salt on the M61/M62 corridors, and industrial fallout. Ceramic Pro 9H's hydrophobic and chemical-resistant properties protect everyday cars as much as prestige vehicles. We coat everything from Vauxhall Astras to Range Rovers at our Farnworth workshop.",
   },
   {
-    question: "How do I book a car detailing appointment in Bolton?",
+    question: "How much does ceramic coating for a car cost near Bolton?",
     answer:
-      `You can book by calling or WhatsApp-ing Ceramic Pro North West on ${BUSINESS.phoneDisplay}, or using the contact form on our website. We will discuss your vehicle's requirements, recommend the appropriate service, and book you in at our Farnworth workshop at a convenient time.`,
+      "Ceramic coating prices at Ceramic Pro North West depend on the vehicle size and the package selected. Contact us on 07482 225323 or via WhatsApp for a free, no-obligation quote tailored to your specific vehicle. We will assess your car's condition and recommend the right protection level and price point.",
   },
   {
-    question: "Do you offer paint protection film (PPF) in Bolton?",
+    question: "Do you offer paint protection film (PPF) near Bolton as well?",
     answer:
-      "Yes — we install KAVACA Paint Protection Film (PPF) at our Bolton workshop. Available as full-vehicle coverage or targeted stone chip protection on the bonnet, bumpers, and mirrors. Contact us to discuss the right coverage option for your vehicle.",
+      "Yes — we install KAVACA Paint Protection Film (PPF) at our BL4 workshop. Available as full-car coverage or targeted protection on the bonnet, bumpers, and mirrors. KAVACA is self-healing and provides physical protection against stone chips and road debris — something ceramic coating alone cannot offer.",
   },
+  {
+    question: "Can I get a same-day ceramic coating quote near Bolton?",
+    answer:
+      "Yes — call or WhatsApp 07482 225323 and we can discuss your requirements immediately. We are available 24/7. For most vehicles, we can give an accurate quote over the phone or via a few photos of the car. Booking slots are available throughout the week at our Farnworth, Bolton workshop.",
+  },
+];
+
+const BOLTON_POSTCODES = [
+  { code: "BL1", area: "Bolton Town Centre, Astley Bridge" },
+  { code: "BL2", area: "Tonge Moor, Breightmet, Darcy Lever" },
+  { code: "BL3", area: "Great Lever, Rumworth, Deane" },
+  { code: "BL4", area: "Farnworth, Kearsley — our workshop" },
+  { code: "BL5", area: "Westhoughton, Daisy Hill" },
+  { code: "BL6", area: "Horwich, Lostock, Blackrod" },
+  { code: "BL7", area: "Bromley Cross, Egerton, Edgworth" },
+  { code: "M26", area: "Radcliffe, Little Lever" },
+  { code: "M27", area: "Swinton, Pendlebury" },
+  { code: "M28", area: "Worsley, Boothstown, Walkden" },
 ];
 
 export default function BoltonPage() {
   return (
     <>
       <SchemaFAQ faqs={FAQS} />
+      <SchemaService
+        name="Ceramic Coating for Cars — Bolton, BL4"
+        description="Professional Ceramic Pro 9H ceramic coating for cars in Bolton. Certified installer at BL4 9EA serving all Bolton postcodes and Greater Manchester. Includes KAVACA PPF, car detailing, and leather protection."
+        slug="ceramic-coating"
+        serviceType="Ceramic Coating"
+      />
 
       <div className="max-w-6xl mx-auto px-4">
         <Breadcrumb
@@ -60,16 +86,44 @@ export default function BoltonPage() {
       {/* Hero */}
       <section className="py-16 px-4 bg-[#0f0f0f]">
         <div className="max-w-4xl mx-auto">
-          <div className="flex items-center gap-2 text-[#c9a84c] text-sm font-semibold uppercase tracking-wider mb-3">
-            <MapPin className="w-4 h-4" /> Bolton, Greater Manchester
+          {/* Rating badge */}
+          <div className="inline-flex items-center gap-2 bg-[#1a1a1a] border border-[#3a3a3a] rounded-full px-4 py-2 mb-6">
+            <div className="flex items-center gap-0.5">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-3.5 h-3.5 fill-[#c9a84c] text-[#c9a84c]" />
+              ))}
+            </div>
+            <span className="text-white text-sm font-semibold">{BUSINESS.rating.google.value} Google Rating</span>
+            <span className="text-gray-400 text-sm">· {BUSINESS.rating.google.count} reviews</span>
           </div>
-          <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-            Ceramic Coating &amp; Car Detailing Bolton — Your Local Specialists
+
+          <div className="flex items-center gap-2 text-[#c9a84c] text-sm font-semibold uppercase tracking-wider mb-3">
+            <MapPin className="w-4 h-4" /> Bolton, BL4 9EA · Greater Manchester
+          </div>
+          <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
+            Ceramic Coating for Cars<br />
+            <span className="text-[#c9a84c]">Near You in Bolton</span>
           </h1>
-          <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            Ceramic Pro North West is Bolton&apos;s trusted source for professional ceramic coatings, paint protection film, and car detailing. Based in Farnworth — just 2 miles from Bolton town centre — our certified workshop serves the whole of Bolton and surrounding Greater Manchester. We are the local Ceramic Pro installers for Bolton, Farnworth, Horwich, Little Lever, Kearsley, and beyond.
+          <p className="text-gray-300 text-lg leading-relaxed mb-6">
+            Ceramic Pro North West is Bolton&apos;s nearest certified ceramic coating installer — based at BL4 9EA, just 2 miles from Bolton town centre. Whether you&apos;re searching for ceramic coating for cars near me or looking for the best paint protection in the Bolton area, our Farnworth workshop is your closest professional option. Certified Ceramic Pro 9H installers serving all BL postcodes and Greater Manchester.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+
+          {/* Trust signals row */}
+          <div className="flex flex-wrap gap-4 text-sm text-gray-400 mb-8">
+            {[
+              { icon: CheckCircle, text: "Ceramic Pro Certified" },
+              { icon: Clock, text: "Available 24/7" },
+              { icon: MapPin, text: "BL4 9EA — 2 miles from Bolton centre" },
+              { icon: CheckCircle, text: "Free quotes" },
+            ].map(({ icon: Icon, text }) => (
+              <div key={text} className="flex items-center gap-2">
+                <Icon className="w-4 h-4 text-[#c9a84c]" />
+                <span>{text}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 mb-10">
             <Link href="/contact"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-[#c9a84c] text-[#0f0f0f] font-bold rounded-xl hover:bg-[#e8c96c] transition-all">
               Get a Free Quote <ArrowRight className="w-5 h-5" />
@@ -84,11 +138,50 @@ export default function BoltonPage() {
               Or call {BUSINESS.phoneDisplay}
             </a>
           </div>
+
+          {/* Hero image */}
+          <div className="relative h-64 sm:h-80 rounded-2xl overflow-hidden">
+            <Image
+              src="/images/bmw-m5-ceramic-coating-bolton-workshop.webp"
+              alt="Ceramic coating for cars near Bolton — BMW M5 at Ceramic Pro North West, Farnworth, BL4 9EA"
+              fill
+              sizes="(max-width: 768px) 100vw, 896px"
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+            <div className="absolute bottom-4 left-5">
+              <span className="text-white text-sm font-semibold drop-shadow">Ceramic Pro North West · Farnworth, Bolton BL4 9EA</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Why Bolton drivers choose us */}
+      {/* Postcodes we cover */}
       <section className="py-16 px-4 bg-[#0a0a0a]">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-[#c9a84c] font-semibold uppercase tracking-wider text-sm mb-3">Postcodes We Cover</p>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-3">
+            Ceramic Coating for Cars Near Every Bolton Postcode
+          </h2>
+          <p className="text-gray-400 mb-8">
+            Our Farnworth workshop is within 10 minutes of every BL postcode. If you&apos;re searching for ceramic coating for cars near me anywhere in Bolton or the surrounding area, we&apos;re your closest certified option.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {BOLTON_POSTCODES.map((p) => (
+              <div key={p.code} className={`flex items-start gap-3 rounded-xl p-4 border ${p.code === "BL4" ? "bg-[#c9a84c]/10 border-[#c9a84c]/30" : "bg-[#1a1a1a] border-[#3a3a3a]"}`}>
+                <div className={`shrink-0 font-heading font-bold text-sm px-2 py-1 rounded ${p.code === "BL4" ? "bg-[#c9a84c] text-[#0f0f0f]" : "bg-[#2a2a2a] text-[#c9a84c]"}`}>
+                  {p.code}
+                </div>
+                <span className="text-gray-300 text-sm leading-snug">{p.area}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why choose us */}
+      <section className="py-16 px-4 bg-[#0f0f0f]">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-8">
             Why Bolton Drivers Choose Ceramic Pro North West
@@ -96,16 +189,16 @@ export default function BoltonPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "Local Bolton Workshop",
-                desc: "Our workshop is based in Farnworth — genuinely local, with easy parking and no lengthy journey. Bolton customers can drop their car off in the morning and collect it the same day for most services.",
+                title: "Your Nearest Certified Installer",
+                desc: "Based at BL4 9EA, we are the nearest Ceramic Pro certified installer to Bolton town centre. No long journey to Manchester — professional ceramic coating for your car is available right here in Farnworth, less than 10 minutes from most Bolton postcodes.",
               },
               {
-                title: "Ceramic Pro Certified",
-                desc: "Not all ceramic coating installers are equal. As an authorised Ceramic Pro installer, we apply the genuine Ceramic Pro 9H product to the brand's certified standards — and the product is registered against your vehicle for warranty purposes.",
+                title: "Genuine Ceramic Pro 9H",
+                desc: "Not all ceramic coatings are equal. As a certified Ceramic Pro installer, we use genuine Ceramic Pro 9H — the same professional product used on supercars worldwide. Each installation is registered against your vehicle for warranty and certification purposes.",
               },
               {
                 title: "North West Weather Experts",
-                desc: "We know exactly what Greater Manchester weather does to car paint — acid rain, winter road salt, bird droppings from M61 / M62 motorway driving. Our coating recommendations are tailored to North West conditions.",
+                desc: "Bolton's wet climate, road salt, and motorway driving demand proper protection. We tailor every ceramic coating to the specific challenges Greater Manchester drivers face — not a one-size-fits-all product applied without assessment.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-6">
@@ -117,12 +210,15 @@ export default function BoltonPage() {
         </div>
       </section>
 
-      {/* Services in Bolton */}
-      <section className="py-16 px-4 bg-[#0f0f0f]">
+      {/* Services */}
+      <section className="py-16 px-4 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-heading text-2xl font-bold text-white mb-8">
-            Services Available to Bolton Customers
+          <h2 className="font-heading text-2xl font-bold text-white mb-2">
+            Services Available Near Bolton
           </h2>
+          <p className="text-gray-400 mb-8 text-sm">
+            All services are available at our Farnworth workshop — ceramic coating for cars, PPF, detailing, and interior protection.
+          </p>
           <div className="space-y-4">
             {BUSINESS.services.map((service) => (
               <div key={service.slug} className="bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -141,31 +237,62 @@ export default function BoltonPage() {
       </section>
 
       {/* Bolton-specific content */}
-      <section className="py-16 px-4 bg-[#0a0a0a]">
-        <div className="max-w-4xl mx-auto space-y-8">
+      <section className="py-16 px-4 bg-[#0f0f0f]">
+        <div className="max-w-4xl mx-auto space-y-10">
           <div>
             <h2 className="font-heading text-2xl font-bold text-white mb-4">
-              Protecting Bolton Cars from Greater Manchester Weather
+              Why Ceramic Coating for Cars Near Bolton Is a Smart Investment
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Bolton sits at the foot of the West Pennine Moors, making it one of the wetter parts of Greater Manchester. Regular rainfall, combined with industrial fallout and road salt used extensively on Bolton&apos;s roads and the M61 junction between October and March, creates a challenging environment for car paintwork. Ceramic coating&apos;s hydrophobic properties mean water and road salt bead off the surface instead of bonding with the paint, dramatically reducing corrosive damage.
+              Bolton sits at the foot of the West Pennine Moors, making it one of the wetter parts of Greater Manchester. Regular rainfall, combined with industrial fallout and road salt heavily applied on Bolton&apos;s roads and the M61 junction between October and March, creates a punishing environment for car paintwork. When Bolton drivers search for ceramic coating for cars near me, they are usually responding to this reality — their car&apos;s paint is deteriorating faster than it should.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Acid rain — a particular issue near motorway corridors — can etch bare or wax-protected paint over time. Ceramic Pro 9H&apos;s chemical resistance creates a stable barrier against these etching agents, protecting your paint&apos;s clear coat from the kind of microscopic damage that accumulates invisibly until it becomes a costly paint correction job.
+              Ceramic Pro 9H&apos;s hydrophobic properties mean water, road salt, and bird droppings bead off the surface instead of bonding with the paint. Its chemical resistance creates a stable barrier against acid rain — a particular issue near motorway corridors like the M61 and M62 — that bare or wax-protected paint simply cannot match over time.
             </p>
           </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="relative h-48 rounded-xl overflow-hidden">
+              <Image
+                src="/images/lamborghini-aventador-ceramic-coating-bolton.webp"
+                alt="Lamborghini Aventador ceramic coating near Bolton — Ceramic Pro North West, BL4"
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden">
+              <Image
+                src="/images/bentley-continental-gtc-ceramic-coating-bolton.webp"
+                alt="Bentley Continental ceramic coating near Bolton — Ceramic Pro North West, Farnworth"
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="relative h-48 rounded-xl overflow-hidden">
+              <Image
+                src="/images/bmw-m5-f10-ceramic-coating-bolton.webp"
+                alt="BMW M5 ceramic coating near Bolton — Ceramic Pro North West, BL4 9EA"
+                fill
+                sizes="(max-width: 640px) 100vw, 33vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
+
           <div>
             <h2 className="font-heading text-2xl font-bold text-white mb-4">
               Our Bolton Workshop — How to Find Us
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
-              Ceramic Pro North West is located at 115 Albert Road, Farnworth, Bolton, BL4 9EA. Farnworth is just off the A6053, approximately 2 miles south of Bolton town centre and 5 minutes from the M61 motorway. There is convenient on-street parking available, and we are easily reachable by bus from Bolton town centre via Farnworth bus routes.
+            <p className="text-gray-400 leading-relaxed mb-5">
+              Ceramic Pro North West is located at 115 Albert Road, Farnworth, Bolton, BL4 9EA — just off the A6053, approximately 2 miles south of Bolton town centre and 5 minutes from the M61 motorway junction 4. The most convenient route from Bolton town centre is via Manchester Road (A666) south through Farnworth. On-street parking is available, and we are reachable by bus from Bolton via Farnworth bus routes.
             </p>
             <address className="not-italic bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-5 text-gray-400 text-sm leading-loose">
               <strong className="text-white">{BUSINESS.name}</strong><br />
               {BUSINESS.address.street}<br />
               {BUSINESS.address.locality}, {BUSINESS.address.city}<br />
-              {BUSINESS.address.postcode}<br />
+              <strong className="text-[#c9a84c]">{BUSINESS.address.postcode}</strong><br />
               <a href={`tel:${BUSINESS.phone}`} className="text-[#c9a84c] hover:underline">{BUSINESS.phoneDisplay}</a>
             </address>
           </div>
@@ -173,7 +300,7 @@ export default function BoltonPage() {
       </section>
 
       {/* Map */}
-      <section className="py-8 px-4 bg-[#0f0f0f]">
+      <section className="py-8 px-4 bg-[#0a0a0a]">
         <div className="max-w-4xl mx-auto">
           <MapEmbed height={380} />
           <div className="mt-4 text-center">
@@ -190,7 +317,7 @@ export default function BoltonPage() {
       </section>
 
       {/* Other areas */}
-      <section className="py-12 px-4 bg-[#0a0a0a]">
+      <section className="py-12 px-4 bg-[#0f0f0f]">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-xl font-bold text-white mb-4">Also Serving These Areas</h2>
           <div className="flex flex-wrap gap-2">
@@ -205,16 +332,18 @@ export default function BoltonPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 px-4 bg-[#0f0f0f]">
+      <section className="py-16 px-4 bg-[#0a0a0a]">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-heading text-2xl font-bold text-white mb-8">Bolton Ceramic Coating FAQs</h2>
+          <h2 className="font-heading text-2xl font-bold text-white mb-8">
+            Ceramic Coating Near Bolton — FAQs
+          </h2>
           <FAQAccordion faqs={FAQS} />
         </div>
       </section>
 
       <CTABanner
-        headline="Bolton's Ceramic Coating Specialists"
-        subtext="Based in Farnworth — your local Ceramic Pro certified installers for Bolton and Greater Manchester."
+        headline="Bolton's Nearest Ceramic Coating Installer"
+        subtext="Certified Ceramic Pro specialists at BL4 9EA. Free quotes. Available 24/7. Serving all Bolton postcodes."
         primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
         secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="gold"
