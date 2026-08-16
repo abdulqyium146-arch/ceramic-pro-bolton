@@ -111,6 +111,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.svg",
   },
   manifest: "/site.webmanifest",
+  verification: {
+    google: "EDqKilAP8MiJrd6dfyZHWtowvmexERAAMqiQKOR8eqM",
+  },
   other: {
     "geo.region": "GB-MAN",
     "geo.placename": "Bolton, Greater Manchester",
