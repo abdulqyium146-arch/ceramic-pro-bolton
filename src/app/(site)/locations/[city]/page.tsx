@@ -152,6 +152,20 @@ const CITY_DATA: Record<
     description:
       "Altrincham's high concentration of prestige and luxury vehicles makes car ceramic coating a sound investment. Latin King Detailing in Farnworth, Bolton is the nearest certified Ceramic Pro installer — Altrincham customers regularly make the straightforward M60/A666 journey for Ceramic Pro 9H and KAVACA PPF.",
   },
+  stockport: {
+    name: "Stockport",
+    distance: "approx. 12 miles from Stockport town centre",
+    route: "via M60 westbound then A666 northbound through Farnworth, approximately 18–22 minutes",
+    description:
+      "Stockport and the SK postcode area sit within easy reach of Latin King Detailing's Farnworth workshop via the M60. We're one of the closest Ceramic Pro certified car ceramic coating installers to Stockport — serving SK1 through SK8 customers with Ceramic Pro 9H, KAVACA PPF, paint correction, and full car detailing.",
+  },
+  wilmslow: {
+    name: "Wilmslow",
+    distance: "approx. 16 miles from Wilmslow",
+    route: "via A34 north through Handforth to M60 then A666 north, approximately 24–28 minutes",
+    description:
+      "Wilmslow and the Cheshire Golden Triangle have one of the highest densities of prestige and performance vehicles in the North West. Latin King Detailing in Farnworth, Bolton is the nearest Ceramic Pro certified installer — Wilmslow customers regularly make the M60/A666 journey north for Ceramic Pro 9H ceramic coating and KAVACA PPF on their Porsches, Range Rovers, and luxury cars.",
+  },
 };
 
 export async function generateStaticParams() {

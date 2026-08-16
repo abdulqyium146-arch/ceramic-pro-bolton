@@ -11,9 +11,9 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Car Ceramic Coating Near Bolton BL4 — Certified Installer",
+  title: "Ceramic Coating Bolton BL4 — 4.7★ Rated, Ceramic Pro Certified",
   description:
-    "Car ceramic coating near Bolton, BL4. Latin King Detailing — your nearest Ceramic Pro 9H certified installer. 4.7★ Google rated. Free quote: 07482 225323.",
+    "Bolton's nearest Ceramic Pro 9H certified installer. Latin King Detailing, Farnworth BL4 — 2 miles from Bolton town centre. 4.7★ Google rated. Free quote: 07482 225323.",
   alternates: { canonical: "/locations/bolton" },
 };
 

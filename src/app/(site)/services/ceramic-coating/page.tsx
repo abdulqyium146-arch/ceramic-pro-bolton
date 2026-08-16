@@ -11,9 +11,9 @@ import SchemaHowTo from "@/components/seo/SchemaHowTo";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Car Ceramic Coating Bolton — Ceramic Pro 9H Certified Installer",
+  title: "Ceramic Coating Bolton — Certified Installer, 9H Hardness, Free Quote",
   description:
-    "Professional car ceramic coating in Bolton & Greater Manchester. Latin King Detailing — Ceramic Pro 9H certified, 9H hardness, UV protection, hydrophobic effect. Farnworth BL4. Free quote.",
+    "Ceramic Pro 9H certified installer in Bolton, Greater Manchester. 9H hardness, UV protection, hydrophobic effect, 2–5 year lifespan. Latin King Detailing, Farnworth BL4. 4.7★ Google rated. Free quote.",
   alternates: { canonical: "/services/ceramic-coating" },
 };
 

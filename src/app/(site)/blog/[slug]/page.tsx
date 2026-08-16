@@ -55,6 +55,18 @@ const POST_HERO_IMAGES: Record<string, { src: string; alt: string }> = {
     src: "/images/bmw-m5-ceramic-gloss-finish-bolton.webp",
     alt: "Black BMW M5 showing deep-gloss ceramic coating protection at night — Bolton, Greater Manchester",
   },
+  "how-long-does-ceramic-coating-last": {
+    src: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
+    alt: "Ceramic coating applied to BMW at Latin King Detailing workshop, Farnworth, Bolton",
+  },
+  "is-ceramic-coating-worth-it": {
+    src: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
+    alt: "Lamborghini Aventador ceramic coated at Latin King Detailing, Farnworth, Bolton",
+  },
+  "ceramic-coating-cost-bolton-manchester": {
+    src: "/images/porsche-macan-ceramic-coating-bolton.webp",
+    alt: "Porsche Macan receiving Ceramic Pro 9H ceramic coating at Latin King Detailing, Bolton",
+  },
 };
 
 const FULL_CONTENT: Record<string, React.ReactNode> = {
@@ -244,6 +256,197 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
       </p>
       <p className="text-gray-400 leading-relaxed">
         If you&apos;re not sure which combination makes sense for your car, call or WhatsApp us. We&apos;ll look at your vehicle, your typical driving routes, and give you an honest recommendation — not just the most expensive package.
+      </p>
+    </>
+  ),
+  "how-long-does-ceramic-coating-last": (
+    <>
+      <p className="text-gray-300 text-lg leading-relaxed mb-6">
+        A professionally applied Ceramic Pro 9H ceramic coating lasts <strong className="text-white">2–5 years</strong> under normal UK driving conditions. Longer packages — including lifetime warranty options — are available and require annual inspections to remain valid. The honest answer, though, is that lifespan varies significantly depending on the product, the installer, and how the car is maintained.
+      </p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">What Affects How Long a Ceramic Coating Lasts?</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Not all ceramic coatings are equal. Consumer spray-on ceramic products sold online — often labelled as &apos;ceramic coating&apos; — sit on the surface and last weeks, not years. A professional-grade coating like Ceramic Pro 9H bonds at a molecular level with the clear coat. That&apos;s the difference.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Factors that determine longevity in practice:
+      </p>
+      <ul className="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-2">
+        <li><strong className="text-white">Product quality</strong> — Ceramic Pro 9H vs budget alternatives</li>
+        <li><strong className="text-white">Installer certification</strong> — a certified installer applies correctly bonded layers</li>
+        <li><strong className="text-white">Paint preparation</strong> — coating over swirled or contaminated paint reduces adhesion</li>
+        <li><strong className="text-white">Maintenance</strong> — contact car washes destroy coatings prematurely</li>
+        <li><strong className="text-white">Usage</strong> — daily motorway driving in road salt season degrades faster than weekend use</li>
+      </ul>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Ceramic Pro 9H Package Lifespans</h2>
+      <div className="overflow-x-auto rounded-xl border border-[#3a3a3a] mb-6">
+        <table className="w-full min-w-[400px] text-sm">
+          <thead>
+            <tr className="bg-[#1a1a1a] border-b border-[#3a3a3a]">
+              <th className="px-4 py-3 text-left text-gray-400">Package</th>
+              <th className="px-4 py-3 text-center text-[#c9a84c]">Expected Lifespan</th>
+              <th className="px-4 py-3 text-center text-gray-400">Warranty</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Entry / Single layer", "2–3 years", "2 years"],
+              ["Multi-layer (2–3 coats)", "3–5 years", "5 years"],
+              ["Ceramic Pro 9H Gold", "5+ years", "Lifetime*"],
+            ].map(([pkg, life, warranty]) => (
+              <tr key={pkg as string} className="border-b border-[#3a3a3a] last:border-0 bg-[#1a1a1a]">
+                <td className="px-4 py-3 text-white">{pkg}</td>
+                <td className="px-4 py-3 text-center text-[#c9a84c]">{life}</td>
+                <td className="px-4 py-3 text-center text-gray-400">{warranty}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-gray-500 text-xs mb-6">*Lifetime warranty requires annual inspection at a certified installer to remain valid.</p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">What Shortens a Ceramic Coating&apos;s Life?</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        The biggest threat is automatic car washes. Rotating brush systems create swirl marks that abrade the coating surface and gradually destroy the hydrophobic layer. If your car goes through an automatic wash regularly, expect to halve the stated lifespan of any coating.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        In Greater Manchester specifically, the combination of road salt (heavily applied on the M61 and M62 from October to March), industrial fallout from surrounding areas, and above-average rainfall means the coating works harder than in drier parts of the UK. This is actually why ceramic coating is a particularly good investment here — but it also means maintenance matters.
+      </p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Signs Your Coating Needs Renewal</h2>
+      <ul className="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-2">
+        <li>Water no longer beads off the surface in tight droplets</li>
+        <li>The paint feels less slick to the touch after washing</li>
+        <li>Bird droppings and tree sap are harder to remove than before</li>
+        <li>The annual inspection shows coating thickness below specification</li>
+      </ul>
+      <p className="text-gray-400 leading-relaxed">
+        At Latin King Detailing in Farnworth, Bolton, we carry out annual coating inspections and maintenance washes to keep your Ceramic Pro 9H performing through its full service life. If the coating is approaching the end of its life, we&apos;ll tell you honestly — and advise on recoating options rather than pushing you towards an unnecessary full respray.
+      </p>
+    </>
+  ),
+  "is-ceramic-coating-worth-it": (
+    <>
+      <p className="text-gray-300 text-lg leading-relaxed mb-6">
+        <strong className="text-white">Yes — for most car owners in the UK, ceramic coating is worth it.</strong> The caveat is &apos;professionally applied.&apos; Consumer spray products sold as ceramic coatings are not the same thing and are generally not worth the money. A genuine Ceramic Pro 9H installation by a certified installer is a different product entirely — and the value case is straightforward.
+      </p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">What You&apos;re Actually Paying For</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Professional ceramic coating is not a premium wax. Ceramic Pro 9H bonds chemically with your car&apos;s clear coat to become a semi-permanent layer with 9H hardness — the highest on the pencil hardness scale. This means:
+      </p>
+      <ul className="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-2">
+        <li>Genuine UV protection that prevents paint fade and oxidation</li>
+        <li>Chemical resistance against bird droppings, tree sap, road salt, and acid rain</li>
+        <li>A persistent hydrophobic effect that makes the car dramatically easier to clean</li>
+        <li>Light swirl mark resistance — it won&apos;t prevent all scratches, but it resists the micro-scratches that dull paint over time</li>
+        <li>A registered warranty against your vehicle&apos;s VIN</li>
+      </ul>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">The ROI Case for Bolton and Greater Manchester Drivers</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        North West England is one of the harshest environments for car paint in the UK. Road salt is applied aggressively on the M61 and M62 from October through March. The region has above-average rainfall. Industrial fallout from surrounding areas settles on paintwork. Most car owners in Bolton and Manchester are washing their cars more often than drivers in drier parts of the country — and paying for it in time, product costs, and faster paint deterioration.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Ceramic coating directly reduces those costs. The hydrophobic effect means rain rinses contamination off the surface before it bonds. Maintenance washes take half the time. You stop paying for wax every few months. Our customers consistently report that the coating pays for itself within 12–18 months in reduced cleaning costs and time alone — before accounting for the paint preservation value.
+      </p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">When Ceramic Coating Is NOT Worth It</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        Ceramic coating is not worth it in a few specific situations:
+      </p>
+      <ul className="list-disc list-inside text-gray-400 space-y-2 mb-6 ml-2">
+        <li><strong className="text-white">If you use automatic car washes</strong> — they destroy the coating and you won&apos;t get the full lifespan</li>
+        <li><strong className="text-white">If the car is a run-around you plan to sell in 12 months</strong> — the investment period is too short to justify the cost</li>
+        <li><strong className="text-white">If the paint is heavily damaged</strong> — the coating will bond over the damage. Paint correction is needed first, which adds cost</li>
+        <li><strong className="text-white">If you buy from an uncertified applicator</strong> — cheaper non-certified applications often use inferior products and incorrect process, delivering none of the claimed longevity</li>
+      </ul>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Ceramic Coating vs The Alternatives</h2>
+      <div className="overflow-x-auto rounded-xl border border-[#3a3a3a] mb-6">
+        <table className="w-full min-w-[400px] text-sm">
+          <thead>
+            <tr className="bg-[#1a1a1a] border-b border-[#3a3a3a]">
+              <th className="px-4 py-3 text-left text-gray-400">Protection Type</th>
+              <th className="px-4 py-3 text-center text-[#c9a84c]">Lifespan</th>
+              <th className="px-4 py-3 text-center text-gray-400">UV Protection</th>
+              <th className="px-4 py-3 text-center text-gray-400">Chemical Resistance</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Carnauba wax", "4–8 weeks", "Minimal", "None"],
+              ["Polymer sealant", "3–6 months", "Moderate", "Low"],
+              ["Ceramic spray (DIY)", "2–4 months", "Low", "Low"],
+              ["Ceramic Pro 9H (professional)", "2–5 years", "Excellent", "Strong"],
+            ].map(([type, lifespan, uv, chem]) => (
+              <tr key={type as string} className="border-b border-[#3a3a3a] last:border-0 bg-[#1a1a1a]">
+                <td className="px-4 py-3 text-white">{type}</td>
+                <td className="px-4 py-3 text-center text-[#c9a84c]">{lifespan}</td>
+                <td className="px-4 py-3 text-center text-gray-400">{uv}</td>
+                <td className="px-4 py-3 text-center text-gray-400">{chem}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-gray-400 leading-relaxed">
+        The verdict: for any car owner who cares about their paint and plans to keep the car for more than 2 years, professional ceramic coating is the highest-value paint protection available. It costs more upfront than wax — and saves more over time.
+      </p>
+    </>
+  ),
+  "ceramic-coating-cost-bolton-manchester": (
+    <>
+      <p className="text-gray-300 text-lg leading-relaxed mb-6">
+        Ceramic coating prices in Bolton and Greater Manchester vary from around <strong className="text-white">£300 for a basic single-layer application</strong> on a small car to <strong className="text-white">£1,500+ for a multi-layer package with paint correction</strong> on a larger vehicle. The range is wide because several factors drive the actual cost — and knowing them helps you get an accurate quote and avoid being overcharged or undersold.
+      </p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">What Drives the Price of Ceramic Coating?</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">1. The product.</strong> Genuine Ceramic Pro 9H is a professional-grade product only available through certified installers. Consumer-grade ceramic sprays are cheaper, but they last weeks, not years. The price difference reflects the product difference — not markup.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">2. The number of layers.</strong> A single-layer application lasts 2–3 years. Multi-layer packages (2–3 coats) last 3–5 years. More layers mean more product, more application time, and longer curing time between coats.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">3. Paint correction.</strong> Ceramic coating bonds permanently over whatever is under it. If your paint has swirl marks, light scratches, or water spots, they need to be corrected before coating — otherwise they&apos;re locked in permanently. Paint correction can add £150–£400 to the job depending on the severity and the number of stages required.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        <strong className="text-white">4. Vehicle size.</strong> A small hatchback takes less product and less time than a large SUV or estate. Most installers price by vehicle category (small/medium/large/XL).
+      </p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Typical Price Ranges in Bolton &amp; Manchester</h2>
+      <div className="overflow-x-auto rounded-xl border border-[#3a3a3a] mb-6">
+        <table className="w-full min-w-[400px] text-sm">
+          <thead>
+            <tr className="bg-[#1a1a1a] border-b border-[#3a3a3a]">
+              <th className="px-4 py-3 text-left text-gray-400">Package</th>
+              <th className="px-4 py-3 text-center text-[#c9a84c]">Small Car</th>
+              <th className="px-4 py-3 text-center text-gray-400">Large / SUV</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ["Entry (1 layer, 2yr)", "From £299", "From £399"],
+              ["Mid (2 layers, 5yr)", "From £499", "From £699"],
+              ["Full (multi-layer, lifetime*)", "From £799", "From £1,200"],
+              ["+ Paint correction (if needed)", "+£150–£250", "+£250–£400"],
+            ].map(([pkg, small, large]) => (
+              <tr key={pkg as string} className="border-b border-[#3a3a3a] last:border-0 bg-[#1a1a1a]">
+                <td className="px-4 py-3 text-white">{pkg}</td>
+                <td className="px-4 py-3 text-center text-[#c9a84c]">{small}</td>
+                <td className="px-4 py-3 text-center text-gray-400">{large}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-gray-500 text-xs mb-6">*These are indicative ranges. Contact Latin King Detailing for an exact quote based on your specific vehicle and condition.</p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">What to Watch Out for With Cheap Quotes</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        If you see a ceramic coating advertised for £79 or £99 on social media, it is not Ceramic Pro 9H. It is likely a diluted consumer-grade spray product applied without proper paint decontamination or preparation. These products genuinely do not last — most fail within 3–6 months — and you won&apos;t have any warranty or certification to fall back on.
+      </p>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        A certified Ceramic Pro installer must register every application against the vehicle VIN. If you can&apos;t get a VIN-registered certificate, it&apos;s not a certified Ceramic Pro installation. That registration matters if you sell the car — a certified coating is a verifiable, transferable asset.
+      </p>
+      <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Getting an Accurate Quote at Latin King Detailing</h2>
+      <p className="text-gray-400 leading-relaxed mb-4">
+        We give accurate, itemised quotes based on your specific vehicle, its current condition, and what you want from the protection. Call or WhatsApp us on 07482 225323 — for most vehicles, we can give a clear indication over the phone or from a few photos. No pressure, no obligation.
+      </p>
+      <p className="text-gray-400 leading-relaxed">
+        Our Farnworth, Bolton workshop serves customers from across Greater Manchester. We are a certified Ceramic Pro installer — every application is registered, warranted, and done to the manufacturer&apos;s professional standard.
       </p>
     </>
   ),

@@ -8,9 +8,9 @@ import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
 
 export const metadata: Metadata = {
-  title: "Car Ceramic Coating Manchester — 15 Min from City Centre",
+  title: "Ceramic Coating Manchester — Ceramic Pro 9H Certified, 15 Min Drive",
   description:
-    "Professional car ceramic coating for Manchester customers. Latin King Detailing in Bolton is 15–20 min from Manchester city centre. Ceramic Pro 9H certified. Free quote: 07482 225323.",
+    "Ceramic Pro 9H certified installer serving Manchester. Latin King Detailing — 15–20 min from Manchester city centre via A666. 4.7★ Google rated. KAVACA PPF & detailing. Free quote: 07482 225323.",
   alternates: { canonical: "/locations/manchester" },
 };
 

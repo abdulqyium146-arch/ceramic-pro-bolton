@@ -9,9 +9,9 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Car Leather Coating & Interior Protection Bolton, Greater Manchester",
+  title: "Leather Seat Protection & Car Interior Coating Bolton — Free Quote",
   description:
-    "Specialist car leather coating & interior protection in Bolton, Greater Manchester. UV protection, crack prevention, stain resistance. Latin King Detailing, Farnworth BL4. Free quote.",
+    "Specialist leather seat coating & interior protection in Bolton. UV fade prevention, crack resistance, stain guard. Latin King Detailing, Farnworth BL4. Covers leather, Alcantara & synthetic. Free quote.",
   alternates: { canonical: "/services/leather-interior-protection" },
 };
 

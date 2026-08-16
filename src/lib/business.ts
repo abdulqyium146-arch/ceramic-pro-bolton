@@ -73,6 +73,8 @@ export const BUSINESS = {
     { name: "Wigan", slug: "wigan", primary: false },
     { name: "Chorley", slug: "chorley", primary: false },
     { name: "Altrincham", slug: "altrincham", primary: false },
+    { name: "Stockport", slug: "stockport", primary: false },
+    { name: "Wilmslow", slug: "wilmslow", primary: false },
   ],
   services: [
     {

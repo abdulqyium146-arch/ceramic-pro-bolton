@@ -84,6 +84,36 @@ export const POSTS = [
     image: "/images/bmw-m5-ceramic-gloss-finish-bolton.webp",
     imageAlt: "Black BMW M5 showing deep ceramic gloss finish at night — ceramic protection, Bolton",
   },
+  {
+    slug: "how-long-does-ceramic-coating-last",
+    title: "How Long Does Ceramic Coating Last? Honest Answer for UK Cars",
+    excerpt: "The honest answer depends on the product, the installer, and how you maintain it. We break down real-world durability for Ceramic Pro 9H in UK driving conditions.",
+    category: "Ceramic Coating",
+    date: "2025-06-12",
+    readTime: "5 min read",
+    image: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
+    imageAlt: "Ceramic coating applied to BMW at Latin King Detailing workshop, Bolton",
+  },
+  {
+    slug: "is-ceramic-coating-worth-it",
+    title: "Is Ceramic Coating Worth It? Honest Verdict for UK Car Owners",
+    excerpt: "Ceramic coating costs more than a wax. Is it actually worth the money? We give you an honest breakdown — the genuine benefits, the limitations, and who it's right for.",
+    category: "Ceramic Coating",
+    date: "2025-07-04",
+    readTime: "6 min read",
+    image: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
+    imageAlt: "Lamborghini Aventador ceramic coated at Latin King Detailing, Bolton",
+  },
+  {
+    slug: "ceramic-coating-cost-bolton-manchester",
+    title: "Ceramic Coating Cost in Bolton & Manchester (2025 Price Guide)",
+    excerpt: "What does ceramic coating actually cost in Bolton and Greater Manchester? We explain what drives the price, what to expect to pay, and how to avoid being overcharged.",
+    category: "Guides",
+    date: "2025-07-20",
+    readTime: "5 min read",
+    image: "/images/porsche-macan-ceramic-coating-bolton.webp",
+    imageAlt: "Porsche Macan receiving Ceramic Pro 9H coating at Latin King Detailing, Bolton",
+  },
 ];
 
 const CATEGORY_COLORS: Record<string, string> = {
