@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { MapPin, Phone, ArrowRight } from "lucide-react";
 import { notFound } from "next/navigation";
@@ -12,47 +12,145 @@ const CITY_DATA: Record<
   string,
   { name: string; distance: string; route: string; description: string }
 > = {
+  farnworth: {
+    name: "Farnworth",
+    distance: "our workshop is located in Farnworth",
+    route: "115 Albert Road, Farnworth, BL4 9EA",
+    description:
+      "Latin King Detailing is based right here in Farnworth, Bolton BL4. If you are a Farnworth local, you are minutes from the area's best car ceramic coating and professional car detailing workshop.",
+  },
+  horwich: {
+    name: "Horwich",
+    distance: "approx. 5 miles from Horwich town centre",
+    route: "via A673 south through Lostock, approximately 10–12 minutes",
+    description:
+      "Horwich customers are some of our closest visitors — just 10 minutes south via the A673. Latin King Detailing serves Horwich with professional car ceramic coating, KAVACA PPF, paint correction, and car detailing for vehicles across the BL6 postcode area.",
+  },
+  westhoughton: {
+    name: "Westhoughton",
+    distance: "approx. 5 miles from Westhoughton town centre",
+    route: "via A58 east into Farnworth, approximately 10–12 minutes",
+    description:
+      "Westhoughton drivers take the A58 east to reach Latin King Detailing in Farnworth in around 10 minutes — short journey for professional Ceramic Pro 9H car ceramic coating, KAVACA PPF, and full car detailing services.",
+  },
+  kearsley: {
+    name: "Kearsley",
+    distance: "approx. 3 miles from Kearsley",
+    route: "via A666 north, approximately 6–8 minutes",
+    description:
+      "Kearsley is just minutes north of our Farnworth workshop on the A666. Latin King Detailing is the car ceramic coating and detailing specialist for Kearsley drivers — one of the closest certified Ceramic Pro installers to the BL4 area.",
+  },
+  "little-lever": {
+    name: "Little Lever",
+    distance: "approx. 3 miles from Little Lever",
+    route: "via Manchester Road west through Farnworth, approximately 7–9 minutes",
+    description:
+      "Little Lever customers are just minutes from Latin King Detailing's Farnworth workshop. We serve Little Lever and the surrounding BL3 corridor with car ceramic coating, KAVACA PPF, and professional car detailing.",
+  },
+  harwood: {
+    name: "Harwood",
+    distance: "approx. 4 miles from Harwood, Bolton",
+    route: "via Crompton Way south through Bolton town centre, approximately 10–12 minutes",
+    description:
+      "Harwood and Bromley Cross residents drive south through Bolton to reach Latin King Detailing's Farnworth workshop in around 10–12 minutes. We serve the BL2 area with Ceramic Pro 9H car ceramic coating, KAVACA PPF, and professional car detailing.",
+  },
+  walkden: {
+    name: "Walkden",
+    distance: "approx. 6 miles from Walkden",
+    route: "via A666 north through Kearsley, approximately 12–15 minutes",
+    description:
+      "Walkden and the M28 area are well-connected to our Farnworth workshop via the A666 northbound. Latin King Detailing is the nearest certified Ceramic Pro car ceramic coating installer to Walkden and the Worsley area of Greater Manchester.",
+  },
+  worsley: {
+    name: "Worsley",
+    distance: "approx. 7 miles from Worsley village",
+    route: "via A572 through Walkden then A666 north, approximately 15 minutes",
+    description:
+      "Worsley and the M28 corridor are home to a high proportion of prestige and luxury vehicle owners. Latin King Detailing in Farnworth, Bolton is the nearest Ceramic Pro certified car ceramic coating installer — just 15 minutes north via Walkden.",
+  },
+  leigh: {
+    name: "Leigh",
+    distance: "approx. 8 miles from Leigh town centre",
+    route: "via A579 east through Tyldesley and A577 northeast, approximately 18–20 minutes",
+    description:
+      "Leigh customers make the 20-minute drive east to Latin King Detailing in Farnworth for Ceramic Pro 9H car ceramic coating, KAVACA PPF, and professional car detailing — results not available from every local detailer across WN7.",
+  },
+  atherton: {
+    name: "Atherton",
+    distance: "approx. 6 miles from Atherton town centre",
+    route: "via A579 east through Tyldesley to A577, approximately 15 minutes",
+    description:
+      "Atherton drivers regularly visit Latin King Detailing in Farnworth for professional car ceramic coating and paint protection services. The A579 eastbound makes our Farnworth, Bolton workshop an easy 15-minute drive from the M46 corridor.",
+  },
+  tyldesley: {
+    name: "Tyldesley",
+    distance: "approx. 5 miles from Tyldesley",
+    route: "via A577 northeast to Farnworth, approximately 12–14 minutes",
+    description:
+      "Tyldesley customers are just 12 minutes from Latin King Detailing's Farnworth workshop via the A577. We serve Tyldesley and the M29 corridor with professional Ceramic Pro 9H car ceramic coating, KAVACA PPF, and full car detailing.",
+  },
+  radcliffe: {
+    name: "Radcliffe",
+    distance: "approx. 5 miles from Radcliffe town centre",
+    route: "via A665 west through Little Lever, approximately 10–12 minutes",
+    description:
+      "Radcliffe drivers take the A665 west through Little Lever to reach Latin King Detailing in Farnworth in just 10–12 minutes. We serve Radcliffe and the surrounding M26 area with professional car ceramic coating and detailing.",
+  },
+  whitefield: {
+    name: "Whitefield",
+    distance: "approx. 8 miles from Whitefield",
+    route: "via A56 / A666 northwest through Radcliffe, approximately 16–18 minutes",
+    description:
+      "Whitefield customers make the straightforward journey northwest to Latin King Detailing in Farnworth for Ceramic Pro 9H car ceramic coating, KAVACA PPF, and professional car detailing. The M45 and A56 make our Bolton workshop easily accessible from Whitefield.",
+  },
+  swinton: {
+    name: "Swinton",
+    distance: "approx. 7 miles from Swinton",
+    route: "via A666 north through Walkden and Kearsley, approximately 13–15 minutes",
+    description:
+      "Swinton and Pendlebury drivers head north on the A666 to reach Latin King Detailing in Farnworth — the nearest Ceramic Pro certified car ceramic coating installer to the Swinton, Eccles, and Salford area of Greater Manchester.",
+  },
+  eccles: {
+    name: "Eccles",
+    distance: "approx. 9 miles from Eccles town centre",
+    route: "via A57 then A666 north through Swinton and Walkden, approximately 17–20 minutes",
+    description:
+      "Eccles customers drive north via the A666 corridor to reach Latin King Detailing in Farnworth, Bolton — the nearest certified Ceramic Pro car ceramic coating installer to the Eccles and Salford M30 area of Greater Manchester.",
+  },
   bury: {
     name: "Bury",
     distance: "approx. 8 miles from Bury town centre",
     route: "via A58 through Radcliffe, 15–20 minutes",
     description:
-      "Bury drivers regularly visit our Farnworth, Bolton workshop for Ceramic Pro 9H coatings, KAVACA PPF, and professional detailing. Conveniently located just off the A58 corridor.",
+      "Bury drivers regularly visit our Farnworth, Bolton workshop for Ceramic Pro 9H car ceramic coating, KAVACA PPF, and professional detailing. Conveniently located just off the A58 corridor, Latin King Detailing serves the BL9 and M26 areas.",
   },
   salford: {
     name: "Salford",
     distance: "approx. 9 miles from Salford Quays",
     route: "via A666 through Walkden, 15–20 minutes",
     description:
-      "Ceramic Pro North West is the nearest certified Ceramic Pro installer to Salford. Many Salford and MediaCityUK area customers visit our Bolton workshop for premium paint protection.",
+      "Latin King Detailing is the nearest certified Ceramic Pro car ceramic coating installer to Salford. Many Salford and MediaCityUK area customers visit our Bolton workshop for professional paint protection and car detailing.",
   },
   wigan: {
     name: "Wigan",
     distance: "approx. 12 miles from Wigan town centre",
     route: "via A58 / B5238, approximately 20–25 minutes",
     description:
-      "Wigan customers come to Ceramic Pro North West for our Ceramic Pro 9H certified installations and KAVACA PPF — professional results not available at every local detailer.",
+      "Wigan customers come to Latin King Detailing for Ceramic Pro 9H certified car ceramic coating installations and KAVACA PPF — professional results not available at every local detailer across the WN1–WN6 postcodes.",
   },
   chorley: {
     name: "Chorley",
     distance: "approx. 8 miles from Chorley town centre",
     route: "via A6 / A673, approximately 15–20 minutes",
     description:
-      "Chorley drivers make the short trip to our Farnworth, Bolton workshop for professional ceramic coatings, paint protection film, and car detailing.",
-  },
-  farnworth: {
-    name: "Farnworth",
-    distance: "our workshop is located in Farnworth",
-    route: "115 Albert Road, Farnworth, BL4 9EA",
-    description:
-      "Ceramic Pro North West is based right here in Farnworth. If you are a Farnworth local, you are minutes from Bolton's best ceramic coating and car detailing workshop.",
+      "Chorley drivers make the short trip south via the A673 to Latin King Detailing's Farnworth workshop for professional car ceramic coating, paint protection film, paint correction, and car detailing.",
   },
   altrincham: {
     name: "Altrincham",
-    distance: "approx. 13 miles from Altrincham town centre",
-    route: "via A56 through Sale and Eccles to M60/A666, approximately 20–25 minutes",
+    distance: "approx. 14 miles from Altrincham town centre",
+    route: "via A56 through Sale and Eccles to M60 / A666, approximately 22–26 minutes",
     description:
-      "Altrincham drivers regularly make the short journey to our Farnworth, Bolton workshop for Ceramic Pro 9H ceramic coatings, KAVACA PPF, and professional car detailing. Altrincham's high concentration of prestige and luxury vehicles makes paint protection a sound investment — and Ceramic Pro North West is the nearest certified Ceramic Pro installer.",
+      "Altrincham's high concentration of prestige and luxury vehicles makes car ceramic coating a sound investment. Latin King Detailing in Farnworth, Bolton is the nearest certified Ceramic Pro installer — Altrincham customers regularly make the straightforward M60/A666 journey for Ceramic Pro 9H and KAVACA PPF.",
   },
 };
 
@@ -70,8 +168,8 @@ export async function generateMetadata({
   if (!data) return {};
 
   return {
-    title: `Ceramic Coating ${data.name} — Ceramic Pro North West Bolton`,
-    description: `Professional ceramic coating and car detailing near ${data.name}. Ceramic Pro North West in Bolton — ${data.distance}. Free quote available.`,
+    title: `Car Ceramic Coating Near ${data.name} — Latin King Detailing Bolton`,
+    description: `Car ceramic coating near ${data.name}. Latin King Detailing in Bolton — ${data.distance}. Ceramic Pro 9H certified car coating specialists. Free quote: 07482 225323.`,
     alternates: { canonical: `/locations/${city}` },
   };
 }
@@ -88,16 +186,24 @@ export default async function CityPage({
 
   const faqs = [
     {
-      question: `How far is Ceramic Pro North West from ${data.name}?`,
-      answer: `Ceramic Pro North West is located at 115 Albert Road, Farnworth, Bolton — ${data.distance}. The most convenient route is ${data.route}.`,
+      question: `How far is Latin King Detailing from ${data.name}?`,
+      answer: `We're at 115 Albert Road, Farnworth, Bolton BL4 9EA — ${data.distance}. The quickest route is ${data.route}.`,
     },
     {
-      question: `Do you offer ceramic coating near ${data.name}?`,
-      answer: `Yes — Ceramic Pro North West serves ${data.name} customers from our professional workshop in Farnworth, Bolton. As a certified Ceramic Pro installer, we apply genuine Ceramic Pro 9H coatings and KAVACA PPF with full manufacturer registration and warranty.`,
+      question: `Do you offer car ceramic coating near ${data.name}?`,
+      answer: `Yes — ${data.name} customers are welcome at our Farnworth, Bolton workshop. As a Ceramic Pro certified installer, we apply genuine Ceramic Pro 9H ceramic coating and KAVACA PPF with manufacturer registration and warranty. Call or WhatsApp us and we'll give you a straight quote for your vehicle.`,
     },
     {
-      question: `Is it worth travelling from ${data.name} for ceramic coating?`,
-      answer: `Our ${data.name} customers consistently say yes. A certified Ceramic Pro 9H installation is a 2–5 year investment, and the short journey to our Bolton workshop ensures you get a properly certified application with registered warranty — not a cheaper alternative product.`,
+      question: `What car ceramic coating services are available near ${data.name}?`,
+      answer: `From our Farnworth workshop, we offer: Ceramic Pro 9H ceramic coating, KAVACA paint protection film, professional car detailing and valeting, paint correction and swirl mark removal, and leather interior protection. We'll advise on what your car actually needs and what it'll cost — no pressure, no hard sell.`,
+    },
+    {
+      question: `How long does car ceramic coating take near ${data.name}?`,
+      answer: `Most ceramic coating jobs take 1–3 days depending on the package and whether paint correction is needed first. We'll confirm the exact timeline when you book. Most ${data.name} customers drop off in the morning and collect their car the next day or the day after.`,
+    },
+    {
+      question: `Is it worth travelling from ${data.name} for car ceramic coating?`,
+      answer: `Our ${data.name} customers say yes. Ceramic Pro 9H lasts 2–5 years — a short drive to a certified installer with a registered, manufacturer-backed warranty is a straightforward decision against a non-certified application that might fail within 12 months.`,
     },
   ];
 
@@ -121,10 +227,10 @@ export default async function CityPage({
             <MapPin className="w-4 h-4" /> {data.name}, Greater Manchester
           </div>
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-            Ceramic Coating &amp; Car Detailing Near {data.name}
+            Car Ceramic Coating Near {data.name} — Latin King Detailing Bolton
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            {data.description} Ceramic Pro North West is {data.distance} — serving {data.name} customers with professional Ceramic Pro 9H ceramic coatings, KAVACA PPF, and full car detailing.
+            {data.description} Whether you need Ceramic Pro 9H ceramic coating, KAVACA PPF, paint correction, or a full car detail — it&apos;s all available from our Farnworth workshop. Call or WhatsApp us to discuss your vehicle and get a straight quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact"
@@ -188,15 +294,15 @@ export default async function CityPage({
       <section className="py-16 px-4 bg-[#0a0a0a]">
         <div className="max-w-3xl mx-auto">
           <h2 className="font-heading text-2xl font-bold text-white mb-8">
-            {data.name} Ceramic Coating FAQs
+            Car Ceramic Coating Near {data.name} — FAQs
           </h2>
           <FAQAccordion faqs={faqs} />
         </div>
       </section>
 
       <CTABanner
-        headline={`Serving ${data.name} from Our Bolton Workshop`}
-        subtext="Ceramic Pro certified installers. Professional results. Easy journey from across Greater Manchester."
+        headline={`Car Ceramic Coating Near ${data.name} — Free Quote`}
+        subtext="Latin King Detailing, Farnworth Bolton. Ceramic Pro 9H certified. KAVACA PPF. Professional results for Greater Manchester drivers."
         primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
         secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="gold"

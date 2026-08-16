@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, ArrowRight, Phone } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -9,9 +9,9 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Leather Coating & Interior Protection Bolton | Ceramic Pro North West",
+  title: "Car Leather Coating & Interior Protection Bolton, Greater Manchester",
   description:
-    "Specialist leather coating and interior protection in Bolton. UV protection, crack prevention, stain resistance. Professional interior detailing at our Farnworth workshop.",
+    "Specialist car leather coating & interior protection in Bolton, Greater Manchester. UV protection, crack prevention, stain resistance. Latin King Detailing, Farnworth BL4. Free quote.",
   alternates: { canonical: "/services/leather-interior-protection" },
 };
 
@@ -19,22 +19,22 @@ const FAQS = [
   {
     question: "Does leather coating change how the leather feels?",
     answer:
-      "No — professional leather coating products used by Ceramic Pro North West are designed to be invisible and non-tacky once cured. They protect the leather's natural texture and feel while forming a barrier against UV, spills, and abrasion. The leather will feel the same as before, just better protected and easier to keep clean.",
+      "No — once cured, it's invisible and you won't feel it. The leather still feels like leather. What changes is how it behaves: spills bead up instead of soaking in, UV stops fading the colour, and the surface is far easier to wipe clean. Same feel; much better performance.",
   },
   {
     question: "How long does leather protection last?",
     answer:
-      "The lifespan of leather protection depends on how much use the vehicle sees and which product is applied. Ceramic-based leather coatings last 12–24 months under normal conditions. We recommend an annual reapplication as part of an interior detail to maintain full protection. Regular conditioning between treatments also extends the protection.",
+      "Ceramic-grade leather protection typically lasts 12–24 months under normal use. We recommend an annual reapplication as part of your interior detail — it's not expensive, takes no time, and means your protection never lapses. Between appointments, conditioning with the right product helps extend it further.",
   },
   {
     question: "Can you treat synthetic or vegan leather?",
     answer:
-      "Yes — modern interior protection products are suitable for genuine leather, synthetic leather (pleather), and Alcantara / suede-style materials. The treatment process varies slightly by material type. During your booking consultation, tell us what type of interior your vehicle has and we will confirm the most appropriate treatment.",
+      "Yes — our interior protection products work on genuine leather, synthetic leather (pleather), and Alcantara or suede-style materials. The prep process varies slightly by material, so when you book, just tell us what's in your car. If you're not sure what type of leather you have, we'll identify it when the car comes in.",
   },
   {
     question: "What happens if leather isn't protected?",
     answer:
-      "Unprotected leather is vulnerable to UV-induced fading and colour loss, drying and cracking (especially common in UK summers after several years), staining from spills, and body oil transfer which permanently discolours the leather. Protecting leather from new — or at the first opportunity — is far more cost-effective than attempting restoration later.",
+      "Without protection, leather absorbs UV, body oils, and spills — and once the damage is done, it's difficult and expensive to reverse. In the UK, the combination of summer sun and a cold, damp car in winter is particularly harsh. Cracking, fading, and permanent staining typically appear after 3–5 years in an unprotected interior. Protecting it now costs a fraction of what leather restoration or replacement does later.",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function LeatherInteriorPage() {
             Leather Coating &amp; Interior Protection Bolton
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            Ceramic Pro North West provides specialist leather coating and interior protection services at our Farnworth, Bolton workshop. While most car owners focus on protecting the exterior paint, the interior is equally vulnerable — UV damage fades dashboards, body oils stain leather, and road dirt embeds itself in carpets and fabrics. Our interior protection treatments guard every surface against these threats.
+            Most people think about protecting the paint. Fewer think about what happens inside — and interiors take just as much punishment. At our Farnworth, Bolton workshop, we apply specialist leather coating and interior protection that guards against UV fade, body oil staining, spills, and the slow deterioration that makes a car feel old before its time. The exterior might look the part; the interior is where you actually sit every day.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact"
@@ -148,7 +148,7 @@ export default function LeatherInteriorPage() {
             How to Maintain Leather Seats
           </h2>
           <p className="text-gray-400 mb-6">
-            After your leather protection treatment at Ceramic Pro North West, follow these simple steps to maximise its lifespan:
+            After your leather protection treatment at Latin King Detailing, follow these simple steps to maximise its lifespan:
           </p>
           <ol className="space-y-4">
             {[
@@ -178,7 +178,7 @@ export default function LeatherInteriorPage() {
             Is Leather Coating Worth It?
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Yes — leather interior protection is one of the highest return-on-investment car care services available. Leather seat restoration or replacement can cost £500–£3,000+ depending on the vehicle. Leather protection treatment at Ceramic Pro North West costs a fraction of that. For new vehicles and recently purchased used cars in good condition, applying leather protection from the outset keeps the interior in showroom condition and significantly supports residual value at resale.
+            Yes — leather interior protection is one of the highest return-on-investment car care services available. Leather seat restoration or replacement can cost £500–£3,000+ depending on the vehicle. Leather protection treatment at Latin King Detailing costs a fraction of that. For new vehicles and recently purchased used cars in good condition, applying leather protection from the outset keeps the interior in showroom condition and significantly supports residual value at resale.
           </p>
         </div>
       </section>

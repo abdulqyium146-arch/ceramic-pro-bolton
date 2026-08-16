@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -9,9 +9,9 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Paint Protection Film Bolton — KAVACA PPF | Ceramic Pro North West",
+  title: "Paint Protection Film Bolton — KAVACA PPF for Cars",
   description:
-    "KAVACA Paint Protection Film (PPF) in Bolton. Self-healing, anti-yellowing, optically clear. Ceramic Pro certified installers. Free quote available.",
+    "KAVACA Paint Protection Film for cars in Bolton & Greater Manchester. Self-healing, anti-yellowing, optically clear. Latin King Detailing — Ceramic Pro certified PPF installers. Free quote.",
   alternates: { canonical: "/services/paint-protection-film" },
 };
 
@@ -19,22 +19,22 @@ const FAQS = [
   {
     question: "What is paint protection film (PPF)?",
     answer:
-      "Paint protection film is a thick, clear urethane film applied directly to your car's painted surfaces. It physically absorbs impacts from stone chips, road debris, and scratches that would otherwise damage your paint. KAVACA PPF from Ceramic Pro also features self-healing technology — minor scratches in the film disappear with heat, keeping the surface looking pristine.",
+      "PPF is a thick, clear film that sits on your paint and takes the hits so your car doesn't have to. Stone chips on the motorway, shopping trolleys, grit and debris — the film absorbs the impact and your paint stays untouched underneath. KAVACA PPF from Ceramic Pro goes further with self-healing technology: minor surface scratches disappear when heat is applied, so the film stays looking clean without you needing to do anything.",
   },
   {
     question: "Does KAVACA PPF yellow over time?",
     answer:
-      "No — KAVACA PPF uses advanced anti-yellowing technology with built-in UV inhibitors. Unlike older PPF products that would turn yellow or haze over time, KAVACA maintains optical clarity for the life of the film. This makes it suitable for the full vehicle, not just stone chip zones.",
+      "No — and this used to be a real problem with older PPF films. KAVACA has built-in UV inhibitors that prevent yellowing and hazing, so it stays optically clear for the life of the film. That's what makes it suitable for the full car, not just the bonnet — you won't even notice it's there until something that would have chipped your paint bounces off it instead.",
   },
   {
     question: "How long does KAVACA PPF last?",
     answer:
-      "KAVACA PPF installed by a certified Ceramic Pro installer like Ceramic Pro North West typically carries a manufacturer warranty of 10 years. In real-world conditions with correct maintenance — gentle washing, avoiding high-pressure jet washing directly at film edges — KAVACA will protect your paint for the life of the vehicle.",
+      "KAVACA installed by a certified Ceramic Pro installer carries a 10-year manufacturer warranty against yellowing, bubbling, and peeling. In practice, with correct maintenance — hand washing rather than pressure washing at film edges — most customers keep it on for the life of the vehicle. It's the kind of protection you fit and forget.",
   },
   {
     question: "Can PPF be removed?",
     answer:
-      "Yes — KAVACA PPF can be safely removed by a trained professional without damaging the underlying paint. This makes it especially popular with leased vehicles and cars where the owner wants to preserve the paint for resale. Attempting to remove PPF yourself without heat and the correct tools risks paint damage.",
+      "Yes, and that's one of the reasons it's so popular with lease car drivers. A trained installer can remove KAVACA cleanly without damaging the paint underneath. It's not something you'd want to attempt yourself — you need heat, the right tools, and patience — but in our hands, it comes off safely. A smart choice if you want to protect your paint and hand the car back in perfect condition.",
   },
 ];
 
@@ -95,7 +95,7 @@ export default function PPFPage() {
             Paint Protection Film Bolton — KAVACA PPF by Ceramic Pro
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            Ceramic Pro North West installs KAVACA Paint Protection Film — the premium self-healing PPF product from the Ceramic Pro brand — at our Farnworth, Bolton workshop. KAVACA provides the ultimate physical barrier against stone chips, road debris, and scratches, with industry-leading optical clarity and anti-yellowing technology.
+            We install KAVACA Paint Protection Film at our Farnworth, Bolton workshop — Ceramic Pro&apos;s own premium PPF product. If you regularly drive on the M61 or M62, you know what motorway debris does to a bonnet. KAVACA takes those hits physically so your paint doesn&apos;t have to. It&apos;s self-healing, stays optically clear without yellowing, and carries a 10-year manufacturer warranty when we fit it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -124,10 +124,10 @@ export default function PPFPage() {
             What Is Paint Protection Film?
           </h2>
           <p className="text-gray-300 leading-relaxed text-lg mb-6">
-            Paint protection film is a thick, optically clear urethane film that is applied to your vehicle&apos;s painted surfaces to act as a physical shield against stone chips, road debris, minor scratches, and environmental damage. Unlike ceramic coating, which provides a hard chemical barrier, PPF is a sacrificial layer — it takes the impact so your paint doesn&apos;t have to.
+            Paint protection film is a thick, clear film applied directly to your paintwork. Where ceramic coating creates a chemical bond that hardens the surface, PPF is a different kind of protection altogether — a sacrificial physical layer that absorbs stone chips, debris impacts, and scratches. The film takes the damage; your paint stays untouched underneath.
           </p>
           <p className="text-gray-400 leading-relaxed">
-            KAVACA PPF from Ceramic Pro is among the most advanced PPF films available. Its self-healing top coat repairs minor scratches with the heat of the sun or warm water, and its anti-yellowing formula ensures the film stays crystal clear throughout its lifespan — making it ideal for light-coloured vehicles and full-vehicle applications.
+            KAVACA is Ceramic Pro&apos;s own PPF product, and it&apos;s among the most capable films on the market. The self-healing top coat means minor surface scratches disappear when heat is applied — sun, warm water, or even just a warm day. The anti-yellowing formula means it stays crystal clear year after year, which is why we&apos;re confident fitting it to full vehicles, not just stone chip zones.
           </p>
         </div>
       </section>
@@ -156,7 +156,7 @@ export default function PPFPage() {
             Where Can PPF Be Applied?
           </h2>
           <p className="text-gray-400 mb-8">
-            KAVACA PPF can be applied to any painted surface on your vehicle — from targeted stone chip zones to a full-vehicle wrap. Ceramic Pro North West offers three coverage options:
+            KAVACA PPF can be applied to any painted surface on your vehicle — from targeted stone chip zones to a full-vehicle wrap. Latin King Detailing offers three coverage options:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {COVERAGE_OPTIONS.map((opt) => (
@@ -227,7 +227,7 @@ export default function PPFPage() {
             How Long Does Paint Protection Film Last?
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            KAVACA PPF installed by Ceramic Pro North West carries a 10-year manufacturer warranty against yellowing, bubbling, peeling, and hazing. With correct maintenance — gentle hand washing, avoiding pressure washing film edges, and periodic inspection — your KAVACA film will keep your paint protected for the full duration of your ownership.
+            KAVACA PPF installed by Latin King Detailing carries a 10-year manufacturer warranty against yellowing, bubbling, peeling, and hazing. With correct maintenance — gentle hand washing, avoiding pressure washing film edges, and periodic inspection — your KAVACA film will keep your paint protected for the full duration of your ownership.
           </p>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
@@ -7,9 +7,9 @@ import CTABanner from "@/components/sections/CTABanner";
 import { WHATSAPP_HREF } from "@/lib/business";
 
 export const metadata: Metadata = {
-  title: "Car Detailing Blog — Ceramic Coating Tips Bolton | Ceramic Pro North West",
+  title: "Car Ceramic Coating Blog — Bolton & Greater Manchester Guides",
   description:
-    "Expert car detailing and ceramic coating advice from Ceramic Pro North West Bolton. Tips on paint protection, PPF, maintenance, and more for Greater Manchester drivers.",
+    "Expert car ceramic coating tips & detailing advice from Latin King Detailing Bolton. Guides on paint protection, PPF, paint correction & maintenance for Greater Manchester drivers.",
   alternates: { canonical: "/blog" },
 };
 
@@ -22,7 +22,7 @@ export const POSTS = [
     date: "2025-04-10",
     readTime: "5 min read",
     image: "/images/mirror-finish-ceramic-coating-reflection-bolton.webp",
-    imageAlt: "Ultra-gloss mirror finish ceramic coating — Ceramic Pro North West, Bolton",
+    imageAlt: "Ultra-gloss mirror finish ceramic coating — Latin King Detailing, Bolton",
   },
   {
     slug: "how-to-maintain-ceramic-coating-uk-weather",
@@ -32,7 +32,7 @@ export const POSTS = [
     date: "2025-03-18",
     readTime: "4 min read",
     image: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
-    imageAlt: "Black BMW M5 in Ceramic Pro North West workshop, Bolton — ceramic coating maintenance",
+    imageAlt: "Black BMW M5 in Latin King Detailing workshop, Bolton — ceramic coating maintenance",
   },
   {
     slug: "ppf-vs-ceramic-coating-which-is-right-for-you",
@@ -42,7 +42,7 @@ export const POSTS = [
     date: "2025-02-25",
     readTime: "6 min read",
     image: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
-    imageAlt: "Bentley Continental GT KAVACA PPF installation at Ceramic Pro North West, Bolton",
+    imageAlt: "Bentley Continental GT KAVACA PPF installation at Latin King Detailing, Bolton",
   },
   {
     slug: "paint-correction-before-ceramic-coating",
@@ -52,7 +52,7 @@ export const POSTS = [
     date: "2025-01-30",
     readTime: "4 min read",
     image: "/images/paint-correction-ceramic-coating-bolton.webp",
-    imageAlt: "Professional paint correction before ceramic coating at Ceramic Pro North West, Bolton",
+    imageAlt: "Professional paint correction before ceramic coating at Latin King Detailing, Bolton",
   },
   {
     slug: "best-car-detailer-bolton",
@@ -62,7 +62,7 @@ export const POSTS = [
     date: "2024-12-14",
     readTime: "5 min read",
     image: "/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp",
-    imageAlt: "Ceramic Pro North West workshop at night — 115 Albert Road, Farnworth, Bolton",
+    imageAlt: "Latin King Detailing workshop at night — 115 Albert Road, Farnworth, Bolton",
   },
   {
     slug: "ceramic-coating-vs-ppf-which-do-you-need",
@@ -72,7 +72,7 @@ export const POSTS = [
     date: "2025-05-08",
     readTime: "6 min read",
     image: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
-    imageAlt: "Bentley Continental GT with KAVACA PPF being installed at Ceramic Pro North West, Bolton",
+    imageAlt: "Bentley Continental GT with KAVACA PPF being installed at Latin King Detailing, Bolton",
   },
   {
     slug: "winter-car-protection-greater-manchester",
@@ -114,7 +114,7 @@ export default function BlogPage() {
               Car Detailing &amp; Ceramic Coating Tips
             </h1>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-              Expert advice from Ceramic Pro North West — Bolton&apos;s professional ceramic coating and car detailing specialists. Written for Greater Manchester car owners.
+              Expert advice from Latin King Detailing — Bolton&apos;s professional ceramic coating and car detailing specialists. Written for Greater Manchester car owners.
             </p>
           </div>
 

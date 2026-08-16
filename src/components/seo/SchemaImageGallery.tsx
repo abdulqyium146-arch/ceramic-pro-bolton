@@ -1,4 +1,4 @@
-import { BUSINESS } from "@/lib/business";
+﻿import { BUSINESS } from "@/lib/business";
 import type { GalleryImage } from "@/lib/gallery";
 
 export default function SchemaImageGallery({ images }: { images: GalleryImage[] }) {
@@ -13,7 +13,7 @@ export default function SchemaImageGallery({ images }: { images: GalleryImage[] 
     height: img.height,
     contentLocation: {
       "@type": "Place",
-      name: "Ceramic Pro North West",
+      name: "Latin King Detailing",
       address: {
         "@type": "PostalAddress",
         streetAddress: BUSINESS.address.street,

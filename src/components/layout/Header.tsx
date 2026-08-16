@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
@@ -49,13 +49,13 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group" aria-label="Ceramic Pro North West – Home">
+          <Link href="/" className="flex items-center gap-3 group" aria-label="Latin King Detailing – Home">
             <div className="w-10 h-10 rounded-lg bg-[#c9a84c] flex items-center justify-center font-bold text-[#0f0f0f] text-lg font-heading shrink-0">
               CP
             </div>
             <div className="hidden sm:block">
               <div className="font-heading font-bold text-white leading-tight text-sm">
-                Ceramic Pro North West
+                Latin King Detailing
               </div>
               <div className="text-[#c9a84c] text-xs leading-tight">
                 Bolton&apos;s Detailing Specialists

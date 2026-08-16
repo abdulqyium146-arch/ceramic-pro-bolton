@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, ArrowRight, Star, CheckCircle, Clock } from "lucide-react";
@@ -11,9 +11,9 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Ceramic Coating for Cars Near Me | Bolton BL4 | Ceramic Pro North West",
+  title: "Car Ceramic Coating Near Bolton BL4 — Certified Installer",
   description:
-    "Looking for ceramic coating for your car near Bolton? Ceramic Pro North West is at BL4 9EA — your nearest certified installer. 4.7★ Google rated. Free quote: 07482 225323.",
+    "Car ceramic coating near Bolton, BL4. Latin King Detailing — your nearest Ceramic Pro 9H certified installer. 4.7★ Google rated. Free quote: 07482 225323.",
   alternates: { canonical: "/locations/bolton" },
 };
 
@@ -21,32 +21,32 @@ const FAQS = [
   {
     question: "Where is the nearest ceramic coating service to Bolton town centre?",
     answer:
-      "Ceramic Pro North West is located at 115 Albert Road, Farnworth, Bolton, BL4 9EA — approximately 2 miles south of Bolton town centre. It is the nearest Ceramic Pro certified installer in the Bolton area, accessible from the A6053 and 5 minutes from the M61 motorway junction 4. If you are searching for ceramic coating for cars near me in Bolton, we are your closest certified option.",
+      "We're at 115 Albert Road, Farnworth — about 2 miles south of Bolton town centre and 5 minutes from the M61 junction 4. As a certified Ceramic Pro installer, we're your closest professional ceramic coating option in the Bolton area. Most BL postcode customers are at the workshop in under 10 minutes.",
   },
   {
     question: "Do you offer ceramic coating for cars near BL1, BL2, BL3, or BL5?",
     answer:
-      "Yes — Ceramic Pro North West at BL4 9EA serves all Bolton postcodes including BL1 (Bolton town centre), BL2 (Tonge Moor, Breightmet), BL3 (Great Lever, Rumworth), BL4 (Farnworth — our location), BL5 (Westhoughton), BL6 (Horwich), and BL7 (Bromley Cross, Egerton). Most Bolton customers are within a 10-minute drive of our workshop.",
+      "Yes — we're at BL4 9EA and cover all Bolton postcodes: BL1 (town centre), BL2 (Tonge Moor, Breightmet), BL3 (Great Lever, Deane), BL4 (Farnworth — us), BL5 (Westhoughton), BL6 (Horwich), BL7 (Bromley Cross, Egerton), and surrounding M26/M27/M28 areas including Radcliffe, Swinton, and Worsley. Most Bolton customers reach us in under 10 minutes.",
   },
   {
     question: "Is ceramic coating worth it for everyday cars near Bolton?",
     answer:
-      "Yes — ceramic coating is particularly worthwhile for Bolton drivers because of Greater Manchester's wet climate, winter road salt on the M61/M62 corridors, and industrial fallout. Ceramic Pro 9H's hydrophobic and chemical-resistant properties protect everyday cars as much as prestige vehicles. We coat everything from Vauxhall Astras to Range Rovers at our Farnworth workshop.",
+      "Yes — and it makes particular sense here. Bolton drivers face road salt on the M61 and M62 from October to March, above-average rainfall at the foot of the Pennines, and industrial fallout. Ceramic Pro 9H's hydrophobic and chemical-resistant properties directly address all of it. We coat everything from daily Vauxhall Astras to Range Rovers — not just prestige cars.",
   },
   {
     question: "How much does ceramic coating for a car cost near Bolton?",
     answer:
-      "Ceramic coating prices at Ceramic Pro North West depend on the vehicle size and the package selected. Contact us on 07482 225323 or via WhatsApp for a free, no-obligation quote tailored to your specific vehicle. We will assess your car's condition and recommend the right protection level and price point.",
+      "Prices depend on the vehicle, its condition, and the package. A well-maintained car needs less preparation than one that's come through automatic car washes regularly. Call or WhatsApp us on 07482 225323 — we'll give you a straight quote with no pressure. For most vehicles we can give an accurate figure over the phone or from a few photos.",
   },
   {
     question: "Do you offer paint protection film (PPF) near Bolton as well?",
     answer:
-      "Yes — we install KAVACA Paint Protection Film (PPF) at our BL4 workshop. Available as full-car coverage or targeted protection on the bonnet, bumpers, and mirrors. KAVACA is self-healing and provides physical protection against stone chips and road debris — something ceramic coating alone cannot offer.",
+      "Yes — KAVACA PPF is available at our BL4 workshop. You can choose targeted protection on the highest-risk zones (bonnet edge, bumpers, door edges), a front-end package, or full vehicle coverage. KAVACA is self-healing and physically absorbs stone chips — the thing ceramic coating alone can't do.",
   },
   {
     question: "Can I get a same-day ceramic coating quote near Bolton?",
     answer:
-      "Yes — call or WhatsApp 07482 225323 and we can discuss your requirements immediately. We are available 24/7. For most vehicles, we can give an accurate quote over the phone or via a few photos of the car. Booking slots are available throughout the week at our Farnworth, Bolton workshop.",
+      "Yes — call or WhatsApp us on 07482 225323 and we'll talk you through it. Most vehicles can be quoted accurately over the phone or from a couple of photos. No obligation to book. We're straightforward about what your car needs and what it'll cost.",
   },
 ];
 
@@ -105,7 +105,7 @@ export default function BoltonPage() {
             <span className="text-[#c9a84c]">Near You in Bolton</span>
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            Ceramic Pro North West is Bolton&apos;s nearest certified ceramic coating installer — based at BL4 9EA, just 2 miles from Bolton town centre. Whether you&apos;re searching for ceramic coating for cars near me or looking for the best paint protection in the Bolton area, our Farnworth workshop is your closest professional option. Certified Ceramic Pro 9H installers serving all BL postcodes and Greater Manchester.
+            Latin King Detailing is at 115 Albert Road, Farnworth — 2 miles south of Bolton town centre, 5 minutes from junction 4 of the M61. If you want proper ceramic coating in Bolton — not a consumer spray product, but a genuine Ceramic Pro 9H installation that bonds permanently to your paint and carries a registered warranty — we&apos;re your closest certified option. We serve all BL postcodes and across Greater Manchester.
           </p>
 
           {/* Trust signals row */}
@@ -143,7 +143,7 @@ export default function BoltonPage() {
           <div className="relative h-64 sm:h-80 rounded-2xl overflow-hidden">
             <Image
               src="/images/bmw-m5-ceramic-coating-bolton-workshop.webp"
-              alt="Ceramic coating for cars near Bolton — BMW M5 at Ceramic Pro North West, Farnworth, BL4 9EA"
+              alt="Ceramic coating for cars near Bolton — BMW M5 at Latin King Detailing, Farnworth, BL4 9EA"
               fill
               sizes="(max-width: 768px) 100vw, 896px"
               className="object-cover"
@@ -151,7 +151,7 @@ export default function BoltonPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
             <div className="absolute bottom-4 left-5">
-              <span className="text-white text-sm font-semibold drop-shadow">Ceramic Pro North West · Farnworth, Bolton BL4 9EA</span>
+              <span className="text-white text-sm font-semibold drop-shadow">Latin King Detailing · Farnworth, Bolton BL4 9EA</span>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@ export default function BoltonPage() {
       <section className="py-16 px-4 bg-[#0f0f0f]">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-8">
-            Why Bolton Drivers Choose Ceramic Pro North West
+            Why Bolton Drivers Choose Latin King Detailing
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
@@ -244,10 +244,10 @@ export default function BoltonPage() {
               Why Ceramic Coating for Cars Near Bolton Is a Smart Investment
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Bolton sits at the foot of the West Pennine Moors, making it one of the wetter parts of Greater Manchester. Regular rainfall, combined with industrial fallout and road salt heavily applied on Bolton&apos;s roads and the M61 junction between October and March, creates a punishing environment for car paintwork. When Bolton drivers search for ceramic coating for cars near me, they are usually responding to this reality — their car&apos;s paint is deteriorating faster than it should.
+              Bolton sits at the foot of the West Pennine Moors — one of the wetter corners of Greater Manchester. Road salt goes down on Bolton&apos;s roads and the M61 from October through March, industrial fallout settles on paintwork between washes, and the climate gives your car no dry season to recover. Unprotected paint deteriorates quietly: first swirls, then fading, then clear coat failure.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Ceramic Pro 9H&apos;s hydrophobic properties mean water, road salt, and bird droppings bead off the surface instead of bonding with the paint. Its chemical resistance creates a stable barrier against acid rain — a particular issue near motorway corridors like the M61 and M62 — that bare or wax-protected paint simply cannot match over time.
+              Ceramic Pro 9H is a direct answer to all of that. Its hydrophobic properties mean water and salt bead off instead of soaking in. Its chemical resistance handles acid rain — a real issue near motorway corridors like the M61 and M62 — that wax simply can&apos;t sustain over a full North West winter.
             </p>
           </div>
 
@@ -255,7 +255,7 @@ export default function BoltonPage() {
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image
                 src="/images/lamborghini-aventador-ceramic-coating-bolton.webp"
-                alt="Lamborghini Aventador ceramic coating near Bolton — Ceramic Pro North West, BL4"
+                alt="Lamborghini Aventador ceramic coating near Bolton — Latin King Detailing, BL4"
                 fill
                 sizes="(max-width: 640px) 100vw, 33vw"
                 className="object-cover"
@@ -264,7 +264,7 @@ export default function BoltonPage() {
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image
                 src="/images/bentley-continental-gtc-ceramic-coating-bolton.webp"
-                alt="Bentley Continental ceramic coating near Bolton — Ceramic Pro North West, Farnworth"
+                alt="Bentley Continental ceramic coating near Bolton — Latin King Detailing, Farnworth"
                 fill
                 sizes="(max-width: 640px) 100vw, 33vw"
                 className="object-cover"
@@ -273,7 +273,7 @@ export default function BoltonPage() {
             <div className="relative h-48 rounded-xl overflow-hidden">
               <Image
                 src="/images/bmw-m5-f10-ceramic-coating-bolton.webp"
-                alt="BMW M5 ceramic coating near Bolton — Ceramic Pro North West, BL4 9EA"
+                alt="BMW M5 ceramic coating near Bolton — Latin King Detailing, BL4 9EA"
                 fill
                 sizes="(max-width: 640px) 100vw, 33vw"
                 className="object-cover"
@@ -286,7 +286,7 @@ export default function BoltonPage() {
               Our Bolton Workshop — How to Find Us
             </h2>
             <p className="text-gray-400 leading-relaxed mb-5">
-              Ceramic Pro North West is located at 115 Albert Road, Farnworth, Bolton, BL4 9EA — just off the A6053, approximately 2 miles south of Bolton town centre and 5 minutes from the M61 motorway junction 4. The most convenient route from Bolton town centre is via Manchester Road (A666) south through Farnworth. On-street parking is available, and we are reachable by bus from Bolton via Farnworth bus routes.
+              Latin King Detailing is located at 115 Albert Road, Farnworth, Bolton, BL4 9EA — just off the A6053, approximately 2 miles south of Bolton town centre and 5 minutes from the M61 motorway junction 4. The most convenient route from Bolton town centre is via Manchester Road (A666) south through Farnworth. On-street parking is available, and we are reachable by bus from Bolton via Farnworth bus routes.
             </p>
             <address className="not-italic bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-5 text-gray-400 text-sm leading-loose">
               <strong className="text-white">{BUSINESS.name}</strong><br />

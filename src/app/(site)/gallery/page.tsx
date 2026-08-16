@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
 import { GALLERY_IMAGES } from "@/lib/gallery";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -8,20 +8,20 @@ import SchemaImageGallery from "@/components/seo/SchemaImageGallery";
 import GalleryClient from "./GalleryClient";
 
 export const metadata: Metadata = {
-  title: "Gallery — Ceramic Coating & Detailing Results Bolton",
+  title: "Car Ceramic Coating Gallery — Latin King Detailing Bolton Results",
   description:
-    "Browse real ceramic coating, PPF, and car detailing results from Ceramic Pro North West's Bolton workshop. Lamborghini, Bentley, Ferrari, BMW and more. Serving Greater Manchester.",
+    "Real car ceramic coating, PPF & detailing results from Latin King Detailing's Bolton workshop. Lamborghini, Bentley, Ferrari, BMW & more — Greater Manchester's finest car ceramic coating.",
   alternates: { canonical: "/gallery" },
   openGraph: {
-    title: `Gallery — Ceramic Coating & Detailing Results | ${BUSINESS.name}`,
+    title: `Car Ceramic Coating Gallery — ${BUSINESS.name} Bolton`,
     description:
-      "Real ceramic coating and detailing results from our Bolton workshop. Lamborghini, Bentley, Ferrari, BMW, Jaguar, Porsche and more.",
+      "Real car ceramic coating and detailing results from Latin King Detailing's Bolton workshop. Lamborghini, Bentley, Ferrari, BMW, Jaguar, Porsche and more — Greater Manchester.",
     images: [
       {
         url: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
         width: 1280,
         height: 853,
-        alt: "Lamborghini Aventador ceramic coating — Ceramic Pro North West, Bolton",
+        alt: "Lamborghini Aventador ceramic coating — Latin King Detailing, Bolton",
       },
     ],
   },

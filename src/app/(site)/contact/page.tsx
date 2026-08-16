@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Phone, MessageCircle, MapPin, Clock, Mail } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -6,9 +6,9 @@ import MapEmbed from "@/components/ui/MapEmbed";
 import BookingForm from "@/components/ui/BookingForm";
 
 export const metadata: Metadata = {
-  title: "Contact & Book | Ceramic Pro North West Bolton | Free Quote",
+  title: "Free Car Ceramic Coating Quote — Latin King Detailing Bolton",
   description:
-    "Contact Ceramic Pro North West in Bolton for a free ceramic coating or car detailing quote. Call, WhatsApp, or use our online form. Based in Farnworth, BL4 9EA.",
+    "Contact Latin King Detailing for a free car ceramic coating or detailing quote in Bolton, Greater Manchester. Call, WhatsApp, or use our online form. Farnworth, Bolton BL4 9EA.",
   alternates: { canonical: "/contact" },
 };
 
@@ -24,7 +24,7 @@ export default function ContactPage() {
           <div className="text-center mb-12">
             <p className="text-[#c9a84c] font-semibold uppercase tracking-wider text-sm mb-3">Get in Touch</p>
             <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-4">
-              Contact Ceramic Pro North West
+              Contact Latin King Detailing
             </h1>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
               Ready to protect your car? Get a free, no-obligation quote from Bolton&apos;s Ceramic Pro certified specialists. Call us, send a WhatsApp, or fill in the form below and we&apos;ll get back to you within 1 business day.

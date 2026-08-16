@@ -5,18 +5,34 @@ const isPlaceholder = (s: string) => s.startsWith("[PLACEHOLDER");
 export function buildLocalBusinessSchema() {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "AutoDetailing"],
+    "@type": ["LocalBusiness", "AutomotiveBusiness"],
     "@id": BUSINESS.url,
     name: BUSINESS.name,
     alternateName: BUSINESS.tradingAs,
     description: BUSINESS.description,
+    slogan: "Bolton's Car Ceramic Coating Specialists",
     url: BUSINESS.url,
     telephone: BUSINESS.phone,
-    image: `${BUSINESS.url}/images/ceramic-pro-north-west-bolton.jpg`,
+    image: `${BUSINESS.url}/images/latin-king-detailing-bolton.webp`,
     logo: {
       "@type": "ImageObject",
       url: `${BUSINESS.url}/images/logo.png`,
     },
+    hasMap: `https://maps.google.com/?q=${encodeURIComponent(BUSINESS.address.full)}`,
+    knowsAbout: [
+      "car ceramic coating",
+      "Ceramic Pro 9H",
+      "KAVACA paint protection film",
+      "PPF installation",
+      "paint correction",
+      "swirl mark removal",
+      "professional car detailing",
+      "car valet",
+      "leather interior protection",
+      "hydrophobic ceramic coating",
+      "paint decontamination",
+      "machine polishing",
+    ],
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.address.street,
@@ -45,13 +61,28 @@ export function buildLocalBusinessSchema() {
       bestRating: 5,
       worstRating: 1,
     },
-    areaServed: BUSINESS.serviceArea.map((area) => ({
-      "@type": "City",
-      name: area.name,
-    })),
+    areaServed: [
+      ...BUSINESS.serviceArea.map((area) => ({
+        "@type": "City",
+        name: area.name,
+        containedInPlace: {
+          "@type": "AdministrativeArea",
+          name: "Greater Manchester",
+        },
+      })),
+      {
+        "@type": "GeoCircle",
+        geoMidpoint: {
+          "@type": "GeoCoordinates",
+          latitude: BUSINESS.geo.lat,
+          longitude: BUSINESS.geo.lng,
+        },
+        geoRadius: "25000",
+      },
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Car Protection & Detailing Services",
+      name: "Car Ceramic Coating & Detailing Services",
       itemListElement: BUSINESS.services.map((service) => ({
         "@type": "Offer",
         itemOffered: {

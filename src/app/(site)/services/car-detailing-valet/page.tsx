@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -9,9 +9,9 @@ import SchemaFAQ from "@/components/seo/SchemaFAQ";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Car Detailing & Valet Services Bolton | Ceramic Pro North West",
+  title: "Car Detailing & Valet Bolton — Paint Correction, Greater Manchester",
   description:
-    "Professional car detailing and valet services in Bolton. Interior & exterior detailing, paint correction, machine polish. Book at our Farnworth workshop.",
+    "Professional car detailing & valet in Bolton, Greater Manchester. Interior & exterior detailing, paint correction, machine polish. Latin King Detailing, Farnworth BL4. Book now.",
   alternates: { canonical: "/services/car-detailing-valet" },
 };
 
@@ -19,22 +19,22 @@ const FAQS = [
   {
     question: "How long does a full car detail take?",
     answer:
-      "A full car detail at Ceramic Pro North West typically takes 1–2 days depending on the package and the condition of the vehicle. A basic valet takes 2–4 hours. Paint correction details can take up to 2 full days. We will give you a clear timeline when you book your appointment.",
+      "It depends on what the car needs. A basic valet is 2–4 hours. A full detail takes 1–2 days, and if paint correction's involved — removing swirls before ceramic coating, for example — allow up to 2 full days. We give you a clear, honest timeline when you book, so you know exactly when to expect your car back.",
   },
   {
     question: "What's the difference between a valet and a detail?",
     answer:
-      "A valet is a thorough clean of your car — washing, vacuuming, wipe-down of interior surfaces, and window cleaning. A full detail goes further: machine polishing to remove swirl marks and scratches, paint decontamination, engine bay cleaning, and thorough leather/fabric treatment. Detailing restores; valeting maintains.",
+      "A valet cleans the car. A detail restores it. Valeting covers the wash, vacuum, interior wipe-down, and glass — it keeps a car that's already in good condition looking good. Detailing goes deeper: machine polishing to remove swirl marks, paint decontamination to strip bonded contamination, engine bay cleaning, and proper leather treatment. If the car's seen better days, a detail is what it actually needs.",
   },
   {
     question: "Do you offer mobile car detailing in Bolton?",
     answer:
-      "Our detailing packages are carried out at our workshop in Farnworth, Bolton, where we have the correct lighting, equipment, and controlled environment to deliver a professional-quality result. We do not currently offer mobile detailing. Our workshop is conveniently located and easily accessible from Bolton town centre and surrounding areas.",
+      "We work from our Farnworth workshop, not mobile — and there's a good reason for it. Professional detailing needs proper lighting to see swirl marks under specialist beams, the right equipment, and a controlled environment. Doing it on a driveway means missing things. Our workshop is easy to reach from across Bolton and Greater Manchester, and the results are worth the trip.",
   },
   {
     question: "How much does car detailing cost in Bolton?",
     answer:
-      "Car detailing prices at Ceramic Pro North West depend on the package chosen and vehicle size. Entry-level valet packages start from [PLACEHOLDER]. Full detail with paint correction is priced from [PLACEHOLDER]. Contact us for a specific quote — every car is different and we tailor our packages to what each vehicle needs.",
+      "Entry valet packages start from [PLACEHOLDER], and a full detail with paint correction is from [PLACEHOLDER]. Every car is different — a daily driver that's been through automatic car washes needs more work than one that's been hand-washed every week. We look at the car first, tell you exactly what it needs, and give you a straight quote.",
   },
 ];
 
@@ -108,7 +108,7 @@ export default function DetailingPage() {
             Professional Car Detailing &amp; Valet Services Bolton
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            Ceramic Pro North West provides professional car detailing and valet services from our Farnworth, Bolton workshop. Whether you need a thorough valet to maintain your car between ceramic coating services, or a full multi-day detail with paint correction to restore your vehicle to showroom condition, our team delivers results that go beyond what any automatic car wash or home wash can achieve.
+            There&apos;s a difference between a car that&apos;s been washed and a car that&apos;s been detailed. At our Farnworth, Bolton workshop, we do the latter — from a thorough valet that gets your car properly clean, to a full multi-day detail with paint correction that takes a neglected car back to showroom condition. It&apos;s the kind of result you can&apos;t get from a drive-through, and our customers keep coming back because they can genuinely see and feel the difference.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact"
@@ -172,19 +172,19 @@ export default function DetailingPage() {
           <div>
             <h2 className="font-heading text-2xl font-bold text-white mb-4">Exterior Detailing</h2>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Exterior car detailing at Ceramic Pro North West goes far beyond a standard car wash. We use a two-bucket hand wash method, followed by paint decontamination with fallout remover and clay bar to remove bonded contaminants your shampoo can&apos;t shift.
+              Exterior detailing starts with a proper two-bucket hand wash, then paint decontamination with fallout remover and clay bar — removing the bonded contamination that regular shampoo simply can&apos;t shift. You&apos;d be surprised what comes off a car that looks clean to the eye.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              Machine polishing removes swirl marks, light scratches, and water spots, restoring depth and gloss to the paintwork. This is also the essential preparation step before ceramic coating — applying a coating over imperfect paint will lock those defects in permanently.
+              Machine polishing removes swirl marks, light scratches, and water spots, restoring depth and gloss to the paintwork. This is also the essential step before ceramic coating — a coating bonds over whatever is underneath it, so if the paint goes in with swirls, they stay there permanently.
             </p>
           </div>
           <div>
             <h2 className="font-heading text-2xl font-bold text-white mb-4">Interior Detailing</h2>
             <p className="text-gray-400 leading-relaxed mb-4">
-              Our interior detailing service thoroughly cleans every surface inside your vehicle — seats, carpets, door cards, dashboard, headlining, and boot. We extract embedded dirt and pet hair, treat and condition leather, and remove odours.
+              We clean every surface inside the car — seats, carpets, door cards, dashboard, headlining, boot. We extract embedded dirt and pet hair, treat and condition leather properly, and remove odours at the source rather than masking them.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              For vehicles with heavy staining, mould, or smoke damage, we also offer specialist interior restoration treatments. Contact us to discuss your specific requirements.
+              For vehicles with heavy staining, mould, or smoke damage, we offer specialist interior restoration. Get in touch and tell us what you&apos;re dealing with — we&apos;ll be straight with you about what we can achieve and what it&apos;ll cost.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -54,7 +54,7 @@ export default function BookingForm({ className }: { className?: string }) {
         <CheckCircle className="w-16 h-16 text-[#c9a84c]" />
         <h3 className="font-heading text-xl font-bold text-white">Message Sent!</h3>
         <p className="text-gray-400">
-          Thank you for getting in touch. Ceramic Pro North West will get back to you within 1 business day.
+          Thank you for getting in touch. Latin King Detailing will get back to you within 1 business day.
         </p>
         <button
           onClick={() => setStatus("idle")}

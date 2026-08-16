@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Star, ExternalLink } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -8,16 +8,16 @@ import CTABanner from "@/components/sections/CTABanner";
 import { buildReviewSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews | Ceramic Pro North West Bolton | 4.7★ Rated",
+  title: "Customer Reviews — Car Ceramic Coating Bolton | Latin King Detailing 4.7★",
   description:
-    "Read genuine customer reviews for Ceramic Pro North West Bolton. 4.7★ Google rating, 5.0★ Facebook. Verified reviews from Greater Manchester car owners.",
+    "Genuine customer reviews for Latin King Detailing Bolton. 4.7★ Google rating for car ceramic coating, PPF & detailing. Verified reviews from Greater Manchester car owners.",
   alternates: { canonical: "/reviews" },
 };
 
 const REVIEWS = [
   { author: "James T.", rating: 5, text: "Had my BMW 5 Series coated with Ceramic Pro 9H — the finish is incredible, water just rolls straight off. Brilliant service from start to finish and the team really knows their stuff. Already recommended to three friends.", date: "2025-03-12", source: "google" as const },
   { author: "Sarah M.", rating: 5, text: "Brought my Audi Q5 in for a full detail and KAVACA paint protection film on the front end. Absolutely delighted with the results. The car looks better than when it came out of the showroom. Outstanding work.", date: "2025-01-08", source: "google" as const },
-  { author: "Dave R.", rating: 5, text: "Third time using Initial Detail for my cars — consistent quality every single time. The ceramic coating on my Range Rover has held up perfectly through two winters now. Solid value, great team.", date: "2024-11-22", source: "facebook" as const },
+  { author: "Dave R.", rating: 5, text: "Third time using Latin King Detailing for my cars — consistent quality every single time. The ceramic coating on my Range Rover has held up perfectly through two winters now. Solid value, great team.", date: "2024-11-22", source: "facebook" as const },
   { author: "Lisa K.", rating: 5, text: "Took my new Porsche for a new car detail and ceramic coating. Couldn't be happier. The team were professional, the finish is flawless, and they explained every step clearly. Will definitely be back.", date: "2025-02-14", source: "google" as const },
   { author: "Michael B.", rating: 4, text: "Great service for my VW Golf GTI — full interior and exterior detail with paint correction. Car looks incredible. Took slightly longer than expected but the result was worth the wait.", date: "2024-12-05", source: "google" as const },
   { author: "Emma W.", rating: 5, text: "Had the interior of my Tesla treated — leather protection, dashboard, carpets. Excellent attention to detail. They spotted a small stone chip on the bonnet and pointed it out without trying to upsell. Really honest business.", date: "2025-04-03", source: "facebook" as const },
@@ -43,7 +43,7 @@ export default function ReviewsPage() {
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#c9a84c] font-semibold uppercase tracking-wider text-sm mb-3">What Our Customers Say</p>
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-8">
-            Customer Reviews — Ceramic Pro North West Bolton
+            Customer Reviews — Latin King Detailing Bolton
           </h1>
 
           {/* Aggregate ratings */}
@@ -109,7 +109,7 @@ export default function ReviewsPage() {
 
       <CTABanner
         headline="Join Our Satisfied Customers"
-        subtext="Experience the Ceramic Pro North West difference — professional results, every time."
+        subtext="Experience the Latin King Detailing difference — professional results, every time."
         primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
         secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="dark"

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { Shield, Star, Award, Users, Phone, CheckCircle } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -7,9 +7,9 @@ import StatsBanner from "@/components/ui/StatsBanner";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
-  title: "About Us — Ceramic Pro North West Bolton | Car Detailing Specialists",
+  title: "About Latin King Detailing — Bolton Car Ceramic Coating Specialists",
   description:
-    "About Ceramic Pro North West — Bolton's certified ceramic coating and car detailing specialists. Our story, certifications, team, and commitment to quality.",
+    "About Latin King Detailing — Bolton & Greater Manchester's car ceramic coating and detailing specialists. Our story, Ceramic Pro certifications, team & commitment to quality.",
   alternates: { canonical: "/about" },
 };
 
@@ -25,10 +25,10 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-[#c9a84c] font-semibold uppercase tracking-wider text-sm mb-3">Our Story</p>
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-            About Ceramic Pro North West — Bolton&apos;s Detailing Specialists
+            About Latin King Detailing — Bolton&apos;s Detailing Specialists
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed">
-            Ceramic Pro North West (trading as Initial Detail – Car Care) is a professional ceramic coating and car detailing business based in Farnworth, Bolton. Founded by car enthusiasts who were frustrated by the lack of genuinely professional paint protection services in the Greater Manchester area, Ceramic Pro North West was established to bring certified Ceramic Pro installations and professional-grade detailing to Bolton and the surrounding region.
+            Latin King Detailing is a professional ceramic coating and car detailing business based in Farnworth, Bolton. We were set up by car enthusiasts who were frustrated by what passed for paint protection in Greater Manchester — drive-through washes, consumer spray coatings marketed as professional, and a general lack of honest advice. We're here to do it properly: certified Ceramic Pro installations, KAVACA PPF, real paint correction, and detailing that actually improves your car instead of just cleaning it.
           </p>
         </div>
       </section>
@@ -56,13 +56,13 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-gray-400 leading-relaxed">
               <p>
-                Ceramic Pro North West began as a passion project by car enthusiasts who saw a gap in the Greater Manchester market: plenty of car washes, but very few genuinely certified, professional paint protection specialists. The business was founded in [PLACEHOLDER: year] with a single mission — to deliver the same standard of ceramic coating and detailing work that high-end supercar owners expect, to everyday car owners across Bolton and Manchester.
+                Latin King Detailing started the way most proper businesses do — out of a problem we couldn&apos;t find a decent solution to. There were plenty of car washes in Bolton. There were people advertising ceramic coating online. But finding someone genuinely certified, working from a proper workshop, using the actual professional-grade products? That was harder than it should have been.
               </p>
               <p>
-                After securing certification as an authorised Ceramic Pro installer, Ceramic Pro North West established its workshop in Farnworth, Bolton — a central location with excellent access from across Greater Manchester. Since opening, the business has built a loyal customer base with a {BUSINESS.rating.google.value}★ Google rating and {BUSINESS.rating.facebook.value}★ on Facebook, with many customers returning for multiple vehicles and annual maintenance services.
+                We set up our Farnworth workshop to fix that. After securing certification as an authorised Ceramic Pro installer — which means every coating is applied to the brand&apos;s professional standards and registered against your VIN for warranty purposes — we&apos;ve built a {BUSINESS.rating.google.value}★ Google rating from verified customers. Not by being the cheapest, but by doing the job right.
               </p>
               <p>
-                Today, Ceramic Pro North West installs Ceramic Pro 9H coatings, KAVACA PPF, and offers a full range of professional detailing services — all from the same workshop, with the same commitment to quality that the business was founded on.
+                Today, Latin King Detailing covers the full range: Ceramic Pro 9H coatings, KAVACA PPF installation, multi-stage paint correction, and professional detailing and valeting — all from the same Farnworth workshop, on all vehicle types, with the same standard on every job.
               </p>
             </div>
           </div>
@@ -79,14 +79,14 @@ export default function AboutPage() {
       <section className="py-16 px-4 bg-[#0f0f0f]">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-8">
-            What Makes Ceramic Pro North West Different
+            What Makes Latin King Detailing Different
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { icon: Award, title: "Ceramic Pro Certified Installer", desc: "Every coating is applied to the Ceramic Pro brand's certified professional standards. Your vehicle's coating is registered against the VIN for warranty purposes — something non-certified applications cannot offer." },
-              { icon: Shield, title: "Genuine Professional Products", desc: "We use only genuine Ceramic Pro 9H and KAVACA PPF products — the same products used on performance cars, supercars, and fleet vehicles worldwide. No consumer-grade alternatives, no diluted products." },
-              { icon: Star, title: "Proven Track Record", desc: `${BUSINESS.rating.google.value}★ on Google from verified customers. ${BUSINESS.rating.facebook.value}★ on Facebook with ${BUSINESS.rating.facebook.count}+ followers. Our reputation is built on consistent, high-quality results — not marketing claims.` },
-              { icon: Users, title: "Local Knowledge", desc: "Based in Farnworth, Bolton, we know Greater Manchester's roads, weather, and the specific challenges that North West conditions present to car paint. Our advice is practical and locally relevant." },
+              { icon: Award, title: "Ceramic Pro Certified Installer", desc: "We're an authorised Ceramic Pro installer — not self-certified. Every coating is applied to the brand's professional standards and your VIN is registered for warranty purposes. That warranty is meaningless without certification, which is why it matters." },
+              { icon: Shield, title: "Genuine Professional Products", desc: "We use only genuine Ceramic Pro 9H and KAVACA PPF — the same products on performance and supercar fleets worldwide. Not watered-down, not consumer-grade products repackaged with a professional price tag." },
+              { icon: Star, title: "Proven Track Record", desc: `${BUSINESS.rating.google.value}★ on Google from verified customers. ${BUSINESS.rating.facebook.value}★ on Facebook. Those ratings aren't from a single good week — they're from consistent results across every job, every vehicle, every month.` },
+              { icon: Users, title: "Local Knowledge, Honest Advice", desc: "Based in Farnworth, Bolton, we know Greater Manchester's roads, its road salt season, and what North West weather does to car paint over winter. We'll tell you what your car actually needs — not the most expensive option." },
             ].map((item) => (
               <div key={item.title} className="bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-6">
                 <div className="w-12 h-12 rounded-lg bg-[#c9a84c]/10 border border-[#c9a84c]/20 flex items-center justify-center mb-4">
@@ -105,7 +105,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-heading text-2xl font-bold text-white mb-6">Our Team</h2>
           <p className="text-gray-400 leading-relaxed mb-8">
-            Ceramic Pro North West is run by a small, dedicated team of professional detailers and ceramic coating specialists. [PLACEHOLDER: add team member names, bios, and photos before launch. Include: lead detailer/founder, PPF specialist if applicable, front-of-house/admin if applicable.]
+            Latin King Detailing is a small, specialist team — not a production-line car wash with rotating staff. Every vehicle is handled by an experienced detailer who cares about the result. [PLACEHOLDER: add team member names, bios, and photos before launch.]
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {["Lead Detailer", "PPF Specialist"].map((role) => (
@@ -157,10 +157,10 @@ export default function AboutPage() {
           <h2 className="font-heading text-2xl font-bold text-white mb-5">Our Commitment to You</h2>
           <div className="space-y-4 text-gray-400 leading-relaxed">
             <p>
-              Every vehicle that enters the Ceramic Pro North West workshop is treated as if it were our own. We won&apos;t recommend a service you don&apos;t need, we won&apos;t cut corners on preparation, and we won&apos;t hand a car back to you until we are satisfied the result meets our standards.
+              Every vehicle that comes into the Latin King Detailing workshop is treated as if it were our own. We won&apos;t recommend a service you don&apos;t need, we won&apos;t rush the preparation, and we won&apos;t hand a car back until the result is right. Preparation is what separates a coating that lasts from one that fails — and we don&apos;t skip it.
             </p>
             <p>
-              If you have any concerns with the work after collection, contact us — we stand behind every job we do. [PLACEHOLDER: confirm exact warranty/guarantee terms with client before launch.]
+              We&apos;re honest about what we can and can&apos;t achieve. If your paint has damage that we can&apos;t fully correct, we&apos;ll tell you that before we start — not after. If you have any concern after collection, contact us. We stand behind every job we do.
             </p>
           </div>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">

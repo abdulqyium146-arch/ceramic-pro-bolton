@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { Phone, Mail, MapPin, Clock, Star } from "lucide-react";
+﻿import Link from "next/link";
+import { Phone, Mail, MapPin, Clock, Star, ExternalLink } from "lucide-react";
 import { BUSINESS } from "@/lib/business";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -28,7 +28,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="font-heading font-bold text-white text-sm leading-tight">
-                  Ceramic Pro North West
+                  Latin King Detailing
                 </div>
                 <div className="text-[#c9a84c] text-xs">{BUSINESS.tradingAs}</div>
               </div>
@@ -37,7 +37,7 @@ export default function Footer() {
               Bolton&apos;s specialist in ceramic coatings, paint protection film, and professional car detailing. Serving Greater Manchester since [PLACEHOLDER: year].
             </p>
             {/* Ratings */}
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 mb-5">
               <div className="flex items-center gap-2">
                 <span className="stars text-sm">★★★★★</span>
                 <span className="text-white text-sm font-semibold">{BUSINESS.rating.google.value}</span>
@@ -49,6 +49,16 @@ export default function Footer() {
                 <span className="text-gray-400 text-xs">Facebook ({BUSINESS.rating.facebook.count}+ followers)</span>
               </div>
             </div>
+            {/* Main website link */}
+            <a
+              href="https://www.latinkingdetailing.co.uk/"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-1.5 text-[#c9a84c] hover:text-[#e8c96c] text-sm font-semibold transition-colors"
+            >
+              <ExternalLink className="w-3.5 h-3.5" />
+              Latin King Detailing
+            </a>
           </div>
 
           {/* Services */}
@@ -130,7 +140,17 @@ export default function Footer() {
               </a>
               <div className="flex items-start gap-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#c9a84c]" />
-                <span>{BUSINESS.address.full}, United Kingdom</span>
+                <div>
+                  <span className="text-white text-xs font-semibold block mb-0.5">Bolton</span>
+                  <span>{BUSINESS.address.full}</span>
+                </div>
+              </div>
+              <div className="flex items-start gap-2 text-gray-400 text-sm">
+                <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-[#c9a84c]" />
+                <div>
+                  <span className="text-white text-xs font-semibold block mb-0.5">Manchester</span>
+                  <span>426 Flixton Rd, Urmston, Manchester M41 6QT</span>
+                </div>
               </div>
             </address>
             <div className="mt-5">

@@ -1,4 +1,4 @@
-export interface GalleryImage {
+﻿export interface GalleryImage {
   src: string;
   alt: string;
   title: string;
@@ -14,8 +14,8 @@ const GEO = "Bolton, Greater Manchester";
 export const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
-    alt: `Matte grey Lamborghini Aventador outside Ceramic Pro North West — ceramic coating specialists in ${GEO}`,
-    title: `Lamborghini Aventador Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    alt: `Matte grey Lamborghini Aventador outside Latin King Detailing — ceramic coating specialists in ${GEO}`,
+    title: `Lamborghini Aventador Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "Lamborghini Aventador — matte ceramic coating. Bolton.",
     category: "ceramic-coating",
     width: 1280,
@@ -24,8 +24,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/ferrari-360-modena-detailing-bolton.webp",
-    alt: `Silver-blue Ferrari 360 Modena outside Ceramic Pro North West workshop, Farnworth, ${GEO}`,
-    title: `Ferrari 360 Modena Professional Detailing — Ceramic Pro North West, ${GEO}`,
+    alt: `Silver-blue Ferrari 360 Modena outside Latin King Detailing workshop, Farnworth, ${GEO}`,
+    title: `Ferrari 360 Modena Professional Detailing — Latin King Detailing, ${GEO}`,
     caption: "Ferrari 360 Modena — ceramic detail. Farnworth, Bolton.",
     category: "ceramic-coating",
     width: 1280,
@@ -35,7 +35,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "/images/bentley-continental-gtc-ceramic-coating-bolton.webp",
     alt: `Black Bentley Continental GTC with Ceramic Pro 9H coating in our ${GEO} workshop`,
-    title: `Bentley Continental GTC Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    title: `Bentley Continental GTC Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "Bentley Continental GTC — Ceramic Pro 9H. Bolton workshop.",
     category: "ceramic-coating",
     width: 1280,
@@ -44,7 +44,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
     alt: `Black BMW M5 receiving Ceramic Pro 9H coating at our workshop in ${GEO}`,
-    title: `BMW M5 Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    title: `BMW M5 Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "BMW M5 — Ceramic Pro 9H application. Bolton.",
     category: "ceramic-coating",
     width: 720,
@@ -53,7 +53,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "/images/bmw-m5-f10-ceramic-coating-bolton.webp",
     alt: `Black BMW M5 F10 with mirror-gloss Ceramic Pro 9H ceramic coating at our ${GEO} workshop`,
-    title: `BMW M5 F10 Mirror-Gloss Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    title: `BMW M5 F10 Mirror-Gloss Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "BMW M5 F10 — mirror-gloss Ceramic Pro 9H. Bolton.",
     category: "ceramic-coating",
     width: 720,
@@ -70,8 +70,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/jaguar-fpace-ceramic-coating-bolton.webp",
-    alt: `Blue Jaguar F-Pace ceramic coating treatment at Ceramic Pro North West, ${GEO}`,
-    title: `Jaguar F-Pace Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    alt: `Blue Jaguar F-Pace ceramic coating treatment at Latin King Detailing, ${GEO}`,
+    title: `Jaguar F-Pace Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "Jaguar F-Pace — ceramic coating. Bolton.",
     category: "ceramic-coating",
     width: 1280,
@@ -79,8 +79,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/porsche-macan-ceramic-coating-bolton.webp",
-    alt: `Grey Porsche Macan ceramic coating at Ceramic Pro North West workshop, ${GEO}`,
-    title: `Porsche Macan Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    alt: `Grey Porsche Macan ceramic coating at Latin King Detailing workshop, ${GEO}`,
+    title: `Porsche Macan Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "Porsche Macan — ceramic coating. Bolton.",
     category: "ceramic-coating",
     width: 1280,
@@ -88,8 +88,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/seat-leon-cupra-ceramic-coating-bolton.webp",
-    alt: `Orange SEAT Leon Cupra ceramic coating result at Ceramic Pro North West, ${GEO}`,
-    title: `SEAT Leon Cupra Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    alt: `Orange SEAT Leon Cupra ceramic coating result at Latin King Detailing, ${GEO}`,
+    title: `SEAT Leon Cupra Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "SEAT Leon Cupra — ceramic coating. Bolton.",
     category: "ceramic-coating",
     width: 1280,
@@ -97,8 +97,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
-    alt: `Bentley Continental GT KAVACA paint protection film installation at Ceramic Pro North West, ${GEO}`,
-    title: `Bentley Continental GT PPF Installation — Ceramic Pro North West, ${GEO}`,
+    alt: `Bentley Continental GT KAVACA paint protection film installation at Latin King Detailing, ${GEO}`,
+    title: `Bentley Continental GT PPF Installation — Latin King Detailing, ${GEO}`,
     caption: "Bentley Continental GT — KAVACA PPF installation. Bolton.",
     category: "ppf",
     width: 1280,
@@ -107,7 +107,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "/images/ceramic-coating-application-technician-bolton.webp",
     alt: `Certified technician applying Ceramic Pro 9H coating at our ${GEO} workshop`,
-    title: `Ceramic Pro 9H Application by Certified Technician — Ceramic Pro North West, ${GEO}`,
+    title: `Ceramic Pro 9H Application by Certified Technician — Latin King Detailing, ${GEO}`,
     caption: "Certified technician — Ceramic Pro 9H application. Bolton.",
     category: "ceramic-coating",
     width: 1280,
@@ -115,8 +115,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/paint-correction-ceramic-coating-bolton.webp",
-    alt: `Professional paint correction before ceramic coating application at Ceramic Pro North West, ${GEO}`,
-    title: `Paint Correction Before Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    alt: `Professional paint correction before ceramic coating application at Latin King Detailing, ${GEO}`,
+    title: `Paint Correction Before Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "Paint correction — pre-coating preparation. Bolton.",
     category: "detailing",
     width: 720,
@@ -133,9 +133,9 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/luxury-car-detailing-ceramic-pro-bolton-workshop.webp",
-    alt: `Luxury vehicles at Ceramic Pro North West, ${GEO} — ceramic coating and detailing specialists`,
-    title: `Luxury Car Detailing — Ceramic Pro North West, ${GEO}`,
-    caption: "Luxury detailing in progress. Ceramic Pro North West, Bolton.",
+    alt: `Luxury vehicles at Latin King Detailing, ${GEO} — ceramic coating and detailing specialists`,
+    title: `Luxury Car Detailing — Latin King Detailing, ${GEO}`,
+    caption: "Luxury detailing in progress. Latin King Detailing, Bolton.",
     category: "detailing",
     width: 1280,
     height: 720,
@@ -143,7 +143,7 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   {
     src: "/images/bmw-alloy-wheel-ceramic-coating-bolton.webp",
     alt: `BMW M-Sport alloy wheel with Ceramic Pro ceramic coating at our ${GEO} workshop`,
-    title: `BMW Alloy Wheel Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    title: `BMW Alloy Wheel Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "BMW M-Sport alloy — ceramic coated. Bolton.",
     category: "ceramic-coating",
     width: 720,
@@ -151,8 +151,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/brake-caliper-coating-bolton.webp",
-    alt: `Red brake caliper and wheel arch detail on vehicle at Ceramic Pro North West, ${GEO}`,
-    title: `Brake Caliper Detail — Ceramic Pro North West, ${GEO}`,
+    alt: `Red brake caliper and wheel arch detail on vehicle at Latin King Detailing, ${GEO}`,
+    title: `Brake Caliper Detail — Latin King Detailing, ${GEO}`,
     caption: "Brake caliper & arch detail. Bolton.",
     category: "detailing",
     width: 1280,
@@ -160,8 +160,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/leather-interior-protection-bolton.webp",
-    alt: `Premium grey leather seat interior protection treatment at Ceramic Pro North West, ${GEO}`,
-    title: `Leather Interior Protection — Ceramic Pro North West, ${GEO}`,
+    alt: `Premium grey leather seat interior protection treatment at Latin King Detailing, ${GEO}`,
+    title: `Leather Interior Protection — Latin King Detailing, ${GEO}`,
     caption: "Premium leather interior protection. Bolton.",
     category: "interior",
     width: 720,
@@ -169,8 +169,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp",
-    alt: `Ceramic Pro North West workshop at night, 115 Albert Road, Farnworth, ${GEO}`,
-    title: `Ceramic Pro North West Workshop — 115 Albert Road, Farnworth, ${GEO}`,
+    alt: `Latin King Detailing workshop at night, 115 Albert Road, Farnworth, ${GEO}`,
+    title: `Latin King Detailing Workshop — 115 Albert Road, Farnworth, ${GEO}`,
     caption: "Our workshop — 115 Albert Road, Farnworth, Bolton.",
     category: "workshop",
     width: 1280,
@@ -178,8 +178,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/ceramic-pro-north-west-detailing-studio-interior.webp",
-    alt: `Professional detailing studio interior at Ceramic Pro North West, Farnworth, ${GEO}`,
-    title: `Professional Detailing Studio — Ceramic Pro North West, Farnworth, ${GEO}`,
+    alt: `Professional detailing studio interior at Latin King Detailing, Farnworth, ${GEO}`,
+    title: `Professional Detailing Studio — Latin King Detailing, Farnworth, ${GEO}`,
     caption: "Our professional detailing studio. Farnworth, Bolton.",
     category: "workshop",
     width: 1280,
@@ -187,8 +187,8 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   },
   {
     src: "/images/motorcycle-ceramic-coating-bolton.webp",
-    alt: `Ducati superbike ceramic coating protection at Ceramic Pro North West, ${GEO}`,
-    title: `Motorcycle Ceramic Coating — Ceramic Pro North West, ${GEO}`,
+    alt: `Ducati superbike ceramic coating protection at Latin King Detailing, ${GEO}`,
+    title: `Motorcycle Ceramic Coating — Latin King Detailing, ${GEO}`,
     caption: "Ducati superbike — ceramic coating. Bolton.",
     category: "ceramic-coating",
     width: 1280,

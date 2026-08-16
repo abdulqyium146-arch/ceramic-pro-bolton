@@ -1,4 +1,4 @@
-import type { Metadata, ResolvingMetadata } from "next";
+﻿import type { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -20,7 +20,7 @@ export async function generateMetadata(
   const post = POSTS.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | Ceramic Pro North West`,
+    title: `${post.title} — Latin King Detailing Bolton`,
     description: post.excerpt.slice(0, 155),
     alternates: { canonical: `/blog/${slug}` },
   };
@@ -33,23 +33,23 @@ const POST_HERO_IMAGES: Record<string, { src: string; alt: string }> = {
   },
   "how-to-maintain-ceramic-coating-uk-weather": {
     src: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
-    alt: "Black BMW M5 ceramic coating at Ceramic Pro North West workshop, Farnworth, Bolton",
+    alt: "Black BMW M5 ceramic coating at Latin King Detailing workshop, Farnworth, Bolton",
   },
   "ppf-vs-ceramic-coating-which-is-right-for-you": {
     src: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
-    alt: "Bentley Continental GT KAVACA PPF installation in progress — Ceramic Pro North West, Bolton",
+    alt: "Bentley Continental GT KAVACA PPF installation in progress — Latin King Detailing, Bolton",
   },
   "ceramic-coating-vs-ppf-which-do-you-need": {
     src: "/images/bentley-continental-gtc-ceramic-coating-bolton.webp",
-    alt: "Bentley Continental GTC receiving paint protection at Ceramic Pro North West, Bolton, Manchester",
+    alt: "Bentley Continental GTC receiving paint protection at Latin King Detailing, Bolton, Manchester",
   },
   "paint-correction-before-ceramic-coating": {
     src: "/images/paint-correction-ceramic-coating-bolton.webp",
-    alt: "Professional paint correction before ceramic coating application — Ceramic Pro North West, Bolton",
+    alt: "Professional paint correction before ceramic coating application — Latin King Detailing, Bolton",
   },
   "best-car-detailer-bolton": {
     src: "/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp",
-    alt: "Ceramic Pro North West workshop at night — 115 Albert Road, Farnworth, Bolton",
+    alt: "Latin King Detailing workshop at night — 115 Albert Road, Farnworth, Bolton",
   },
   "winter-car-protection-greater-manchester": {
     src: "/images/bmw-m5-ceramic-gloss-finish-bolton.webp",
@@ -156,7 +156,7 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
       <div className="relative h-56 sm:h-72 rounded-xl overflow-hidden my-8">
         <Image
           src="/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp"
-          alt="Ceramic Pro North West workshop — 115 Albert Road, Farnworth, Bolton, Greater Manchester"
+          alt="Latin King Detailing workshop — 115 Albert Road, Farnworth, Bolton, Greater Manchester"
           fill
           sizes="(max-width: 768px) 100vw, 700px"
           className="object-cover"
@@ -168,7 +168,7 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
       </div>
       <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">Annual Maintenance Inspection</h2>
       <p className="text-gray-400 leading-relaxed">
-        Ceramic Pro North West recommends an annual maintenance check for all coated vehicles. During this visit, we inspect the coating under specialist lighting, assess its condition, and apply a maintenance boost product where needed. This annual service is also required to maintain the warranty on some Ceramic Pro packages. Contact us to book your annual maintenance appointment.
+        Latin King Detailing recommends an annual maintenance check for all coated vehicles. During this visit, we inspect the coating under specialist lighting, assess its condition, and apply a maintenance boost product where needed. This annual service is also required to maintain the warranty on some Ceramic Pro packages. Contact us to book your annual maintenance appointment.
       </p>
     </>
   ),
@@ -180,7 +180,7 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
 
       <h2 className="font-heading text-2xl font-bold text-white mt-10 mb-4">What Each Product Is Designed To Do</h2>
       <p className="text-gray-400 leading-relaxed mb-4">
-        <strong className="text-white">Ceramic coating</strong> bonds chemically with your car&apos;s clear coat to create a hardened, hydrophobic surface. It excels at UV protection, chemical resistance (bird droppings, industrial fallout, road film), and making the car dramatically easier to clean. Ceramic Pro 9H — the professional product we use at Ceramic Pro North West — sits at 9H pencil hardness, the maximum measurable. It does not absorb physical impacts.
+        <strong className="text-white">Ceramic coating</strong> bonds chemically with your car&apos;s clear coat to create a hardened, hydrophobic surface. It excels at UV protection, chemical resistance (bird droppings, industrial fallout, road film), and making the car dramatically easier to clean. Ceramic Pro 9H — the professional product we use at Latin King Detailing — sits at 9H pencil hardness, the maximum measurable. It does not absorb physical impacts.
       </p>
       <p className="text-gray-400 leading-relaxed mb-6">
         <strong className="text-white">Paint protection film (PPF)</strong> is a polyurethane film physically laminated to the paint surface. KAVACA PPF is self-healing — light scratches and swirl marks disappear with heat. More importantly, PPF absorbs stone chips, road debris impacts, and minor abrasions that would otherwise permanently damage the paint underneath. It does what ceramic coating cannot: stop physical damage before it reaches the paint.
@@ -205,7 +205,7 @@ const FULL_CONTENT: Record<string, React.ReactNode> = {
       <div className="relative h-56 sm:h-72 rounded-xl overflow-hidden my-8">
         <Image
           src="/images/lamborghini-aventador-ceramic-coating-bolton.webp"
-          alt="Lamborghini Aventador with full paint protection at Ceramic Pro North West — Bolton, Manchester"
+          alt="Lamborghini Aventador with full paint protection at Latin King Detailing — Bolton, Manchester"
           fill
           sizes="(max-width: 768px) 100vw, 700px"
           className="object-cover"
@@ -293,7 +293,7 @@ export default async function BlogPostPage({
             <div className="flex items-center gap-4 text-gray-500 text-sm">
               <span className="flex items-center gap-1"><Calendar className="w-4 h-4" />{formatDate(post.date)}</span>
               <span className="flex items-center gap-1"><Clock className="w-4 h-4" />{post.readTime}</span>
-              <span>By Ceramic Pro North West</span>
+              <span>By Latin King Detailing</span>
             </div>
           </div>
 
@@ -322,7 +322,7 @@ export default async function BlogPostPage({
               CP
             </div>
             <div>
-              <p className="font-heading font-bold text-white">Ceramic Pro North West</p>
+              <p className="font-heading font-bold text-white">Latin King Detailing</p>
               <p className="text-gray-400 text-sm mt-1">
                 Bolton&apos;s certified Ceramic Pro installer and car detailing specialists. Based in Farnworth, serving Greater Manchester.{" "}
                 <Link href="/about" className="text-[#c9a84c] hover:underline">Learn more about us.</Link>
@@ -373,7 +373,7 @@ export default async function BlogPostPage({
 
       <CTABanner
         headline="Ready to Protect Your Car?"
-        subtext="Get a free quote from Ceramic Pro North West — Bolton's certified detailing specialists."
+        subtext="Get a free quote from Latin King Detailing — Bolton's certified detailing specialists."
         primaryCTA={{ label: "Get a Free Quote", href: "/contact" }}
         secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="gold"

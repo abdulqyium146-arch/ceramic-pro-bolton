@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Shield, Film, Sparkles, Layers, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -8,9 +8,9 @@ import CTABanner from "@/components/sections/CTABanner";
 import StatsBanner from "@/components/ui/StatsBanner";
 
 export const metadata: Metadata = {
-  title: "Car Detailing & Ceramic Coating Services Bolton | Ceramic Pro North West",
+  title: "Car Ceramic Coating & Detailing Services Bolton, Greater Manchester",
   description:
-    "Professional ceramic coating, paint protection film, car detailing & leather protection in Bolton. Ceramic Pro certified. Serving Greater Manchester.",
+    "Car ceramic coating, paint protection film, car detailing & leather protection in Bolton, Greater Manchester. Latin King Detailing — Ceramic Pro 9H certified. Serving all of Greater Manchester.",
   alternates: { canonical: "/services" },
 };
 
@@ -48,7 +48,7 @@ export default function ServicesPage() {
             Professional Car Protection &amp; Detailing Services in Bolton
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
-            Ceramic Pro North West offers Bolton and Greater Manchester&apos;s most comprehensive range of professional paint protection and car care services. From Ceramic Pro 9H coatings to KAVACA PPF and full detailing packages — all applied by certified technicians using professional-grade products.
+            We cover the full range — Ceramic Pro 9H ceramic coating, KAVACA PPF, professional detailing and valeting, and leather interior protection. Everything goes through our Farnworth workshop, applied by certified technicians with genuine professional-grade products. We don&apos;t outsource any of it.
           </p>
         </div>
       </section>
@@ -112,7 +112,7 @@ export default function ServicesPage() {
             Not Sure Which Service You Need?
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-8">
-            The team at Ceramic Pro North West is happy to assess your vehicle and recommend the right combination of protection and detailing for your car, usage, and budget. There&apos;s no obligation — just straightforward advice from local experts.
+            The team at Latin King Detailing is happy to assess your vehicle and recommend the right combination of protection and detailing for your car, usage, and budget. There&apos;s no obligation — just straightforward advice from local experts.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
@@ -139,7 +139,7 @@ export default function ServicesPage() {
 
       <CTABanner
         headline="Protect Your Car with Bolton's Best"
-        subtext="Ceramic Pro North West — professional results, honest advice, local service."
+        subtext="Latin King Detailing — professional results, honest advice, local service."
         primaryCTA={{ label: "Book Your Appointment", href: "/contact" }}
         secondaryCTA={{ label: "WhatsApp Us", href: WHATSAPP_HREF, isWhatsApp: true }}
         variant="gold"

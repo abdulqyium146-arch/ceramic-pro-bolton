@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -11,9 +11,9 @@ import SchemaHowTo from "@/components/seo/SchemaHowTo";
 import SchemaService from "@/components/seo/SchemaService";
 
 export const metadata: Metadata = {
-  title: "Ceramic Coating Bolton — Ceramic Pro 9H | Ceramic Pro North West",
+  title: "Car Ceramic Coating Bolton — Ceramic Pro 9H Certified Installer",
   description:
-    "Professional Ceramic Pro 9H ceramic coating in Bolton. 9H hardness, UV protection, hydrophobic effect. Certified installers. Get a free quote today.",
+    "Professional car ceramic coating in Bolton & Greater Manchester. Latin King Detailing — Ceramic Pro 9H certified, 9H hardness, UV protection, hydrophobic effect. Farnworth BL4. Free quote.",
   alternates: { canonical: "/services/ceramic-coating" },
 };
 
@@ -21,27 +21,27 @@ const FAQS = [
   {
     question: "How much does ceramic coating cost in Bolton?",
     answer:
-      "Ceramic coating prices at Ceramic Pro North West start from [PLACEHOLDER] for smaller vehicles with an entry package, up to [PLACEHOLDER] for a full Ceramic Pro 9H application on larger vehicles. Pricing depends on the vehicle size, paint condition, and whether paint correction is required beforehand. Contact us for a free, tailored quote.",
+      "Entry-level starts from [PLACEHOLDER] for smaller cars — a full Ceramic Pro 9H application on a larger vehicle or one that needs paint correction first will be more. Your paint's condition matters too: if there are swirl marks or scratches, we correct those first so the coating bonds over a flawless surface. Send us your car details and we'll give you an honest, itemised quote.",
   },
   {
     question: "How long does ceramic coating last?",
     answer:
-      "A professionally applied Ceramic Pro 9H coating from Ceramic Pro North West typically lasts 2–5 years depending on the package selected, how the vehicle is used, and how well it is maintained. With proper aftercare — pH-neutral car shampoo and avoiding automatic car washes — you can expect maximum longevity.",
+      "Realistically, 2–5 years — and that's a proper certified Ceramic Pro 9H coating, not a spray-on alternative. The exact lifespan depends on which package you choose, how much the car's driven, and how you wash it. Stick to pH-neutral shampoo, skip the automatic car wash, and come in for an annual check. Do those three things and you'll get the full life out of your coating.",
   },
   {
     question: "Can ceramic coating be applied to any car?",
     answer:
-      "Yes — ceramic coating can be applied to any vehicle with a painted surface, including cars, vans, motorcycles, and motorhomes. The paint must first be decontaminated and, if necessary, paint-corrected to remove swirl marks or scratches. We assess every vehicle before application to ensure the best possible result.",
+      "Yes — if it has paint, we can coat it. Cars, vans, motorcycles, motorhomes. We decontaminate the paint and correct any swirl marks or scratches before application, because ceramic coating amplifies what's underneath. If the paint goes in clean, it comes out looking incredible. We look at every vehicle before we start so you know exactly what to expect.",
   },
   {
     question: "Does ceramic coating require maintenance?",
     answer:
-      "Ceramic coating greatly reduces maintenance, but it still benefits from regular washing with a pH-neutral car shampoo. Avoid automatic car washes with brushes, which can scratch the coating. An annual maintenance inspection by Ceramic Pro North West will help maximise the life of your coating.",
+      "Less maintenance than an uncoated car — but not zero. You still wash it, just less often and with better results each time. Use pH-neutral shampoo and avoid drive-through car washes with brushes. Once a year, bring it back to us for an inspection and top-up. That's genuinely all it takes to keep it performing for years.",
   },
   {
     question: "How long does the application process take?",
     answer:
-      "A full ceramic coating application at our Bolton workshop typically takes 1–3 days depending on the package and whether paint correction is required beforehand. We will give you a clear timeline when you book. Your vehicle will need to be kept dry for 24 hours after application to allow the coating to cure.",
+      "Most customers are without their car for 1–3 days, depending on the package and paint condition. If paint correction's needed first, allow the longer end. We'll be upfront about the exact timeline when you book — no surprises. One thing to remember: keep the car dry for the first 24 hours after you pick it up so the coating cures fully. We'll remind you when you collect.",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function CeramicCoatingPage() {
       />
       <SchemaFAQ faqs={FAQS} />
       <SchemaHowTo
-        name="How the ceramic coating process works at Ceramic Pro North West"
+        name="How the ceramic coating process works at Latin King Detailing"
         description="Step-by-step guide to our professional Ceramic Pro 9H ceramic coating application process in Bolton."
         steps={HOW_TO_STEPS}
       />
@@ -109,7 +109,7 @@ export default function CeramicCoatingPage() {
             Professional Ceramic Coating Bolton — Ceramic Pro 9H
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            Ceramic Pro North West applies professional Ceramic Pro 9H ceramic coatings at our Farnworth, Bolton workshop. As certified Ceramic Pro installers, we deliver the highest standard of paint protection available — with a coating that bonds permanently with your paint, creating a 9H-hard surface that repels water, dirt, UV rays, and chemical damage.
+            We apply Ceramic Pro 9H at our Farnworth, Bolton workshop — and because we&apos;re certified installers, your coating is registered to your vehicle with full manufacturer warranty. It&apos;s not something you spray on and wipe off. It bonds with the paint at a molecular level, creating a hard, permanent surface that makes the car easier to clean, protects against UV, and resists everything the road throws at it.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -139,10 +139,10 @@ export default function CeramicCoatingPage() {
             What Is Ceramic Coating?
           </h2>
           <p className="text-gray-300 leading-relaxed text-lg mb-6">
-            Ceramic coating is a liquid polymer applied to a vehicle&apos;s exterior that chemically bonds with the factory paintwork to create a permanent, protective layer. Unlike traditional wax which sits on top of the paint and wears off within weeks, a professional ceramic coating like Ceramic Pro 9H becomes part of the paint surface — providing lasting protection against the elements, UV radiation, and environmental contaminants.
+            Ceramic coating is a liquid polymer that chemically bonds directly with your car&apos;s paint — not on top of it, but into it. Once cured, it becomes a semi-permanent part of the surface. Compare that to traditional wax, which sits on the paint and washes off within a few weeks. With Ceramic Pro 9H, you get a protective layer that lasts years, repels UV, acid rain, bird droppings, road salt, and everything else that Greater Manchester weather throws at your car.
           </p>
           <p className="text-gray-400 leading-relaxed">
-            Ceramic Pro 9H — the product we use at our Bolton workshop — is named for its 9H pencil hardness rating, the highest hardness achievable on the standard scale. This makes it significantly harder than unprotected paint, resisting the kind of light abrasions and swirl marks that automatic car washes and improper washing techniques create.
+            Ceramic Pro 9H gets its name from the pencil hardness scale — 9H is the hardest rating achievable, significantly tougher than your clear coat alone. That extra hardness is what stops the light swirl marks and abrasions that automatic car washes leave behind. It doesn&apos;t make your car scratch-proof — nothing does — but it gives your paint a level of everyday resilience that unprotected paint simply doesn&apos;t have.
           </p>
         </div>
       </section>
@@ -193,7 +193,7 @@ export default function CeramicCoatingPage() {
             Ceramic Coating Prices Bolton
           </h2>
           <p className="text-gray-400 leading-relaxed mb-6">
-            Ceramic Pro North West offers a range of coating packages to suit different vehicles, budgets, and protection requirements. All packages include paint decontamination and preparation.
+            Latin King Detailing offers a range of coating packages to suit different vehicles, budgets, and protection requirements. All packages include paint decontamination and preparation.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
             {["Bronze", "Silver", "Gold"].map((tier) => (
@@ -224,7 +224,7 @@ export default function CeramicCoatingPage() {
               How Long Does Ceramic Coating Last?
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              A professionally applied Ceramic Pro 9H coating at our Bolton workshop typically lasts between 2 and 5 years, depending on the package chosen. Ceramic Pro offers tiered packages with different longevity guarantees — from an annual application up to a lifetime warranty option (subject to annual inspection). With correct aftercare — pH-neutral shampoo, no automatic car washes, and annual maintenance checks — you can maximise the lifespan of your coating.
+              Realistically, 2–5 years. Ceramic Pro offers tiered packages — from an annual coating right up to a lifetime warranty option, which requires an annual inspection to stay valid (worth doing anyway, as it lets us catch anything early). Look after it properly — pH-neutral shampoo, no automatic car washes, annual check with us — and you&apos;ll get every year out of it.
             </p>
           </div>
           <div>
@@ -232,7 +232,7 @@ export default function CeramicCoatingPage() {
               Is Ceramic Coating Worth It for a Daily Driver?
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              Yes — especially in the North West of England, where road salt in winter, acid rain, and bird droppings from motorway driving (M61, M62) are constant threats to paint. Ceramic coating significantly reduces time spent washing and detailing, protects the paint from the elements, and helps maintain your car&apos;s resale value. Most Ceramic Pro North West customers find the investment pays for itself within 12–18 months in reduced cleaning and protection costs.
+              Yes — especially if you&apos;re on the M61 or M62 regularly. Road salt in winter, acid rain, bird droppings, motorway debris: Greater Manchester roads are genuinely tough on paint. Ceramic coating doesn&apos;t make your car invincible, but it makes it dramatically easier to keep clean and significantly better protected against the elements. Most of our customers say it paid for itself within 12–18 months — mainly by cutting the time and money spent washing and maintaining the car.
             </p>
           </div>
         </div>
@@ -264,7 +264,7 @@ export default function CeramicCoatingPage() {
             Ceramic Coating Service Area
           </h2>
           <p className="text-gray-400 mb-5">
-            Ceramic Pro North West provides professional ceramic coating services from our Farnworth, Bolton workshop to customers across Greater Manchester, including:
+            Latin King Detailing provides professional ceramic coating services from our Farnworth, Bolton workshop to customers across Greater Manchester, including:
           </p>
           <div className="flex flex-wrap gap-2">
             {BUSINESS.serviceArea.map((area) => (

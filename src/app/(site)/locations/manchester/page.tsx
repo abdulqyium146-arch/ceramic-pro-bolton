@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { MapPin, Phone, ArrowRight, Clock } from "lucide-react";
 import { BUSINESS, WHATSAPP_HREF } from "@/lib/business";
@@ -8,32 +8,32 @@ import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
 
 export const metadata: Metadata = {
-  title: "Ceramic Coating Manchester — Ceramic Pro North West Bolton",
+  title: "Car Ceramic Coating Manchester — 15 Min from City Centre",
   description:
-    "Professional ceramic coating and car detailing near Manchester. Ceramic Pro North West in Bolton serves Manchester customers — 15–20 min drive. Free quote available.",
+    "Professional car ceramic coating for Manchester customers. Latin King Detailing in Bolton is 15–20 min from Manchester city centre. Ceramic Pro 9H certified. Free quote: 07482 225323.",
   alternates: { canonical: "/locations/manchester" },
 };
 
 const FAQS = [
   {
-    question: "How far is Ceramic Pro North West from Manchester city centre?",
+    question: "How far is Latin King Detailing from Manchester city centre?",
     answer:
-      "Ceramic Pro North West is located in Farnworth, Bolton — approximately 8–10 miles from Manchester city centre. The journey typically takes 15–20 minutes via the A666 through Salford, or 20–25 minutes via the M61 motorway. Our central Bolton location makes us accessible to customers across Greater Manchester.",
+      "We're in Farnworth, Bolton — about 8–10 miles from Manchester city centre. Via the A666 through Salford it's typically 15–20 minutes; via the M61 motorway, 20–25 minutes. Customers from Salford, Eccles, Worsley, and Swinton are often with us in 15 minutes or less.",
   },
   {
     question: "Is Ceramic Pro 9H available at Manchester car detailers?",
     answer:
-      "Ceramic Pro 9H must be applied by a certified Ceramic Pro installer. Ceramic Pro North West is one of the certified installers serving Greater Manchester. Many Manchester customers make the short journey to our Farnworth workshop to access certified Ceramic Pro applications not available at every local detailing shop.",
+      "Ceramic Pro 9H has to be applied by a certified installer — it's not just a brand preference, it's a warranty requirement. Your installation is registered against your VIN, and that registration is only valid through a certified applicator. Latin King Detailing is one of the certified installers for Greater Manchester. That's why Manchester customers make the trip.",
   },
   {
     question: "Do you serve all areas of Manchester?",
     answer:
-      "Yes — Ceramic Pro North West serves customers from across Greater Manchester including Salford, Eccles, Swinton, Worsley, Pendlebury, and Trafford. The drive to our Bolton workshop from these areas is typically 15–25 minutes. We also serve customers from further afield, including Prestwich, Whitefield, and Radcliffe.",
+      "Yes — we serve customers from Salford, Eccles, Swinton, Worsley, Pendlebury, Trafford, Whitefield, Radcliffe, Leigh, Atherton, and more. Drive times from those areas to our Farnworth workshop are typically 15–25 minutes. We'll give you accurate directions when you book.",
   },
   {
     question: "Is the journey from Manchester worth it for ceramic coating?",
     answer:
-      "Our Manchester customers consistently say yes. Professional ceramic coating is a multi-year investment — the extra 15 minutes to access a certified installer using genuine Ceramic Pro 9H products is worthwhile compared to a cheaper, non-certified application that may not deliver the same durability, hardness, or warranty.",
+      "Our Manchester customers say yes. A ceramic coating lasts 2–5 years, sometimes longer. Spending 15 minutes to access a certified installer using genuine Ceramic Pro 9H — with a registered warranty — is a straightforward decision against a cheaper application that may look similar on the day and fail within 12 months.",
   },
 ];
 
@@ -58,10 +58,10 @@ export default function ManchesterPage() {
             <MapPin className="w-4 h-4" /> Greater Manchester
           </div>
           <h1 className="font-heading text-4xl sm:text-5xl font-bold text-white mb-6">
-            Ceramic Coating &amp; Car Detailing Manchester — Ceramic Pro North West
+            Ceramic Coating &amp; Car Detailing Manchester — Latin King Detailing
           </h1>
           <p className="text-gray-300 text-lg leading-relaxed mb-8">
-            Ceramic Pro North West serves Manchester customers from our professional workshop in Farnworth, Bolton — approximately 15–20 minutes from Manchester city centre via the A666 through Salford. Manchester drivers regularly make the short journey to access our certified Ceramic Pro 9H installations and KAVACA PPF, which are not available at every local detailing shop.
+            Latin King Detailing serves Manchester customers from our professional workshop in Farnworth, Bolton — approximately 15–20 minutes from Manchester city centre via the A666 through Salford. Manchester drivers regularly make the short journey to access our certified Ceramic Pro 9H installations and KAVACA PPF, which are not available at every local detailing shop.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/contact"
@@ -129,15 +129,15 @@ export default function ManchesterPage() {
             {[
               {
                 title: "Certified Ceramic Pro Installation",
-                body: "Ceramic Pro 9H is a professional-grade product that must be applied by a trained, certified installer. Ceramic Pro North West is one of the certified installers for Greater Manchester. The certificate and warranty are registered against your specific vehicle — something that matters if you ever sell the car.",
+                body: "Ceramic Pro 9H can only be applied by a trained, certified installer — and the warranty is registered to your VIN, not just a piece of paper. Latin King Detailing is one of the certified installers serving Greater Manchester. That certification matters if you ever sell the car; a registered coating is a documented, verifiable asset.",
               },
               {
-                title: "KAVACA PPF — Not Available Everywhere",
-                body: "KAVACA Paint Protection Film from Ceramic Pro is a specialist product requiring factory-trained installation. Many Manchester detailing shops do not stock or install KAVACA. Our Bolton workshop is one of the few Greater Manchester locations where KAVACA PPF is available from a certified installer.",
+                title: "KAVACA PPF — Not Available at Every Shop",
+                body: "KAVACA Paint Protection Film requires factory-trained installation. Most Manchester detailing shops don't stock it or don't have the trained staff to apply it correctly. Our Bolton workshop is one of the few Greater Manchester locations with a certified KAVACA installer — worth knowing if PPF is on your radar.",
               },
               {
-                title: "A 15-Minute Drive Is a Multi-Year Investment",
-                body: "A ceramic coating or PPF installation will protect your car for 2–10 years. The 15-minute journey from Manchester to our Bolton workshop is a small one-time inconvenience in exchange for professional results that last years — and a product that is registered and warranted.",
+                title: "15 Minutes Now, Years of Protection",
+                body: "Ceramic coating lasts 2–5 years. PPF lasts up to 10. The drive from Manchester to our Farnworth workshop is a one-time, 15-minute investment for results that last years — with professional installation, registered certification, and aftercare support that most local options can't match.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-6">

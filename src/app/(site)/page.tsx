@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Shield, Film, Sparkles, Layers, Phone, Star, MapPin, CheckCircle, ArrowRight, MessageCircle } from "lucide-react";
@@ -14,9 +14,12 @@ import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
 
 export const metadata: Metadata = {
-  title: "Ceramic Pro North West | Ceramic Coating & Car Detailing Bolton",
+  title: {
+    absolute:
+      "Latin King Detailing | Car Ceramic Coating Bolton & Greater Manchester",
+  },
   description:
-    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet. 4.7★ Google rated. Call or WhatsApp 07482 225323.",
+    "Bolton's car ceramic coating specialists. Latin King Detailing — Ceramic Pro 9H, KAVACA PPF, paint protection film & professional car detailing. Serving Bolton, Manchester, Salford, Bury, Wigan, Chorley, Altrincham. Free quote: 07482 225323.",
   alternates: { canonical: "/" },
 };
 
@@ -51,7 +54,7 @@ const REVIEWS = [
   {
     author: "Dave R.",
     rating: 5,
-    text: "Third time using Initial Detail for my cars. Consistent quality every time. The ceramic coating on my Range Rover has held up perfectly through two winters now. Highly recommend to anyone in Bolton or Manchester.",
+    text: "Third time using Latin King Detailing for my cars. Consistent quality every time. The ceramic coating on my Range Rover has held up perfectly through two winters now. Highly recommend to anyone in Bolton or Manchester.",
     date: "November 2024",
     source: "facebook" as const,
   },
@@ -61,22 +64,22 @@ const HOME_FAQS = [
   {
     question: "How much does ceramic coating cost in Bolton?",
     answer:
-      "Ceramic coating prices at Ceramic Pro North West depend on vehicle size and the coating package chosen. Prices start from [PLACEHOLDER] for compact vehicles with an entry-level ceramic coating. A full Ceramic Pro 9H professional application on a larger vehicle is [PLACEHOLDER]. Contact us for a free, no-obligation quote tailored to your car.",
+      "Prices depend on your car's size and the package you want — entry-level starts from [PLACEHOLDER] on a compact car, and a full Ceramic Pro 9H application on an SUV or prestige vehicle will be more. The best thing to do is drop us a message with your make and model. We'll come straight back with an honest quote, no pressure.",
   },
   {
     question: "Is ceramic coating worth it for a daily driver?",
     answer:
-      "Yes — ceramic coating is excellent value for daily drivers. It significantly reduces the time spent washing and maintaining your car, protects against UV damage, bird lime, and road grime, and keeps your car looking newer for longer. Most customers see it pay for itself in reduced detailing costs within 18 months.",
+      "Genuinely, yes — and most people notice the difference straight away. After coating, water beads off, dirt doesn't cling the same way, and you spend far less time washing. For a Greater Manchester daily driver dealing with road salt, rain, and bird lime all year, the protection is real. Most of our customers say it paid for itself within 12–18 months in reduced cleaning costs alone.",
   },
   {
     question: "How long does a Ceramic Pro coating last?",
     answer:
-      "Ceramic Pro 9H applied by a certified installer like Ceramic Pro North West typically lasts 2–5 years depending on the package, how the car is used, and how well it is maintained. With the correct aftercare — pH-neutral car shampoo and avoiding automatic car washes — you can expect maximum longevity from your coating.",
+      "A properly applied Ceramic Pro 9H coating lasts 2–5 years, depending on the package and how you look after it. The care routine is simple: pH-neutral shampoo, no automatic car washes, and an annual check with us. Do that, and you'll get every year out of it.",
   },
   {
     question: "Do you offer paint protection film (PPF) in Bolton?",
     answer:
-      "Yes. Ceramic Pro North West offers KAVACA Paint Protection Film, the premium self-healing PPF product from the Ceramic Pro brand. KAVACA can be applied to the full vehicle or to high-impact zones such as the bonnet, bumpers, door edges, and mirror caps. Call us to discuss options for your vehicle.",
+      "Yes — we install KAVACA PPF, the self-healing paint protection film from the Ceramic Pro brand. It goes on clear, stays clear, physically protects against stone chips, and it's removable if you ever sell the car. We can cover just the high-impact zones or the full vehicle — give us a call and we'll explain what makes sense for your car.",
   },
 ];
 
@@ -87,7 +90,7 @@ const BLOG_TEASERS = [
     excerpt: "Is ceramic coating really worth the investment over traditional wax? We break down the differences every Greater Manchester driver should understand.",
     category: "Ceramic Coating",
     image: "/images/mirror-finish-ceramic-coating-reflection-bolton.webp",
-    imageAlt: "Ultra-gloss mirror finish ceramic coating result — Ceramic Pro North West, Bolton",
+    imageAlt: "Ultra-gloss mirror finish ceramic coating result — Latin King Detailing, Bolton",
   },
   {
     slug: "how-to-maintain-ceramic-coating-uk-weather",
@@ -95,7 +98,7 @@ const BLOG_TEASERS = [
     excerpt: "British weather is tough on car paint. Here's how to keep your coating performing through rain, frost, and road salt season.",
     category: "Maintenance",
     image: "/images/bmw-m5-ceramic-coating-bolton-workshop.webp",
-    imageAlt: "Black BMW M5 ceramic coating maintenance at Ceramic Pro North West, Bolton",
+    imageAlt: "Black BMW M5 ceramic coating maintenance at Latin King Detailing, Bolton",
   },
   {
     slug: "ppf-vs-ceramic-coating-which-is-right-for-you",
@@ -103,7 +106,7 @@ const BLOG_TEASERS = [
     excerpt: "Both protect your car — but they work very differently. We explain which is right for your vehicle and budget.",
     category: "PPF",
     image: "/images/bentley-continental-gt-ppf-installation-bolton.webp",
-    imageAlt: "Bentley Continental GT KAVACA PPF installation at Ceramic Pro North West, Bolton",
+    imageAlt: "Bentley Continental GT KAVACA PPF installation at Latin King Detailing, Bolton",
   },
 ];
 
@@ -140,7 +143,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-gray-300 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-            Ceramic Pro North West delivers professional-grade paint protection, PPF, and car detailing from our Farnworth, Bolton workshop. Serving Greater Manchester with Ceramic Pro 9H certified installations.
+            We&apos;re Bolton&apos;s car ceramic coating specialists — based in Farnworth, five minutes from junction 4 of the M61. We apply Ceramic Pro 9H, install KAVACA PPF, and detail cars to a standard you won&apos;t get from a drive-through wash. If you want it done properly, you&apos;ve found the right place.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -190,12 +193,12 @@ export default function HomePage() {
             {[
               {
                 src: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
-                alt: "Lamborghini Aventador ceramic coating — Ceramic Pro North West, Bolton, Greater Manchester",
+                alt: "Lamborghini Aventador ceramic coating — Latin King Detailing, Bolton, Greater Manchester",
                 label: "Lamborghini Aventador",
               },
               {
                 src: "/images/ferrari-360-modena-detailing-bolton.webp",
-                alt: "Ferrari 360 Modena detailing — Ceramic Pro North West, Farnworth, Bolton",
+                alt: "Ferrari 360 Modena detailing — Latin King Detailing, Farnworth, Bolton",
                 label: "Ferrari 360 Modena",
               },
               {
@@ -205,7 +208,7 @@ export default function HomePage() {
               },
               {
                 src: "/images/bmw-m5-f10-ceramic-coating-bolton.webp",
-                alt: "BMW M5 F10 mirror-gloss ceramic coating — Ceramic Pro North West, Bolton",
+                alt: "BMW M5 F10 mirror-gloss ceramic coating — Latin King Detailing, Bolton",
                 label: "BMW M5 F10",
               },
             ].map((img) => (
@@ -262,7 +265,7 @@ export default function HomePage() {
               Professional Car Protection &amp; Detailing Services
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Ceramic Pro North West offers a complete range of paint protection and car care services from our Bolton workshop, using only professional-grade products.
+              Latin King Detailing offers a complete range of paint protection and car care services from our Bolton workshop, using only professional-grade products.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -291,7 +294,7 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-[#0f0f0f]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#c9a84c] font-semibold uppercase tracking-wider text-sm mb-3">Why Ceramic Pro North West</p>
+            <p className="text-[#c9a84c] font-semibold uppercase tracking-wider text-sm mb-3">Why Latin King Detailing</p>
             <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white">
               Bolton&apos;s Trusted Paint Protection Experts
             </h2>
@@ -301,17 +304,17 @@ export default function HomePage() {
               {
                 icon: Shield,
                 title: "Ceramic Pro Certified Installer",
-                desc: "As an authorised Ceramic Pro installer, every coating is applied to the brand's strict professional standards, ensuring maximum hardness, clarity, and durability.",
+                desc: "Certification means your coating is registered directly to your car's VIN with Ceramic Pro — so the warranty is real and traceable. Anyone can claim to 'use Ceramic Pro.' Being a certified installer means we're held accountable to the brand's standards on every single job.",
               },
               {
                 icon: Star,
-                title: "Premium Products Only",
-                desc: "We use Ceramic Pro 9H and KAVACA PPF — the same professional-grade products used on supercars worldwide. No diluted consumer-grade coatings here.",
+                title: "Professional Products Only",
+                desc: "Ceramic Pro 9H and KAVACA PPF are the products used on Lamborghinis, Bentleys, and McLarens. We don't stock consumer-grade alternatives — what goes on your car is exactly the same as what goes on the cars in our gallery.",
               },
               {
                 icon: MapPin,
                 title: "Local Bolton Specialists",
-                desc: "Based in Farnworth, Bolton, Ceramic Pro North West is your local expert. We know Greater Manchester roads and weather — and how to protect your car from them.",
+                desc: "Our workshop is in Farnworth, five minutes from the M61 at junction 4. Our customers drive from across Greater Manchester because they know what they're getting. We understand what Bolton roads and winters do to paintwork — and we know how to protect against it.",
               },
             ].map((item) => (
               <div key={item.title} className="bg-[#1a1a1a] border border-[#3a3a3a] rounded-xl p-8 text-center">
@@ -390,7 +393,7 @@ export default function HomePage() {
             Serving Bolton &amp; Greater Manchester
           </h2>
           <p className="text-gray-400 mb-8">
-            Ceramic Pro North West is based in Farnworth, Bolton and serves customers across Greater Manchester and the surrounding area.
+            Latin King Detailing is based in Farnworth, Bolton and serves customers across Greater Manchester and the surrounding area.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {BUSINESS.serviceArea.map((area) => (

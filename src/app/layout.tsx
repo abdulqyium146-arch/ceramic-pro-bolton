@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Inter, Syne } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
@@ -24,21 +24,48 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.url),
   title: {
-    default: `${BUSINESS.name} | Ceramic Coating & Car Detailing Bolton`,
+    default: `${BUSINESS.name} | Car Ceramic Coating Bolton & Greater Manchester`,
     template: `%s | ${BUSINESS.name}`,
   },
   description:
-    "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet services. Serving Greater Manchester. Call or WhatsApp 07482 225323.",
+    "Bolton & Greater Manchester's car ceramic coating specialists. Latin King Detailing — Ceramic Pro 9H, KAVACA PPF, paint protection film, paint correction & professional car detailing. Farnworth, Bolton BL4. Call 07482 225323.",
   keywords: [
-    "ceramic coating Bolton",
-    "car detailing Bolton",
+    "car ceramic coating Bolton",
+    "car ceramic coating Manchester",
+    "car ceramic coating Greater Manchester",
+    "ceramic coating near me Bolton",
+    "car ceramic coat Bolton",
+    "professional ceramic coating Bolton",
+    "Ceramic Pro 9H Bolton",
+    "Ceramic Pro certified installer Bolton",
+    "KAVACA PPF Bolton",
     "paint protection film Bolton",
-    "PPF Bolton",
-    "ceramic coating Greater Manchester",
-    "Ceramic Pro North West",
+    "paint correction Bolton",
+    "car detailing Bolton",
+    "car detailing Manchester",
     "car valet Bolton",
-    "KAVACA PPF",
-    "Initial Detail",
+    "vehicle ceramic coating Bolton",
+    "Latin King Detailing",
+    "ceramic coating Farnworth",
+    "ceramic coating Horwich",
+    "ceramic coating Westhoughton",
+    "ceramic coating Kearsley",
+    "ceramic coating Little Lever",
+    "ceramic coating Harwood",
+    "ceramic coating Walkden",
+    "ceramic coating Worsley",
+    "ceramic coating Leigh",
+    "ceramic coating Atherton",
+    "ceramic coating Tyldesley",
+    "ceramic coating Radcliffe",
+    "ceramic coating Whitefield",
+    "ceramic coating Swinton",
+    "ceramic coating Eccles",
+    "ceramic coating Salford",
+    "ceramic coating Bury",
+    "ceramic coating Wigan",
+    "ceramic coating Chorley",
+    "ceramic coating Altrincham",
   ],
   authors: [{ name: BUSINESS.name }],
   creator: BUSINESS.name,
@@ -53,23 +80,23 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: BUSINESS.url,
     siteName: BUSINESS.name,
-    title: `${BUSINESS.name} | Ceramic Coating & Car Detailing Bolton`,
+    title: `${BUSINESS.name} | Car Ceramic Coating Bolton & Greater Manchester`,
     description:
-      "Bolton's trusted ceramic coating & car detailing specialists. Ceramic Pro 9H, KAVACA PPF, professional valet services. 4.7★ Google rating.",
+      "Bolton & Greater Manchester's car ceramic coating specialists. Latin King Detailing — Ceramic Pro 9H, KAVACA PPF, paint protection film & professional car detailing. 4.7★ Google rated.",
     images: [
       {
         url: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
         width: 1280,
         height: 853,
-        alt: "Lamborghini Aventador ceramic coating — Ceramic Pro North West, Bolton, Greater Manchester",
+        alt: "Lamborghini Aventador ceramic coating — Latin King Detailing, Bolton, Greater Manchester",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${BUSINESS.name} | Ceramic Coating Bolton`,
+    title: `${BUSINESS.name} | Car Ceramic Coating Bolton`,
     description:
-      "Bolton's trusted ceramic coating & car detailing specialists. 4.7★ Google rating.",
+      "Bolton & Manchester's car ceramic coating specialists. Ceramic Pro 9H, KAVACA PPF. 4.7★ Google rated.",
     images: ["/images/lamborghini-aventador-ceramic-coating-bolton.webp"],
   },
   alternates: {
