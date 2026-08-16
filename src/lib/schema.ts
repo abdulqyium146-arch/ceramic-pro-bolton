@@ -6,17 +6,23 @@ export function buildLocalBusinessSchema() {
   const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "AutomotiveBusiness"],
-    "@id": BUSINESS.url,
+    "@id": `${BUSINESS.url}/#localbusiness`,
     name: BUSINESS.name,
     alternateName: BUSINESS.tradingAs,
     description: BUSINESS.description,
     slogan: "Bolton's Car Ceramic Coating Specialists",
     url: BUSINESS.url,
     telephone: BUSINESS.phone,
-    image: `${BUSINESS.url}/images/latin-king-detailing-bolton.webp`,
+    image: [
+      `${BUSINESS.url}/images/lamborghini-aventador-ceramic-coating-bolton.webp`,
+      `${BUSINESS.url}/images/bmw-m5-ceramic-coating-bolton-workshop.webp`,
+      `${BUSINESS.url}/images/ceramic-pro-north-west-workshop-farnworth-bolton.webp`,
+    ],
     logo: {
       "@type": "ImageObject",
-      url: `${BUSINESS.url}/images/logo.png`,
+      url: `${BUSINESS.url}/favicon.svg`,
+      width: 512,
+      height: 512,
     },
     hasMap: `https://maps.google.com/?q=${encodeURIComponent(BUSINESS.address.full)}`,
     knowsAbout: [
@@ -117,8 +123,21 @@ export function buildWebSiteSchema() {
     "@id": `${BUSINESS.url}/#website`,
     url: BUSINESS.url,
     name: BUSINESS.name,
+    alternateName: "Latin King Detailing Bolton",
     description: BUSINESS.description,
     inLanguage: "en-GB",
+    publisher: {
+      "@type": "LocalBusiness",
+      "@id": `${BUSINESS.url}/#localbusiness`,
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${BUSINESS.url}/blog?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 }
 
@@ -142,7 +161,7 @@ export function buildServiceSchema({
     url: `${BUSINESS.url}/services/${slug}`,
     provider: {
       "@type": "LocalBusiness",
-      "@id": BUSINESS.url,
+      "@id": `${BUSINESS.url}/#localbusiness`,
       name: BUSINESS.name,
     },
     areaServed: BUSINESS.serviceArea

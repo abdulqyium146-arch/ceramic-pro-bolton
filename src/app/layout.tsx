@@ -24,11 +24,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.url),
   title: {
-    default: `${BUSINESS.name} | Car Ceramic Coating Bolton & Greater Manchester`,
-    template: `%s | ${BUSINESS.name}`,
+    default: "Ceramic Coating Manchester & Bolton — Latin King Detailing | Ceramic Pro 9H Certified",
+    template: `%s | Latin King Detailing`,
   },
   description:
-    "Bolton & Greater Manchester's car ceramic coating specialists. Latin King Detailing — Ceramic Pro 9H, KAVACA PPF, paint protection film, paint correction & professional car detailing. Farnworth, Bolton BL4. Call 07482 225323.",
+    "Greater Manchester's certified Ceramic Pro 9H installer. Latin King Detailing, Farnworth, Bolton — ceramic coating, KAVACA PPF, paint correction & professional car detailing. 4.7★ Google rated. Free quote: 07482 225323.",
   keywords: [
     "car ceramic coating Bolton",
     "car ceramic coating Manchester",
@@ -80,9 +80,9 @@ export const metadata: Metadata = {
     locale: "en_GB",
     url: BUSINESS.url,
     siteName: BUSINESS.name,
-    title: `${BUSINESS.name} | Car Ceramic Coating Bolton & Greater Manchester`,
+    title: "Ceramic Coating Manchester & Bolton — Latin King Detailing | Ceramic Pro 9H Certified",
     description:
-      "Bolton & Greater Manchester's car ceramic coating specialists. Latin King Detailing — Ceramic Pro 9H, KAVACA PPF, paint protection film & professional car detailing. 4.7★ Google rated.",
+      "Greater Manchester's certified Ceramic Pro 9H installer. Ceramic coating, KAVACA PPF, paint correction & car detailing from Bolton's specialist. 4.7★ Google rated.",
     images: [
       {
         url: "/images/lamborghini-aventador-ceramic-coating-bolton.webp",
@@ -94,13 +94,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${BUSINESS.name} | Car Ceramic Coating Bolton`,
+    title: "Ceramic Coating Manchester & Bolton — Latin King Detailing",
     description:
-      "Bolton & Manchester's car ceramic coating specialists. Ceramic Pro 9H, KAVACA PPF. 4.7★ Google rated.",
+      "Greater Manchester's certified Ceramic Pro 9H installer. Ceramic coating, KAVACA PPF, paint correction. 4.7★ Google rated.",
     images: ["/images/lamborghini-aventador-ceramic-coating-bolton.webp"],
   },
   alternates: {
-    canonical: BUSINESS.url,
+    canonical: "/",
   },
   icons: {
     icon: [

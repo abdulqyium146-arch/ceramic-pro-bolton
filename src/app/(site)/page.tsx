@@ -12,14 +12,15 @@ import MapEmbed from "@/components/ui/MapEmbed";
 import TrustBar from "@/components/ui/TrustBar";
 import CTABanner from "@/components/sections/CTABanner";
 import SchemaFAQ from "@/components/seo/SchemaFAQ";
+import SchemaLocalBusiness from "@/components/seo/SchemaLocalBusiness";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Latin King Detailing | Car Ceramic Coating Bolton & Greater Manchester",
+      "Ceramic Coating Manchester & Bolton — Latin King Detailing | Ceramic Pro 9H Certified",
   },
   description:
-    "Bolton's car ceramic coating specialists. Latin King Detailing — Ceramic Pro 9H, KAVACA PPF, paint protection film & professional car detailing. Serving Bolton, Manchester, Salford, Bury, Wigan, Chorley, Altrincham. Free quote: 07482 225323.",
+    "Greater Manchester's certified Ceramic Pro 9H installer. Latin King Detailing, Farnworth, Bolton — ceramic coating, KAVACA PPF, paint correction & car detailing. 4.7★ Google rated. Free quote: 07482 225323.",
   alternates: { canonical: "/" },
 };
 
@@ -113,6 +114,7 @@ const BLOG_TEASERS = [
 export default function HomePage() {
   return (
     <>
+      <SchemaLocalBusiness />
       <SchemaFAQ faqs={HOME_FAQS} />
 
       {/* Hero */}

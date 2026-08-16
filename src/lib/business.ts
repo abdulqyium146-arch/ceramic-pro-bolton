@@ -4,7 +4,7 @@ export const BUSINESS = {
   legalName: "Latin King Detailing",
   description:
     "Latin King Detailing is Bolton's car ceramic coating and detailing specialist, based at 115 Albert Road, Farnworth, Bolton BL4 9EA. Ceramic Pro 9H certified installer offering car ceramic coating, KAVACA PPF, paint correction, and professional car detailing across Bolton, Farnworth, Horwich, Westhoughton, Kearsley, Little Lever, Harwood, Walkden, Worsley, Leigh, Atherton, Tyldesley, Radcliffe, Whitefield, Swinton, Eccles, Manchester, Salford, Bury, Wigan, Chorley, and Altrincham.",
-  url: "https://www.latinkingdetailing.co.uk",
+  url: "https://ceramicpromanchester.com",
   phone: "+447482225323",
   phoneDisplay: "07482 225323",
   whatsapp: "447482225323",
